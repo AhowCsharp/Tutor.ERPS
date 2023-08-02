@@ -1,0 +1,15 @@
+D:\GitLab\TUTOR.ERPS\TUTOR.Repository\bin\Debug\net6.0\TUTOR.Repository.deps.json
+D:\GitLab\TUTOR.ERPS\TUTOR.Repository\bin\Debug\net6.0\TUTOR.Repository.dll
+D:\GitLab\TUTOR.ERPS\TUTOR.Repository\bin\Debug\net6.0\TUTOR.Repository.pdb
+D:\GitLab\TUTOR.ERPS\TUTOR.Repository\bin\Debug\net6.0\TUTOR.Biz.dll
+D:\GitLab\TUTOR.ERPS\TUTOR.Repository\bin\Debug\net6.0\TUTOR.Biz.pdb
+D:\GitLab\TUTOR.ERPS\TUTOR.Repository\obj\Debug\net6.0\TUTOR.Repository.csproj.AssemblyReference.cache
+D:\GitLab\TUTOR.ERPS\TUTOR.Repository\obj\Debug\net6.0\TUTOR.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitLab\TUTOR.ERPS\TUTOR.Repository\obj\Debug\net6.0\TUTOR.Repository.AssemblyInfoInputs.cache
+D:\GitLab\TUTOR.ERPS\TUTOR.Repository\obj\Debug\net6.0\TUTOR.Repository.AssemblyInfo.cs
+D:\GitLab\TUTOR.ERPS\TUTOR.Repository\obj\Debug\net6.0\TUTOR.Repository.csproj.CoreCompileInputs.cache
+D:\GitLab\TUTOR.ERPS\TUTOR.Repository\obj\Debug\net6.0\TUTOR.Repository.csproj.CopyComplete
+D:\GitLab\TUTOR.ERPS\TUTOR.Repository\obj\Debug\net6.0\TUTOR.Repository.dll
+D:\GitLab\TUTOR.ERPS\TUTOR.Repository\obj\Debug\net6.0\refint\TUTOR.Repository.dll
+D:\GitLab\TUTOR.ERPS\TUTOR.Repository\obj\Debug\net6.0\TUTOR.Repository.pdb
+D:\GitLab\TUTOR.ERPS\TUTOR.Repository\obj\Debug\net6.0\ref\TUTOR.Repository.dll

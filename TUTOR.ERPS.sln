@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TUTOR.ERPS.Api", "TUTOR.ERPS\TUTOR.ERPS.Api.csproj", "{59D15230-FCE9-41E7-BD29-861347E8E2C9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{28BB244B-F336-44CA-BB1D-A6E4E352C76F} = {28BB244B-F336-44CA-BB1D-A6E4E352C76F}
+		{D0728394-2FED-4BAB-A8C6-6D20D5B9954E} = {D0728394-2FED-4BAB-A8C6-6D20D5B9954E}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TUTOR.Repository", "TUTOR.Repository\TUTOR.Repository.csproj", "{28BB244B-F336-44CA-BB1D-A6E4E352C76F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D0728394-2FED-4BAB-A8C6-6D20D5B9954E} = {D0728394-2FED-4BAB-A8C6-6D20D5B9954E}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TUTOR.Biz", "TUTOR.Biz\TUTOR.Biz.csproj", "{D0728394-2FED-4BAB-A8C6-6D20D5B9954E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59D15230-FCE9-41E7-BD29-861347E8E2C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59D15230-FCE9-41E7-BD29-861347E8E2C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59D15230-FCE9-41E7-BD29-861347E8E2C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59D15230-FCE9-41E7-BD29-861347E8E2C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28BB244B-F336-44CA-BB1D-A6E4E352C76F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28BB244B-F336-44CA-BB1D-A6E4E352C76F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28BB244B-F336-44CA-BB1D-A6E4E352C76F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28BB244B-F336-44CA-BB1D-A6E4E352C76F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0728394-2FED-4BAB-A8C6-6D20D5B9954E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0728394-2FED-4BAB-A8C6-6D20D5B9954E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0728394-2FED-4BAB-A8C6-6D20D5B9954E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0728394-2FED-4BAB-A8C6-6D20D5B9954E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8AA6FE25-9CD2-45A4-A902-800D3CEDACB1}
+	EndGlobalSection
+EndGlobal

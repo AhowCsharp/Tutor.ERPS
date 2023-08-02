@@ -1,0 +1,536 @@
+2023-07-12 14:58:22.4463|0|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\j3537\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. |url: |action: |
+2023-07-12 14:58:23.0445|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7061 |url: |action: |
+2023-07-12 14:58:23.0445|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5128 |url: |action: |
+2023-07-12 14:58:23.0516|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |
+2023-07-12 14:58:23.0671|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |
+2023-07-12 14:58:23.0671|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\GitLab\TUTOR.ERPS\TUTOR.ERPS\ |url: |action: |
+2023-07-12 14:58:24.3690|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/index.html - - |url: https://localhost/swagger/index.html|action: |
+2023-07-12 14:58:24.9154|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_vs/browserLink - - |url: https://localhost/_vs/browserLink|action: |
+2023-07-12 14:58:24.9154|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-07-12 14:58:24.9371|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/index.html - - - 200 - text/html;charset=utf-8 573.4464ms |url: https://localhost/swagger/index.html|action: |
+2023-07-12 14:58:24.9425|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 24.4044ms |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-07-12 14:58:25.2544|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 340.6945ms |url: https://localhost/_vs/browserLink|action: |
+2023-07-12 14:58:25.3167|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-07-12 14:58:25.4743|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 157.7254ms |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-07-12 14:59:13.0513|0|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\j3537\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. |url: |action: |
+2023-07-12 14:59:13.6111|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7061 |url: |action: |
+2023-07-12 14:59:13.6148|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5128 |url: |action: |
+2023-07-12 14:59:13.6330|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |
+2023-07-12 14:59:13.6330|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |
+2023-07-12 14:59:13.6330|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\GitLab\TUTOR.ERPS\TUTOR.ERPS\ |url: |action: |
+2023-07-12 14:59:14.3619|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/index.html - - |url: https://localhost/swagger/index.html|action: |
+2023-07-12 14:59:14.7868|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_vs/browserLink - - |url: https://localhost/_vs/browserLink|action: |
+2023-07-12 14:59:14.8019|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-07-12 14:59:14.8182|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/index.html - - - 200 - text/html;charset=utf-8 461.3386ms |url: https://localhost/swagger/index.html|action: |
+2023-07-12 14:59:14.8182|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 20.9353ms |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-07-12 14:59:15.0365|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 243.5324ms |url: https://localhost/_vs/browserLink|action: |
+2023-07-12 14:59:15.0884|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-07-12 14:59:15.2451|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 156.4312ms |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-07-12 14:59:18.8342|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/Member/StudentList - - |url: https://localhost/Member/StudentList|action: |
+2023-07-12 14:59:18.9889|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api)' |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 14:59:19.0919|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Data", controller = "Member"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Data(Int32) on controller IALW.API.ApiControllers.MemberController (TUTOR.ERPS.Api). |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 14:59:58.7796|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api) in 39667.1635ms |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 14:59:58.7796|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api)' |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:01:33.7878|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/index.html - - |url: https://localhost/swagger/index.html|action: |
+2023-07-12 15:01:33.8647|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/index.html - - - 200 - text/html;charset=utf-8 80.2052ms |url: https://localhost/swagger/index.html|action: |
+2023-07-12 15:01:33.9112|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-07-12 15:01:33.9112|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_vs/browserLink - - |url: https://localhost/_vs/browserLink|action: |
+2023-07-12 15:01:33.9112|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 10.8985ms |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-07-12 15:01:34.1453|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 229.6285ms |url: https://localhost/_vs/browserLink|action: |
+2023-07-12 15:01:34.1935|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-07-12 15:01:34.1935|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 13.7808ms |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-07-12 15:01:39.8498|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/Member/StudentList - - |url: https://localhost/Member/StudentList|action: |
+2023-07-12 15:01:39.8654|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api)' |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:01:39.8654|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Data", controller = "Member"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Data(Int32) on controller IALW.API.ApiControllers.MemberController (TUTOR.ERPS.Api). |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:02:38.2675|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api) in 58394.9733ms |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:02:38.3150|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api)' |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:07:38.8003|0|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\j3537\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. |url: |action: |
+2023-07-12 15:07:39.3030|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7061 |url: |action: |
+2023-07-12 15:07:39.3030|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5128 |url: |action: |
+2023-07-12 15:07:39.3224|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |
+2023-07-12 15:07:39.3224|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |
+2023-07-12 15:07:39.3224|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\GitLab\TUTOR.ERPS\TUTOR.ERPS\ |url: |action: |
+2023-07-12 15:07:40.0923|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/index.html - - |url: https://localhost/swagger/index.html|action: |
+2023-07-12 15:07:40.5367|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_vs/browserLink - - |url: https://localhost/_vs/browserLink|action: |
+2023-07-12 15:07:40.5367|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-07-12 15:07:40.5531|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/index.html - - - 200 - text/html;charset=utf-8 472.6627ms |url: https://localhost/swagger/index.html|action: |
+2023-07-12 15:07:40.5531|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 19.4772ms |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-07-12 15:07:40.7697|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 241.3591ms |url: https://localhost/_vs/browserLink|action: |
+2023-07-12 15:07:40.8202|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-07-12 15:07:40.9585|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 134.7942ms |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-07-12 15:08:20.3497|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/Member/StudentList - - |url: https://localhost/Member/StudentList|action: |
+2023-07-12 15:08:20.4581|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api)' |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:08:20.5436|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Data", controller = "Member"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Data(Int32) on controller IALW.API.ApiControllers.MemberController (TUTOR.ERPS.Api). |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:08:24.6364|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (218ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:08:24.9252|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (41ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:08:25.2760|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (54ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (DbType = DateTime), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 50), @p8='?' (Size = 4000), @p9='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [SystemErrorLog] ([Api], [Entry_Date], [Entry_User], [Error_Level], [Ip], [Message], [Token], [Web_Method], [Web_Request], [Web_Response])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9); |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:08:25.4153|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api) - Validation state: Valid |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:08:25.5584|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (52ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Member] AS [m]
+        ORDER BY (SELECT 1)
+        OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:08:29.2239|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api) in 8665.7677ms |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:08:29.2239|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api)' |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:09:27.5285|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/index.html - - |url: https://localhost/swagger/index.html|action: |
+2023-07-12 15:09:27.5988|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/index.html - - - 200 - text/html;charset=utf-8 76.8212ms |url: https://localhost/swagger/index.html|action: |
+2023-07-12 15:09:27.6321|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-07-12 15:09:27.6321|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_vs/browserLink - - |url: https://localhost/_vs/browserLink|action: |
+2023-07-12 15:09:27.6457|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 14.8096ms |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-07-12 15:09:27.9114|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 272.9345ms |url: https://localhost/_vs/browserLink|action: |
+2023-07-12 15:09:27.9512|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-07-12 15:09:27.9620|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 12.3636ms |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-07-12 15:09:32.1608|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/Member/StudentList - - |url: https://localhost/Member/StudentList|action: |
+2023-07-12 15:09:32.1608|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api)' |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:09:32.1608|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Data", controller = "Member"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Data(Int32) on controller IALW.API.ApiControllers.MemberController (TUTOR.ERPS.Api). |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:09:32.2365|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (41ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:09:32.2831|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (41ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:09:32.3415|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (52ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (DbType = DateTime), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 50), @p8='?' (Size = 4000), @p9='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [SystemErrorLog] ([Api], [Entry_Date], [Entry_User], [Error_Level], [Ip], [Message], [Token], [Web_Method], [Web_Request], [Web_Response])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9); |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:09:32.3415|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api) - Validation state: Valid |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:09:32.3901|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (38ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Member] AS [m]
+        ORDER BY (SELECT 1)
+        OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:10:07.2767|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api) in 35114.5597ms |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:10:07.2767|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api)' |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:15:27.6447|0|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\j3537\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. |url: |action: |
+2023-07-12 15:15:28.1425|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7061 |url: |action: |
+2023-07-12 15:15:28.1467|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5128 |url: |action: |
+2023-07-12 15:15:28.1677|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |
+2023-07-12 15:15:28.1677|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |
+2023-07-12 15:15:28.1772|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\GitLab\TUTOR.ERPS\TUTOR.ERPS\ |url: |action: |
+2023-07-12 15:15:28.9931|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/index.html - - |url: https://localhost/swagger/index.html|action: |
+2023-07-12 15:15:29.4764|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/index.html - - - 200 - text/html;charset=utf-8 487.2368ms |url: https://localhost/swagger/index.html|action: |
+2023-07-12 15:15:29.4916|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-07-12 15:15:29.4916|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_vs/browserLink - - |url: https://localhost/_vs/browserLink|action: |
+2023-07-12 15:15:29.5053|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 15.0479ms |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-07-12 15:15:29.7243|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 237.7681ms |url: https://localhost/_vs/browserLink|action: |
+2023-07-12 15:15:29.7801|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-07-12 15:15:29.9024|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 123.8190ms |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-07-12 15:16:13.6151|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/Member/StudentList - - |url: https://localhost/Member/StudentList|action: |
+2023-07-12 15:16:13.7460|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api)' |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:16:13.8335|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Data", controller = "Member"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Data(Int32) on controller IALW.API.ApiControllers.MemberController (TUTOR.ERPS.Api). |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:16:17.7806|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (203ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:16:18.0328|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (41ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:16:18.4092|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (40ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (DbType = DateTime), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 50), @p8='?' (Size = 4000), @p9='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [SystemErrorLog] ([Api], [Entry_Date], [Entry_User], [Error_Level], [Ip], [Message], [Token], [Web_Method], [Web_Request], [Web_Response])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9); |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:16:18.5737|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api) - Validation state: Valid |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:16:18.7151|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (37ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Member] AS [m]
+        ORDER BY (SELECT 1)
+        OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:16:26.8576|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api) in 12998.3461ms |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:16:26.8576|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api)' |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:33:27.0377|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/index.html - - |url: https://localhost/swagger/index.html|action: |
+2023-07-12 15:33:27.1307|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/index.html - - - 200 - text/html;charset=utf-8 89.1808ms |url: https://localhost/swagger/index.html|action: |
+2023-07-12 15:33:27.2389|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-07-12 15:33:27.2389|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_vs/browserLink - - |url: https://localhost/_vs/browserLink|action: |
+2023-07-12 15:33:27.2549|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 15.9728ms |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-07-12 15:33:27.4889|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 251.2207ms |url: https://localhost/_vs/browserLink|action: |
+2023-07-12 15:33:27.5321|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-07-12 15:33:27.5410|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 12.4749ms |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-07-12 15:33:31.4276|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/Member/StudentList - - |url: https://localhost/Member/StudentList|action: |
+2023-07-12 15:33:31.4430|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api)' |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:33:31.4430|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Data", controller = "Member"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Data(Int32) on controller IALW.API.ApiControllers.MemberController (TUTOR.ERPS.Api). |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:33:31.6751|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (36ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:33:31.7165|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (37ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:33:31.7632|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (39ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (DbType = DateTime), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 50), @p8='?' (Size = 4000), @p9='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [SystemErrorLog] ([Api], [Entry_Date], [Entry_User], [Error_Level], [Ip], [Message], [Token], [Web_Method], [Web_Request], [Web_Response])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9); |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:33:31.7632|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api) - Validation state: Valid |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:33:31.8100|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (36ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Member] AS [m]
+        ORDER BY (SELECT 1)
+        OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:34:34.6179|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api) in 63173.6065ms |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:34:34.6179|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api)' |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:36:14.1297|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/index.html - - |url: https://localhost/swagger/index.html|action: |
+2023-07-12 15:36:14.2080|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/index.html - - - 200 - text/html;charset=utf-8 92.8478ms |url: https://localhost/swagger/index.html|action: |
+2023-07-12 15:36:14.2901|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-07-12 15:36:14.2901|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_vs/browserLink - - |url: https://localhost/_vs/browserLink|action: |
+2023-07-12 15:36:14.3031|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 10.0234ms |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-07-12 15:36:14.5049|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 208.4568ms |url: https://localhost/_vs/browserLink|action: |
+2023-07-12 15:36:14.5287|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-07-12 15:36:14.5375|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 11.4812ms |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-07-12 15:36:24.4304|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/Member/StudentList - - |url: https://localhost/Member/StudentList|action: |
+2023-07-12 15:36:24.4304|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api)' |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:36:24.4304|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Data", controller = "Member"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Data(Int32) on controller IALW.API.ApiControllers.MemberController (TUTOR.ERPS.Api). |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:36:24.5753|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (36ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:36:24.6148|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (36ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:36:24.6560|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (38ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (DbType = DateTime), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 50), @p8='?' (Size = 4000), @p9='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [SystemErrorLog] ([Api], [Entry_Date], [Entry_User], [Error_Level], [Ip], [Message], [Token], [Web_Method], [Web_Request], [Web_Response])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9); |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:36:24.6560|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api) - Validation state: Valid |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:37:23.5634|0|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\j3537\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. |url: |action: |
+2023-07-12 15:37:24.0585|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7061 |url: |action: |
+2023-07-12 15:37:24.0585|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5128 |url: |action: |
+2023-07-12 15:37:24.0673|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |
+2023-07-12 15:37:24.0673|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |
+2023-07-12 15:37:24.0840|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\GitLab\TUTOR.ERPS\TUTOR.ERPS\ |url: |action: |
+2023-07-12 15:37:25.1060|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/index.html - - |url: https://localhost/swagger/index.html|action: |
+2023-07-12 15:37:25.5408|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_vs/browserLink - - |url: https://localhost/_vs/browserLink|action: |
+2023-07-12 15:37:25.5408|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-07-12 15:37:25.5543|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 21.2023ms |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-07-12 15:37:25.5679|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/index.html - - - 200 - text/html;charset=utf-8 478.7963ms |url: https://localhost/swagger/index.html|action: |
+2023-07-12 15:37:25.7547|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 215.3135ms |url: https://localhost/_vs/browserLink|action: |
+2023-07-12 15:37:25.7948|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-07-12 15:37:25.9345|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 140.4683ms |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-07-12 15:37:30.3673|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/Member/StudentList?page=1 - - |url: https://localhost/Member/StudentList|action: |
+2023-07-12 15:37:30.4654|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api)' |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:37:30.5592|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Data", controller = "Member"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Data(Int32) on controller IALW.API.ApiControllers.MemberController (TUTOR.ERPS.Api). |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:37:34.2257|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (183ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:37:34.5284|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (41ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:37:34.8763|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (44ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (DbType = DateTime), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 50), @p8='?' (Size = 4000), @p9='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [SystemErrorLog] ([Api], [Entry_Date], [Entry_User], [Error_Level], [Ip], [Message], [Token], [Web_Method], [Web_Request], [Web_Response])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9); |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:37:35.0234|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api) - Validation state: Valid |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:37:48.5110|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (41ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Member] AS [m]
+        ORDER BY (SELECT 1)
+        OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:37:51.4125|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (42ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [m].[Account], [m].[Email], [m].[Password], [m].[Status], [m].[StudyLevel], [m].[BeDeleted], [m].[Creator], [m].[Editor], [m].[Id], [m].[StartDate], [m].[EndDate], [m].[Name]
+FROM [Member] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:38:07.2690|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 32234.6128ms. |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:38:07.3073|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'TUTOR.Biz.Models.Responses.Member.MemberResponse'. |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:38:07.4109|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api) in 36854.2319ms |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:38:07.4109|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api)' |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:38:07.4621|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/Member/StudentList?page=1 - - - 200 - application/json;+charset=utf-8 37094.3042ms |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:38:14.7866|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/Member/StudentList?page=-55 - - |url: https://localhost/Member/StudentList|action: |
+2023-07-12 15:38:14.7866|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api)' |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:38:14.7866|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Data", controller = "Member"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Data(Int32) on controller IALW.API.ApiControllers.MemberController (TUTOR.ERPS.Api). |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:38:14.8714|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (36ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:38:14.9145|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (37ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:38:14.9635|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (42ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (DbType = DateTime), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 50), @p8='?' (Size = 4000), @p9='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [SystemErrorLog] ([Api], [Entry_Date], [Entry_User], [Error_Level], [Ip], [Message], [Token], [Web_Method], [Web_Request], [Web_Response])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9); |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:38:14.9635|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api) - Validation state: Valid |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:38:18.2772|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (40ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Member] AS [m]
+        ORDER BY (SELECT 1)
+        OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:38:25.2906|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api) in 10498.4651ms |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 15:38:25.2906|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api)' |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:00:18.6594|0|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\j3537\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. |url: |action: |
+2023-07-12 16:00:19.3248|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7061 |url: |action: |
+2023-07-12 16:00:19.3248|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5128 |url: |action: |
+2023-07-12 16:00:19.3329|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |
+2023-07-12 16:00:19.3329|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |
+2023-07-12 16:00:19.3493|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\GitLab\TUTOR.ERPS\TUTOR.ERPS\ |url: |action: |
+2023-07-12 16:00:20.3088|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/index.html - - |url: https://localhost/swagger/index.html|action: |
+2023-07-12 16:00:20.8826|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_vs/browserLink - - |url: https://localhost/_vs/browserLink|action: |
+2023-07-12 16:00:20.8826|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-07-12 16:00:20.9123|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/index.html - - - 200 - text/html;charset=utf-8 609.9385ms |url: https://localhost/swagger/index.html|action: |
+2023-07-12 16:00:20.9123|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 23.2723ms |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-07-12 16:00:21.1309|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 244.6426ms |url: https://localhost/_vs/browserLink|action: |
+2023-07-12 16:00:21.1773|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-07-12 16:00:21.3829|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 212.5494ms |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-07-12 16:00:29.3489|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/Member/StudentList?page=1 - - |url: https://localhost/Member/StudentList|action: |
+2023-07-12 16:00:29.4823|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api)' |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:00:29.5813|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Data", controller = "Member"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Data(Int32) on controller IALW.API.ApiControllers.MemberController (TUTOR.ERPS.Api). |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:00:33.7796|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (187ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:00:34.0446|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (43ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:00:34.4133|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (45ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (DbType = DateTime), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 50), @p8='?' (Size = 4000), @p9='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [SystemErrorLog] ([Api], [Entry_Date], [Entry_User], [Error_Level], [Ip], [Message], [Token], [Web_Method], [Web_Request], [Web_Response])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9); |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:00:34.5700|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api) - Validation state: Valid |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:00:36.9647|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (40ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Member] AS [m]
+        ORDER BY (SELECT 1)
+        OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:00:37.0681|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (38ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [m].[Account], [m].[Email], [m].[Password], [m].[Status], [m].[StudyLevel], [m].[BeDeleted], [m].[Creator], [m].[Editor], [m].[Id], [m].[StartDate], [m].[EndDate], [m].[Name]
+FROM [Member] AS [m]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:00:37.0681|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2501.0894ms. |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:00:37.1143|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'TUTOR.Biz.Models.Responses.Member.MemberResponse'. |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:00:37.1615|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api) in 7575.3683ms |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:00:37.1615|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api)' |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:00:37.1953|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/Member/StudentList?page=1 - - - 200 - application/json;+charset=utf-8 7842.3577ms |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:00:42.4908|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/Member/StudentList?page=-555 - - |url: https://localhost/Member/StudentList|action: |
+2023-07-12 16:00:42.5063|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api)' |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:00:42.5063|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Data", controller = "Member"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Data(Int32) on controller IALW.API.ApiControllers.MemberController (TUTOR.ERPS.Api). |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:00:42.5735|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (40ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:00:42.6187|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (41ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:00:42.6619|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (39ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (DbType = DateTime), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 50), @p8='?' (Size = 4000), @p9='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [SystemErrorLog] ([Api], [Entry_Date], [Entry_User], [Error_Level], [Ip], [Message], [Token], [Web_Method], [Web_Request], [Web_Response])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9); |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:00:42.6619|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api) - Validation state: Valid |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:00:44.8980|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (38ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Member] AS [m]
+        ORDER BY (SELECT 1)
+        OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:02:27.6698|0|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\j3537\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. |url: |action: |
+2023-07-12 16:02:28.1407|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7061 |url: |action: |
+2023-07-12 16:02:28.1470|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5128 |url: |action: |
+2023-07-12 16:02:28.1470|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |
+2023-07-12 16:02:28.1630|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |
+2023-07-12 16:02:28.1630|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\GitLab\TUTOR.ERPS\TUTOR.ERPS\ |url: |action: |
+2023-07-12 16:02:29.1577|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/index.html - - |url: https://localhost/swagger/index.html|action: |
+2023-07-12 16:02:29.5827|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_vs/browserLink - - |url: https://localhost/_vs/browserLink|action: |
+2023-07-12 16:02:29.5827|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-07-12 16:02:29.5993|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/index.html - - - 200 - text/html;charset=utf-8 452.7838ms |url: https://localhost/swagger/index.html|action: |
+2023-07-12 16:02:29.5993|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 20.5322ms |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-07-12 16:02:29.7702|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 188.7551ms |url: https://localhost/_vs/browserLink|action: |
+2023-07-12 16:02:29.8021|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-07-12 16:02:29.9429|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 140.0603ms |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-07-12 16:02:36.7868|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/Member/StudentList?page=-9 - - |url: https://localhost/Member/StudentList|action: |
+2023-07-12 16:02:36.9131|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api)' |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:02:36.9997|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Data", controller = "Member"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Data(Int32) on controller IALW.API.ApiControllers.MemberController (TUTOR.ERPS.Api). |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:02:40.8007|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (184ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:02:41.0581|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (43ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:02:41.4302|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (44ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (DbType = DateTime), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 50), @p8='?' (Size = 4000), @p9='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [SystemErrorLog] ([Api], [Entry_Date], [Entry_User], [Error_Level], [Ip], [Message], [Token], [Web_Method], [Web_Request], [Web_Response])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9); |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:02:41.5680|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api) - Validation state: Valid |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:02:43.4790|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (39ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Member] AS [m]
+        ORDER BY (SELECT 1)
+        OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:02:48.7430|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api) in 11732.2235ms |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:02:48.7430|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api)' |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:04:51.2940|0|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\j3537\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. |url: |action: |
+2023-07-12 16:04:51.8462|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7061 |url: |action: |
+2023-07-12 16:04:51.8485|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5128 |url: |action: |
+2023-07-12 16:04:51.8679|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |
+2023-07-12 16:04:51.8679|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |
+2023-07-12 16:04:51.8679|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\GitLab\TUTOR.ERPS\TUTOR.ERPS\ |url: |action: |
+2023-07-12 16:04:52.5921|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/index.html - - |url: https://localhost/swagger/index.html|action: |
+2023-07-12 16:04:53.0207|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_vs/browserLink - - |url: https://localhost/_vs/browserLink|action: |
+2023-07-12 16:04:53.0207|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-07-12 16:04:53.0513|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 20.6147ms |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-07-12 16:04:53.0513|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/index.html - - - 200 - text/html;charset=utf-8 464.5089ms |url: https://localhost/swagger/index.html|action: |
+2023-07-12 16:04:53.2708|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 241.7295ms |url: https://localhost/_vs/browserLink|action: |
+2023-07-12 16:04:53.3016|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-07-12 16:04:53.4427|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 139.2377ms |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-07-12 16:05:39.2384|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/Member/StudentList?page=-5 - - |url: https://localhost/Member/StudentList|action: |
+2023-07-12 16:05:39.3415|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api)' |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:05:39.4414|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Data", controller = "Member"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Data(Int32) on controller IALW.API.ApiControllers.MemberController (TUTOR.ERPS.Api). |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:05:43.0536|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (190ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:05:43.3156|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (40ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:05:43.6754|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (43ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (DbType = DateTime), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 50), @p8='?' (Size = 4000), @p9='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [SystemErrorLog] ([Api], [Entry_Date], [Entry_User], [Error_Level], [Ip], [Message], [Token], [Web_Method], [Web_Request], [Web_Response])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9); |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:05:43.8027|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api) - Validation state: Valid |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:05:44.9249|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (56ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Member] AS [m]
+        ORDER BY (SELECT 1)
+        OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:05:48.3386|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api) in 8888.8082ms |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:05:48.3386|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api)' |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:14:42.4913|0|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\j3537\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. |url: |action: |
+2023-07-12 16:14:43.0308|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7061 |url: |action: |
+2023-07-12 16:14:43.0361|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5128 |url: |action: |
+2023-07-12 16:14:43.0361|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |
+2023-07-12 16:14:43.0521|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |
+2023-07-12 16:14:43.0521|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\GitLab\TUTOR.ERPS\TUTOR.ERPS\ |url: |action: |
+2023-07-12 16:14:44.0306|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/index.html - - |url: https://localhost/swagger/index.html|action: |
+2023-07-12 16:14:44.4441|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_vs/browserLink - - |url: https://localhost/_vs/browserLink|action: |
+2023-07-12 16:14:44.4441|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-07-12 16:14:44.4590|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/index.html - - - 200 - text/html;charset=utf-8 440.6424ms |url: https://localhost/swagger/index.html|action: |
+2023-07-12 16:14:44.4590|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 15.8783ms |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-07-12 16:14:44.6293|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 190.0190ms |url: https://localhost/_vs/browserLink|action: |
+2023-07-12 16:14:44.6694|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-07-12 16:14:44.8025|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 130.8720ms |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-07-12 16:14:50.6189|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/Member/StudentList?page=-8 - - |url: https://localhost/Member/StudentList|action: |
+2023-07-12 16:14:50.7241|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api)' |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:14:50.8159|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Data", controller = "Member"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Data(Int32) on controller IALW.API.ApiControllers.MemberController (TUTOR.ERPS.Api). |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:15:06.9501|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api) in 16091.4053ms |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:15:06.9501|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api)' |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:16:35.8164|0|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\j3537\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. |url: |action: |
+2023-07-12 16:16:36.2909|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7061 |url: |action: |
+2023-07-12 16:16:36.2909|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5128 |url: |action: |
+2023-07-12 16:16:36.3016|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |
+2023-07-12 16:16:36.3016|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |
+2023-07-12 16:16:36.3190|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\GitLab\TUTOR.ERPS\TUTOR.ERPS\ |url: |action: |
+2023-07-12 16:16:37.3548|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/index.html - - |url: https://localhost/swagger/index.html|action: |
+2023-07-12 16:16:37.8204|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_vs/browserLink - - |url: https://localhost/_vs/browserLink|action: |
+2023-07-12 16:16:37.8360|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-07-12 16:16:37.8644|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/index.html - - - 200 - text/html;charset=utf-8 514.3221ms |url: https://localhost/swagger/index.html|action: |
+2023-07-12 16:16:37.8644|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 30.1230ms |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-07-12 16:16:38.0527|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 230.8806ms |url: https://localhost/_vs/browserLink|action: |
+2023-07-12 16:16:38.0890|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-07-12 16:16:38.2392|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 146.5092ms |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-07-12 16:16:45.6605|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/Member/StudentList?page=-2 - - |url: https://localhost/Member/StudentList|action: |
+2023-07-12 16:16:45.7584|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api)' |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:16:45.8484|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Data", controller = "Member"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Data(Int32) on controller IALW.API.ApiControllers.MemberController (TUTOR.ERPS.Api). |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:16:49.5979|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (181ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:16:49.8634|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (44ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:16:50.2567|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (42ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (DbType = DateTime), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 50), @p8='?' (Size = 4000), @p9='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [SystemErrorLog] ([Api], [Entry_Date], [Entry_User], [Error_Level], [Ip], [Message], [Token], [Web_Method], [Web_Request], [Web_Response])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9); |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:16:50.3970|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method IALW.API.ApiControllers.MemberController.Data (TUTOR.ERPS.Api) - Validation state: Valid |url: https://localhost/Member/StudentList|action: Data|
+2023-07-12 16:16:52.9015|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (37ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Member] AS [m]
+        ORDER BY (SELECT 1)
+        OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END |url: https://localhost/Member/StudentList|action: Data|

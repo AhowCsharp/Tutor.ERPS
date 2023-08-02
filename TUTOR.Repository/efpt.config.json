@@ -1,0 +1,73 @@
+﻿{
+   "CodeGenerationMode": 2,
+   "ContextClassName": "TUTOR.ERPSContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": "EF",
+   "PreserveCasingWithRegex": true,
+   "ProjectRootNamespace": "TUTOR.Repository",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "Tables": [
+      {
+         "Name": "[dbo].[AdminManage]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[AllowIpManage]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ApiTokenManage]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[LogSystem]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Member]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SentenceManage]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SentenceTpye]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[StudentAnswerLog]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SystemErrorLog]",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": "EC2AMAZ-FSUTJ1R\\SQLEXPRESS.TUTOR.ERPS",
+   "UncountableWords": null,
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDateOnlyTimeOnly": false,
+   "UseDbContextSplitting": false,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": false,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UseSchemaFolders": false,
+   "UseSpatial": false,
+   "UseT4": false
+}

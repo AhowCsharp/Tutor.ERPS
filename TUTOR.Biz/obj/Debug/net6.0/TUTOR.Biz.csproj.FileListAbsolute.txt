@@ -1,0 +1,12 @@
+D:\GitLab\TUTOR.ERPS\TUTOR.Biz\bin\Debug\net6.0\TUTOR.Biz.deps.json
+D:\GitLab\TUTOR.ERPS\TUTOR.Biz\bin\Debug\net6.0\TUTOR.Biz.dll
+D:\GitLab\TUTOR.ERPS\TUTOR.Biz\bin\Debug\net6.0\TUTOR.Biz.pdb
+D:\GitLab\TUTOR.ERPS\TUTOR.Biz\obj\Debug\net6.0\TUTOR.Biz.csproj.AssemblyReference.cache
+D:\GitLab\TUTOR.ERPS\TUTOR.Biz\obj\Debug\net6.0\TUTOR.Biz.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitLab\TUTOR.ERPS\TUTOR.Biz\obj\Debug\net6.0\TUTOR.Biz.AssemblyInfoInputs.cache
+D:\GitLab\TUTOR.ERPS\TUTOR.Biz\obj\Debug\net6.0\TUTOR.Biz.AssemblyInfo.cs
+D:\GitLab\TUTOR.ERPS\TUTOR.Biz\obj\Debug\net6.0\TUTOR.Biz.csproj.CoreCompileInputs.cache
+D:\GitLab\TUTOR.ERPS\TUTOR.Biz\obj\Debug\net6.0\TUTOR.Biz.dll
+D:\GitLab\TUTOR.ERPS\TUTOR.Biz\obj\Debug\net6.0\refint\TUTOR.Biz.dll
+D:\GitLab\TUTOR.ERPS\TUTOR.Biz\obj\Debug\net6.0\TUTOR.Biz.pdb
+D:\GitLab\TUTOR.ERPS\TUTOR.Biz\obj\Debug\net6.0\ref\TUTOR.Biz.dll
