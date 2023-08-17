@@ -18,6 +18,22 @@
           }
         }
       },
+      "AutoMapper.Extensions.ExpressionMapping/6.0.4": {
+        "type": "package",
+        "dependencies": {
+          "AutoMapper": "[12.0.0, 13.0.0)"
+        },
+        "compile": {
+          "lib/netstandard2.1/AutoMapper.Extensions.ExpressionMapping.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/AutoMapper.Extensions.ExpressionMapping.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "AutoMapper.Extensions.Microsoft.DependencyInjection/12.0.1": {
         "type": "package",
         "dependencies": {
@@ -154,6 +170,19 @@
         "runtime": {
           "lib/netstandard2.0/Flurl.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "JetBrains.Annotations/2022.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/JetBrains.Annotations.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/JetBrains.Annotations.dll": {
+            "related": ".deps.json;.xml"
           }
         }
       },
@@ -2380,6 +2409,18 @@
           }
         }
       },
+      "X.PagedList/8.4.7": {
+        "type": "package",
+        "dependencies": {
+          "JetBrains.Annotations": "2022.3.1"
+        },
+        "compile": {
+          "lib/net6.0/X.PagedList.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/X.PagedList.dll": {}
+        }
+      },
       "ZXing.Net/0.16.9": {
         "type": "package",
         "compile": {
@@ -2398,6 +2439,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "AutoMapper": "12.0.1",
+          "AutoMapper.Extensions.ExpressionMapping": "6.0.4",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "Dapper": "2.0.143",
           "Flurl": "3.0.7",
@@ -2408,6 +2450,7 @@
           "NPOI": "2.6.1",
           "Swashbuckle.AspNetCore.Annotations": "6.5.0",
           "System.Drawing.Common": "7.0.0",
+          "X.PagedList": "8.4.7",
           "ZXing.Net": "0.16.9"
         },
         "compile": {
@@ -2422,12 +2465,14 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "AutoMapper": "12.0.1",
+          "AutoMapper.Extensions.ExpressionMapping": "6.0.4",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "Dapper": "2.0.143",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.8",
           "NPOI": "2.6.1",
           "System.Drawing.Common": "7.0.0",
           "TUTOR.Biz": "1.0.0",
+          "X.PagedList": "8.4.7",
           "ZXing.Net": "0.16.9"
         },
         "compile": {
@@ -2453,6 +2498,20 @@
         "icon.png",
         "lib/netstandard2.1/AutoMapper.dll",
         "lib/netstandard2.1/AutoMapper.xml"
+      ]
+    },
+    "AutoMapper.Extensions.ExpressionMapping/6.0.4": {
+      "sha512": "scgLSSt/Ju2Fhg5xn8Ckdebg+mh8MQ9bQpTBvxj9jQP0kinGmtcsg9BxppnKffYVaec16GvbrKmWI6z1Ce6TPg==",
+      "type": "package",
+      "path": "automapper.extensions.expressionmapping/6.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "automapper.extensions.expressionmapping.6.0.4.nupkg.sha512",
+        "automapper.extensions.expressionmapping.nuspec",
+        "icon.png",
+        "lib/netstandard2.1/AutoMapper.Extensions.ExpressionMapping.dll",
+        "lib/netstandard2.1/AutoMapper.Extensions.ExpressionMapping.xml"
       ]
     },
     "AutoMapper.Extensions.Microsoft.DependencyInjection/12.0.1": {
@@ -2644,6 +2703,28 @@
         "lib/net472/Flurl.xml",
         "lib/netstandard2.0/Flurl.dll",
         "lib/netstandard2.0/Flurl.xml"
+      ]
+    },
+    "JetBrains.Annotations/2022.3.1": {
+      "sha512": "11nsS3+lFICGkztVs9PP2NRItxf9fF+qD6xEW/T0YGto52zj07wseUeBdMAU1ah9HNVTDZyRC1u4NWdtJScwhw==",
+      "type": "package",
+      "path": "jetbrains.annotations/2022.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "jetbrains.annotations.2022.3.1.nupkg.sha512",
+        "jetbrains.annotations.nuspec",
+        "lib/net20/JetBrains.Annotations.dll",
+        "lib/net20/JetBrains.Annotations.xml",
+        "lib/netstandard1.0/JetBrains.Annotations.deps.json",
+        "lib/netstandard1.0/JetBrains.Annotations.dll",
+        "lib/netstandard1.0/JetBrains.Annotations.xml",
+        "lib/netstandard2.0/JetBrains.Annotations.deps.json",
+        "lib/netstandard2.0/JetBrains.Annotations.dll",
+        "lib/netstandard2.0/JetBrains.Annotations.xml",
+        "lib/portable40-net40+sl5+win8+wp8+wpa81/JetBrains.Annotations.dll",
+        "lib/portable40-net40+sl5+win8+wp8+wpa81/JetBrains.Annotations.xml"
       ]
     },
     "LinqKit/1.2.4": {
@@ -7477,6 +7558,21 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "X.PagedList/8.4.7": {
+      "sha512": "ZA1WcyNviMUhivCgwKAm/5/YsNP3Yf/n81SzrPaHSJOcFzavA9MrXTT8M+ZX4fvHwLCL1bY6BPXvwZF5pRtgTg==",
+      "type": "package",
+      "path": "x.pagedlist/8.4.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0/X.PagedList.dll",
+        "lib/net7.0/X.PagedList.dll",
+        "lib/netstandard2.0/X.PagedList.dll",
+        "lib/netstandard2.1/X.PagedList.dll",
+        "x.pagedlist.8.4.7.nupkg.sha512",
+        "x.pagedlist.nuspec"
+      ]
+    },
     "ZXing.Net/0.16.9": {
       "sha512": "7WaVMHklpT3Ye2ragqRIwlFRsb6kOk63BOGADV0fan3ulVfGLUYkDi5yNUsZS/7FVNkWbtHAlDLmu4WnHGfqvQ==",
       "type": "package",
@@ -7573,6 +7669,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "AutoMapper.Extensions.ExpressionMapping >= 6.0.4",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
       "Dapper >= 2.0.143",
       "NLog.Database >= 5.2.2",
@@ -7584,6 +7681,7 @@
       "System.Drawing.Common >= 7.0.0",
       "TUTOR.Biz >= 1.0.0",
       "TUTOR.Repository >= 1.0.0",
+      "X.PagedList >= 8.4.7",
       "ZXing.Net >= 0.16.9"
     ]
   },
@@ -7633,6 +7731,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "AutoMapper.Extensions.ExpressionMapping": {
+            "target": "Package",
+            "version": "[6.0.4, )"
+          },
           "AutoMapper.Extensions.Microsoft.DependencyInjection": {
             "target": "Package",
             "version": "[12.0.1, )"
@@ -7668,6 +7770,10 @@
           "System.Drawing.Common": {
             "target": "Package",
             "version": "[7.0.0, )"
+          },
+          "X.PagedList": {
+            "target": "Package",
+            "version": "[8.4.7, )"
           },
           "ZXing.Net": {
             "target": "Package",

@@ -4,10 +4,11 @@ using TUTOR.Biz.Extensions;
 using TUTOR.Biz.Helpers;
 using Microsoft.AspNetCore.Http;
 using TUTOR.Biz.Repository_Interfaces;
+using TUTOR.Biz.SeedWork;
 
 namespace TUTOR.Biz.Domain.API
 {
-    public class AttributeDomain : IAttributeDomain
+    public class AttributeDomain : IAttributeDomain, IAdminApiDomain
     {
         private readonly ITokenRepository tokenRepo;
 
@@ -19,7 +20,7 @@ namespace TUTOR.Biz.Domain.API
             this.httpContextAccessor = httpContextAccessor;
         }
 
-        public bool VerifyToken(string token,string clientIp)
+        public bool VerifyToken(string token, string clientIp)
         {
             bool result;
             var dto = tokenRepo.Get(token, clientIp);

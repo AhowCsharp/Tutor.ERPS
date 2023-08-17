@@ -1,0 +1,649 @@
+2023-08-11 09:42:03.2852|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with no compiled views. |url: |action: |
+2023-08-11 09:42:03.3480|0|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider |url: |action: |
+2023-08-11 09:42:03.7364|0|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting |url: |action: |
+2023-08-11 09:42:03.7364|0|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\j3537\AppData\Local\ASP.NET\DataProtection-Keys\key-184f69a1-ee82-446d-a3df-16f76072f29e.xml'. |url: |action: |
+2023-08-11 09:42:03.7577|0|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\j3537\AppData\Local\ASP.NET\DataProtection-Keys\key-befd1401-1cab-4be0-99bb-8dd3f0db47bc.xml'. |url: |action: |
+2023-08-11 09:42:03.7804|0|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {184f69a1-ee82-446d-a3df-16f76072f29e}. |url: |action: |
+2023-08-11 09:42:03.7863|0|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {befd1401-1cab-4be0-99bb-8dd3f0db47bc}. |url: |action: |
+2023-08-11 09:42:03.7863|0|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {befd1401-1cab-4be0-99bb-8dd3f0db47bc} with expiration date 2023-09-10 02:06:08Z as default key. |url: |action: |
+2023-08-11 09:42:03.8000|0|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 |url: |action: |
+2023-08-11 09:42:03.8000|0|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI. |url: |action: |
+2023-08-11 09:42:03.8000|0|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 |url: |action: |
+2023-08-11 09:42:03.8000|0|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC. |url: |action: |
+2023-08-11 09:42:03.8000|0|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC. |url: |action: |
+2023-08-11 09:42:03.8140|0|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {befd1401-1cab-4be0-99bb-8dd3f0db47bc} as the default key. |url: |action: |
+2023-08-11 09:42:03.8140|0|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {befd1401-1cab-4be0-99bb-8dd3f0db47bc} was loaded during application startup. |url: |action: |
+2023-08-11 09:42:04.0570|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: A1B36F3074FFE353434C9B13AE59733DD9B8E436) |url: |action: |
+2023-08-11 09:42:04.0994|0|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly TUTOR.ERPS.Api |url: |action: |
+2023-08-11 09:42:04.0994|0|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh |url: |action: |
+2023-08-11 09:42:04.0994|0|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net |url: |action: |
+2023-08-11 09:42:04.1136|0|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started |url: |action: |
+2023-08-11 09:42:04.1932|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ1GL3NJ8J" accepted. |url: |action: |
+2023-08-11 09:42:04.1932|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ1GL3NJ8J" started. |url: |action: |
+2023-08-11 09:42:04.2593|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ1GL3NJ8K" accepted. |url: |action: |
+2023-08-11 09:42:04.2593|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ1GL3NJ8K" started. |url: |action: |
+2023-08-11 09:42:04.6283|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ1GL3NJ8L" accepted. |url: |action: |
+2023-08-11 09:42:04.6283|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ1GL3NJ8L" started. |url: |action: |
+2023-08-11 09:42:04.7022|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMSQ1GL3NJ8L established using the following protocol: Tls13 |url: |action: |
+2023-08-11 09:42:04.8343|0|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. |url: https://localhost/swagger/index.html|action: |
+2023-08-11 09:42:05.0404|0|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection. |url: https://localhost/swagger/index.html|action: |
+2023-08-11 09:42:05.2518|0|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection. |url: https://localhost/swagger/index.html|action: |
+2023-08-11 09:42:07.8194|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSQ1GL3NJ8L" received FIN. |url: |action: |
+2023-08-11 09:42:07.8194|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMSQ1GL3NJ8L" is closed. The last processed stream ID was 7. |url: |action: |
+2023-08-11 09:42:07.8194|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSQ1GL3NJ8L" sending FIN because: "The client closed the connection." |url: |action: |
+2023-08-11 09:42:07.8380|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ1GL3NJ8L" stopped. |url: |action: |
+2023-08-11 09:42:14.2271|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Authentication of the HTTPS connection timed out. |url: |action: |
+2023-08-11 09:42:14.2271|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ1GL3NJ8J" stopped. |url: |action: |
+2023-08-11 09:42:14.2271|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSQ1GL3NJ8J" sending FIN because: "The Socket transport's send loop completed gracefully." |url: |action: |
+2023-08-11 09:42:14.2654|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Authentication of the HTTPS connection timed out. |url: |action: |
+2023-08-11 09:42:14.2654|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ1GL3NJ8K" stopped. |url: |action: |
+2023-08-11 09:42:14.2654|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSQ1GL3NJ8K" sending FIN because: "The Socket transport's send loop completed gracefully." |url: |action: |
+2023-08-11 09:42:17.8751|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ1GL3NJ8M" accepted. |url: |action: |
+2023-08-11 09:42:17.8751|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ1GL3NJ8M" started. |url: |action: |
+2023-08-11 09:42:17.8797|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMSQ1GL3NJ8M established using the following protocol: Tls13 |url: |action: |
+2023-08-11 09:42:17.8797|0|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter |url: https://localhost/member/student|action: |
+2023-08-11 09:42:17.8797|0|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter |url: https://localhost/member/student|action: |
+2023-08-11 09:42:17.8797|0|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /member/student does not match a supported file type |url: https://localhost/member/student|action: |
+2023-08-11 09:42:17.9101|0|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/member/student' |url: https://localhost/member/student|action: |
+2023-08-11 09:42:17.9101|0|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'TUTOR.ERPS.API.MemberController.GetMemberList (TUTOR.ERPS.Api)' with route pattern 'member/student' is valid for the request path '/member/student' |url: https://localhost/member/student|action: |
+2023-08-11 09:42:17.9101|0|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'TUTOR.ERPS.API.MemberController.GetMemberList (TUTOR.ERPS.Api)' |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:17.9626|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): TUTOR.ERPS.API.Infa.Attribute.ApTokenAuth |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:17.9626|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:17.9626|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:17.9626|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:17.9626|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter, Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:18.4891|0|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:19.1545|0|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 7.0.8 initialized 'TUTORERPSContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.8' with options: None |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:19.2202|0|DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<ApiTokenManage>()
+    .SingleOrDefault(x => x.ApiToken == __token_0)' |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:19.4711|0|DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<ApiTokenManage>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: ApiTokenManage.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: ApiTokenManage.ApiToken (string), 1], [Property: ApiTokenManage.Ip (string) MaxLength(50), 2], [Property: ApiTokenManage.TokenActive (int?), 3], [Property: ApiTokenManage.TokenEndTime (DateTime?), 4], [Property: ApiTokenManage.TokenStartTime (DateTime?), 5] }
+        SELECT TOP(2) a.Id, a.Api_Token, a.Ip, a.Token_Active, a.Token_EndTime, a.Token_StartTime
+        FROM ApiTokenManage AS a
+        WHERE a.Api_Token == @__token_0), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, ApiTokenManage>, 
+    TUTOR.Repository.EF.TUTORERPSContext, 
+    False, 
+    False, 
+    True
+)
+    .SingleOrDefault()' |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:19.5136|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:19.5136|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:19.5491|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (30ms). |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:19.5491|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (40ms). |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:19.5491|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (49ms). |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:19.5661|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.3426|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.3560|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.5402|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'TUTORERPSContext' started tracking 'ApiTokenManage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.5708|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.5819|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'TUTOR.ERPS' on server 'erp.ahow.tw' is being disposed after spending 77ms reading results. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.5819|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.5955|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw' (10ms). |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.5955|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.5955|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.5955|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms). |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.5955|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.5955|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.5955|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.6443|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.6443|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'TUTOR.ERPS' on server 'erp.ahow.tw' is being disposed after spending 1ms reading results. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.6443|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.6443|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw' (0ms). |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.6747|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|'"TUTORERPSContext"' generated a temporary value for the property '"Id"."SystemErrorLog"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.7066|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'TUTORERPSContext' started tracking 'SystemErrorLog' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.7066|0|DEBUG|Microsoft.EntityFrameworkCore.Update|SaveChanges starting for 'TUTORERPSContext'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.7066|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges starting for 'TUTORERPSContext'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.7297|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges completed for 'TUTORERPSContext'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.7855|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.7855|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.7855|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.7855|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.7855|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms). |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.7855|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p0='?' (Size = 50), @p1='?' (DbType = DateTime), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 50), @p8='?' (Size = 4000), @p9='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [SystemErrorLog] ([Api], [Entry_Date], [Entry_User], [Error_Level], [Ip], [Message], [Token], [Web_Method], [Web_Request], [Web_Response])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9); |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.8447|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The foreign key property 'SystemErrorLog.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.8523|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.8523|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'TUTOR.ERPS' on server 'erp.ahow.tw' is being disposed after spending 23ms reading results. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.8523|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.8523|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw' (0ms). |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.8648|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|An entity of type 'SystemErrorLog' tracked by 'TUTORERPSContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.8648|0|DEBUG|Microsoft.EntityFrameworkCore.Update|SaveChanges completed for 'TUTORERPSContext' with 1 entities written to the database. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.8648|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller TUTOR.ERPS.API.MemberController (TUTOR.ERPS.Api) |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.8648|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller TUTOR.ERPS.API.MemberController (TUTOR.ERPS.Api) |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.8898|0|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'page' of type 'System.Int32' ... |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.8898|0|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'page' of type 'System.Int32' using the name 'page' in request data ... |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.8932|0|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'page' of type 'System.Int32'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.8932|0|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'page' of type 'System.Int32'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.8932|0|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'page' of type 'System.Int32' ... |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.8932|0|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'page' of type 'System.Int32'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.8932|0|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'pageSize' of type 'System.Nullable`1[System.Int32]' ... |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.8932|0|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'pageSize' of type 'System.Nullable`1[System.Int32]' using the name '' in request data ... |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.8932|0|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name '' for binding parameter 'pageSize' of type 'System.Nullable`1[System.Int32]'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.8932|0|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'pageSize' of type 'System.Nullable`1[System.Int32]'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.8932|0|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'pageSize' of type 'System.Nullable`1[System.Int32]'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.8932|0|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'pageSize' of type 'System.Nullable`1[System.Int32]' ... |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.8932|0|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'pageSize' of type 'System.Nullable`1[System.Int32]'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.8932|0|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'x' of type 'System.String' ... |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.8932|0|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'x' of type 'System.String' using the name '' in request data ... |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.8932|0|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name '' for binding parameter 'x' of type 'System.String'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.8932|0|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'x' of type 'System.String'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.8932|0|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'x' of type 'System.String'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.8932|0|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'x' of type 'System.String' ... |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.9113|0|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'x' of type 'System.String'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.9113|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter|The request has model state errors, returning an error response. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.9113|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.9113|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.9113|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.9113|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types 'application/problem+json, application/problem+xml, application/problem+json, application/problem+xml'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.9113|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.9250|0|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'TUTORERPSContext' disposed. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.9415|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:20.9415|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database '' on server '' (2ms). |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 09:42:27.8601|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSQ1GL3NJ8M" received FIN. |url: |action: |
+2023-08-11 09:42:27.8601|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMSQ1GL3NJ8M" is closed. The last processed stream ID was 1. |url: |action: |
+2023-08-11 09:42:27.8610|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSQ1GL3NJ8M" sending FIN because: "The client closed the connection." |url: |action: |
+2023-08-11 09:42:27.8610|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ1GL3NJ8M" stopped. |url: |action: |
+2023-08-11 10:05:52.0072|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with no compiled views. |url: |action: |
+2023-08-11 10:05:52.0701|0|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider |url: |action: |
+2023-08-11 10:05:52.1944|0|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting |url: |action: |
+2023-08-11 10:05:52.1944|0|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\j3537\AppData\Local\ASP.NET\DataProtection-Keys\key-184f69a1-ee82-446d-a3df-16f76072f29e.xml'. |url: |action: |
+2023-08-11 10:05:52.1944|0|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\j3537\AppData\Local\ASP.NET\DataProtection-Keys\key-befd1401-1cab-4be0-99bb-8dd3f0db47bc.xml'. |url: |action: |
+2023-08-11 10:05:52.2067|0|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {184f69a1-ee82-446d-a3df-16f76072f29e}. |url: |action: |
+2023-08-11 10:05:52.2067|0|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {befd1401-1cab-4be0-99bb-8dd3f0db47bc}. |url: |action: |
+2023-08-11 10:05:52.2067|0|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {befd1401-1cab-4be0-99bb-8dd3f0db47bc} with expiration date 2023-09-10 02:06:08Z as default key. |url: |action: |
+2023-08-11 10:05:52.2067|0|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 |url: |action: |
+2023-08-11 10:05:52.2067|0|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI. |url: |action: |
+2023-08-11 10:05:52.2214|0|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 |url: |action: |
+2023-08-11 10:05:52.2214|0|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC. |url: |action: |
+2023-08-11 10:05:52.2214|0|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC. |url: |action: |
+2023-08-11 10:05:52.2214|0|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {befd1401-1cab-4be0-99bb-8dd3f0db47bc} as the default key. |url: |action: |
+2023-08-11 10:05:52.2214|0|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {befd1401-1cab-4be0-99bb-8dd3f0db47bc} was loaded during application startup. |url: |action: |
+2023-08-11 10:05:52.3873|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: A1B36F3074FFE353434C9B13AE59733DD9B8E436) |url: |action: |
+2023-08-11 10:05:52.4238|0|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly TUTOR.ERPS.Api |url: |action: |
+2023-08-11 10:05:52.4238|0|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh |url: |action: |
+2023-08-11 10:05:52.4238|0|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net |url: |action: |
+2023-08-11 10:05:52.4238|0|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started |url: |action: |
+2023-08-11 10:05:52.5701|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ1TUPPM24" accepted. |url: |action: |
+2023-08-11 10:05:52.5701|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ1TUPPM24" started. |url: |action: |
+2023-08-11 10:05:52.5701|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ1TUPPM25" accepted. |url: |action: |
+2023-08-11 10:05:52.5701|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ1TUPPM25" started. |url: |action: |
+2023-08-11 10:05:52.6071|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSQ1TUPPM24" received FIN. |url: |action: |
+2023-08-11 10:05:52.6071|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSQ1TUPPM25" received FIN. |url: |action: |
+2023-08-11 10:05:52.6326|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)|url: |action: |
+2023-08-11 10:05:52.6326|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)|url: |action: |
+2023-08-11 10:05:52.6946|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ1TUPPM24" stopped. |url: |action: |
+2023-08-11 10:05:52.6946|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ1TUPPM25" stopped. |url: |action: |
+2023-08-11 10:05:52.6946|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSQ1TUPPM24" sending FIN because: "The Socket transport's send loop completed gracefully." |url: |action: |
+2023-08-11 10:05:52.6946|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSQ1TUPPM25" sending FIN because: "The Socket transport's send loop completed gracefully." |url: |action: |
+2023-08-11 10:05:52.8865|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ1TUPPM26" accepted. |url: |action: |
+2023-08-11 10:05:52.8865|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ1TUPPM26" started. |url: |action: |
+2023-08-11 10:05:52.9263|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMSQ1TUPPM26 established using the following protocol: Tls13 |url: |action: |
+2023-08-11 10:05:53.0429|0|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. |url: https://localhost/swagger/index.html|action: |
+2023-08-11 10:05:53.2358|0|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection. |url: https://localhost/swagger/index.html|action: |
+2023-08-11 10:05:53.3619|0|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection. |url: https://localhost/swagger/index.html|action: |
+2023-08-11 10:06:43.0519|0|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter |url: https://localhost/member/student|action: |
+2023-08-11 10:06:43.0519|0|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter |url: https://localhost/member/student|action: |
+2023-08-11 10:06:43.0519|0|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /member/student does not match a supported file type |url: https://localhost/member/student|action: |
+2023-08-11 10:06:43.0966|0|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/member/student' |url: https://localhost/member/student|action: |
+2023-08-11 10:06:43.0966|0|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'TUTOR.ERPS.API.MemberController.GetMemberList (TUTOR.ERPS.Api)' with route pattern 'member/student' is valid for the request path '/member/student' |url: https://localhost/member/student|action: |
+2023-08-11 10:06:43.0966|0|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'TUTOR.ERPS.API.MemberController.GetMemberList (TUTOR.ERPS.Api)' |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:43.1499|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): TUTOR.ERPS.API.Infa.Attribute.ApTokenAuth |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:43.1499|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:43.1499|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:43.1499|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:43.1499|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter, Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:43.5668|0|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:44.8109|0|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 7.0.8 initialized 'TUTORERPSContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.8' with options: None |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:44.9424|0|DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<ApiTokenManage>()
+    .SingleOrDefault(x => x.ApiToken == __token_0)' |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:45.5294|0|DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<ApiTokenManage>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: ApiTokenManage.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: ApiTokenManage.ApiToken (string), 1], [Property: ApiTokenManage.Ip (string) MaxLength(50), 2], [Property: ApiTokenManage.TokenActive (int?), 3], [Property: ApiTokenManage.TokenEndTime (DateTime?), 4], [Property: ApiTokenManage.TokenStartTime (DateTime?), 5] }
+        SELECT TOP(2) a.Id, a.Api_Token, a.Ip, a.Token_Active, a.Token_EndTime, a.Token_StartTime
+        FROM ApiTokenManage AS a
+        WHERE a.Api_Token == @__token_0), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, ApiTokenManage>, 
+    TUTOR.Repository.EF.TUTORERPSContext, 
+    False, 
+    False, 
+    True
+)
+    .SingleOrDefault()' |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:45.6189|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:45.6189|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:45.6939|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (65ms). |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:45.7089|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (85ms). |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:45.7265|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (109ms). |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:45.7265|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:46.5023|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:46.5282|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:46.8003|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'TUTORERPSContext' started tracking 'ApiTokenManage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:46.8558|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:46.8761|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'TUTOR.ERPS' on server 'erp.ahow.tw' is being disposed after spending 152ms reading results. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:46.8821|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:46.9024|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw' (20ms). |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:46.9092|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:46.9092|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:46.9092|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms). |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:46.9092|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:46.9092|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:46.9092|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:46.9572|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:46.9572|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'TUTOR.ERPS' on server 'erp.ahow.tw' is being disposed after spending 2ms reading results. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:46.9572|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:46.9572|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw' (0ms). |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:47.0143|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|'"TUTORERPSContext"' generated a temporary value for the property '"Id"."SystemErrorLog"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:47.0787|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'TUTORERPSContext' started tracking 'SystemErrorLog' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:47.0837|0|DEBUG|Microsoft.EntityFrameworkCore.Update|SaveChanges starting for 'TUTORERPSContext'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:47.0837|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges starting for 'TUTORERPSContext'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:47.1247|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges completed for 'TUTORERPSContext'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:47.2382|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:47.2382|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:47.2382|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:47.2382|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:47.2382|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (1ms). |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:47.2382|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p0='?' (Size = 50), @p1='?' (DbType = DateTime), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 50), @p8='?' (Size = 4000), @p9='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [SystemErrorLog] ([Api], [Entry_Date], [Entry_User], [Error_Level], [Ip], [Message], [Token], [Web_Method], [Web_Request], [Web_Response])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9); |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:47.3234|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The foreign key property 'SystemErrorLog.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:47.3373|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:47.3373|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'TUTOR.ERPS' on server 'erp.ahow.tw' is being disposed after spending 42ms reading results. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:47.3373|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:47.3373|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw' (0ms). |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:47.3572|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|An entity of type 'SystemErrorLog' tracked by 'TUTORERPSContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:47.3572|0|DEBUG|Microsoft.EntityFrameworkCore.Update|SaveChanges completed for 'TUTORERPSContext' with 1 entities written to the database. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:47.3572|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller TUTOR.ERPS.API.MemberController (TUTOR.ERPS.Api) |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:47.3621|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller TUTOR.ERPS.API.MemberController (TUTOR.ERPS.Api) |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:47.3867|0|DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<Member>()' |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:47.3926|0|DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Member>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Member.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Member.Account (string) Required, 1], [Property: Member.BeDeleted (int) Required, 2], [Property: Member.CreateDate (DateTime?), 3], [Property: Member.Creator (string) MaxLength(50), 4], [Property: Member.Editor (string) MaxLength(50), 5], [Property: Member.Email (string) Required, 6], [Property: Member.EndDate (DateTime) Required, 7], [Property: Member.Name (string) MaxLength(10), 8], [Property: Member.Password (string) Required, 9], [Property: Member.StartDate (DateTime) Required, 10], [Property: Member.Status (int) Required, 11], [Property: Member.StudyLevel (int?), 12] }
+        SELECT m.Id, m.Account, m.BeDeleted, m.CreateDate, m.Creator, m.Editor, m.Email, m.EndDate, m.Name, m.Password, m.StartDate, m.Status, m.StudyLevel
+        FROM Member AS m), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Member>, 
+    TUTOR.Repository.EF.TUTORERPSContext, 
+    False, 
+    False, 
+    True
+)' |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:47.4205|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:47.4205|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:47.4205|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms). |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:47.4322|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:47.4405|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:47.4405|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[Id], [m].[Account], [m].[BeDeleted], [m].[CreateDate], [m].[Creator], [m].[Editor], [m].[Email], [m].[EndDate], [m].[Name], [m].[Password], [m].[StartDate], [m].[Status], [m].[StudyLevel]
+FROM [Member] AS [m] |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:47.5737|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'TUTORERPSContext' started tracking 'Member' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:47.6104|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'TUTORERPSContext' started tracking 'Member' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:47.6235|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:47.6235|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'TUTOR.ERPS' on server 'erp.ahow.tw' is being disposed after spending 82ms reading results. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:47.6363|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:47.6363|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw' (1ms). |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:47.7210|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:47.7210|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:47.7210|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:47.7210|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:47.7364|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:47.8024|0|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'TUTORERPSContext' disposed. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:47.8194|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 10:06:47.8194|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database '' on server '' (3ms). |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:27:27.9621|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with no compiled views. |url: |action: |
+2023-08-11 13:27:28.0192|0|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider |url: |action: |
+2023-08-11 13:27:28.1607|0|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting |url: |action: |
+2023-08-11 13:27:28.1607|0|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\j3537\AppData\Local\ASP.NET\DataProtection-Keys\key-184f69a1-ee82-446d-a3df-16f76072f29e.xml'. |url: |action: |
+2023-08-11 13:27:28.1607|0|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\j3537\AppData\Local\ASP.NET\DataProtection-Keys\key-befd1401-1cab-4be0-99bb-8dd3f0db47bc.xml'. |url: |action: |
+2023-08-11 13:27:28.1777|0|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {184f69a1-ee82-446d-a3df-16f76072f29e}. |url: |action: |
+2023-08-11 13:27:28.1777|0|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {befd1401-1cab-4be0-99bb-8dd3f0db47bc}. |url: |action: |
+2023-08-11 13:27:28.1906|0|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {befd1401-1cab-4be0-99bb-8dd3f0db47bc} with expiration date 2023-09-10 02:06:08Z as default key. |url: |action: |
+2023-08-11 13:27:28.1906|0|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 |url: |action: |
+2023-08-11 13:27:28.1906|0|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI. |url: |action: |
+2023-08-11 13:27:28.1906|0|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 |url: |action: |
+2023-08-11 13:27:28.1906|0|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC. |url: |action: |
+2023-08-11 13:27:28.2045|0|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC. |url: |action: |
+2023-08-11 13:27:28.2045|0|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {befd1401-1cab-4be0-99bb-8dd3f0db47bc} as the default key. |url: |action: |
+2023-08-11 13:27:28.2045|0|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {befd1401-1cab-4be0-99bb-8dd3f0db47bc} was loaded during application startup. |url: |action: |
+2023-08-11 13:27:28.4074|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: A1B36F3074FFE353434C9B13AE59733DD9B8E436) |url: |action: |
+2023-08-11 13:27:28.4563|0|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly TUTOR.ERPS.Api |url: |action: |
+2023-08-11 13:27:28.4563|0|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh |url: |action: |
+2023-08-11 13:27:28.4563|0|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net |url: |action: |
+2023-08-11 13:27:28.4704|0|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started |url: |action: |
+2023-08-11 13:27:28.6923|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ5EJND1RB" accepted. |url: |action: |
+2023-08-11 13:27:28.6923|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ5EJND1RB" started. |url: |action: |
+2023-08-11 13:27:28.6923|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ5EJND1RC" accepted. |url: |action: |
+2023-08-11 13:27:28.6923|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ5EJND1RC" started. |url: |action: |
+2023-08-11 13:27:28.7290|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSQ5EJND1RC" received FIN. |url: |action: |
+2023-08-11 13:27:28.7290|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSQ5EJND1RB" received FIN. |url: |action: |
+2023-08-11 13:27:28.7896|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)|url: |action: |
+2023-08-11 13:27:28.7896|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)|url: |action: |
+2023-08-11 13:27:28.9132|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ5EJND1RC" stopped. |url: |action: |
+2023-08-11 13:27:28.9132|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ5EJND1RB" stopped. |url: |action: |
+2023-08-11 13:27:28.9231|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSQ5EJND1RC" sending FIN because: "The Socket transport's send loop completed gracefully." |url: |action: |
+2023-08-11 13:27:28.9231|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSQ5EJND1RB" sending FIN because: "The Socket transport's send loop completed gracefully." |url: |action: |
+2023-08-11 13:27:29.0423|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ5EJND1RD" accepted. |url: |action: |
+2023-08-11 13:27:29.0423|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ5EJND1RD" started. |url: |action: |
+2023-08-11 13:27:29.0887|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMSQ5EJND1RD established using the following protocol: Tls13 |url: |action: |
+2023-08-11 13:27:29.2270|0|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. |url: https://localhost/swagger/index.html|action: |
+2023-08-11 13:27:29.7342|0|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection. |url: https://localhost/swagger/index.html|action: |
+2023-08-11 13:27:29.8949|0|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection. |url: https://localhost/swagger/index.html|action: |
+2023-08-11 13:28:42.8230|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with no compiled views. |url: |action: |
+2023-08-11 13:28:42.9027|0|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider |url: |action: |
+2023-08-11 13:28:43.0578|0|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting |url: |action: |
+2023-08-11 13:28:43.0647|0|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\j3537\AppData\Local\ASP.NET\DataProtection-Keys\key-184f69a1-ee82-446d-a3df-16f76072f29e.xml'. |url: |action: |
+2023-08-11 13:28:43.0647|0|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\j3537\AppData\Local\ASP.NET\DataProtection-Keys\key-befd1401-1cab-4be0-99bb-8dd3f0db47bc.xml'. |url: |action: |
+2023-08-11 13:28:43.0647|0|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {184f69a1-ee82-446d-a3df-16f76072f29e}. |url: |action: |
+2023-08-11 13:28:43.0647|0|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {befd1401-1cab-4be0-99bb-8dd3f0db47bc}. |url: |action: |
+2023-08-11 13:28:43.0848|0|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {befd1401-1cab-4be0-99bb-8dd3f0db47bc} with expiration date 2023-09-10 02:06:08Z as default key. |url: |action: |
+2023-08-11 13:28:43.0848|0|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 |url: |action: |
+2023-08-11 13:28:43.0848|0|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI. |url: |action: |
+2023-08-11 13:28:43.0848|0|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 |url: |action: |
+2023-08-11 13:28:43.0962|0|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC. |url: |action: |
+2023-08-11 13:28:43.0962|0|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC. |url: |action: |
+2023-08-11 13:28:43.0962|0|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {befd1401-1cab-4be0-99bb-8dd3f0db47bc} as the default key. |url: |action: |
+2023-08-11 13:28:43.0962|0|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {befd1401-1cab-4be0-99bb-8dd3f0db47bc} was loaded during application startup. |url: |action: |
+2023-08-11 13:28:43.2801|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: A1B36F3074FFE353434C9B13AE59733DD9B8E436) |url: |action: |
+2023-08-11 13:28:43.3186|0|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly TUTOR.ERPS.Api |url: |action: |
+2023-08-11 13:28:43.3186|0|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh |url: |action: |
+2023-08-11 13:28:43.3186|0|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net |url: |action: |
+2023-08-11 13:28:43.3303|0|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started |url: |action: |
+2023-08-11 13:28:43.4075|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ5F9VUH5D" accepted. |url: |action: |
+2023-08-11 13:28:43.4078|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ5F9VUH5D" started. |url: |action: |
+2023-08-11 13:28:43.4078|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ5F9VUH5E" accepted. |url: |action: |
+2023-08-11 13:28:43.4078|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ5F9VUH5E" started. |url: |action: |
+2023-08-11 13:28:43.4455|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSQ5F9VUH5D" received FIN. |url: |action: |
+2023-08-11 13:28:43.4455|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSQ5F9VUH5E" received FIN. |url: |action: |
+2023-08-11 13:28:43.4623|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)|url: |action: |
+2023-08-11 13:28:43.4623|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)|url: |action: |
+2023-08-11 13:28:43.5078|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ5F9VUH5E" stopped. |url: |action: |
+2023-08-11 13:28:43.5078|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ5F9VUH5D" stopped. |url: |action: |
+2023-08-11 13:28:43.5187|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSQ5F9VUH5E" sending FIN because: "The Socket transport's send loop completed gracefully." |url: |action: |
+2023-08-11 13:28:43.5187|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSQ5F9VUH5D" sending FIN because: "The Socket transport's send loop completed gracefully." |url: |action: |
+2023-08-11 13:28:43.7272|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ5F9VUH5F" accepted. |url: |action: |
+2023-08-11 13:28:43.7272|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ5F9VUH5F" started. |url: |action: |
+2023-08-11 13:28:43.7684|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMSQ5F9VUH5F established using the following protocol: Tls13 |url: |action: |
+2023-08-11 13:28:43.8671|0|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. |url: https://localhost/swagger/index.html|action: |
+2023-08-11 13:28:44.0628|0|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection. |url: https://localhost/swagger/index.html|action: |
+2023-08-11 13:28:44.1899|0|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection. |url: https://localhost/swagger/index.html|action: |
+2023-08-11 13:30:54.1520|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with no compiled views. |url: |action: |
+2023-08-11 13:30:54.2129|0|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider |url: |action: |
+2023-08-11 13:30:54.3456|0|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting |url: |action: |
+2023-08-11 13:30:54.3456|0|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\j3537\AppData\Local\ASP.NET\DataProtection-Keys\key-184f69a1-ee82-446d-a3df-16f76072f29e.xml'. |url: |action: |
+2023-08-11 13:30:54.3456|0|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\j3537\AppData\Local\ASP.NET\DataProtection-Keys\key-befd1401-1cab-4be0-99bb-8dd3f0db47bc.xml'. |url: |action: |
+2023-08-11 13:30:54.3456|0|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {184f69a1-ee82-446d-a3df-16f76072f29e}. |url: |action: |
+2023-08-11 13:30:54.3456|0|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {befd1401-1cab-4be0-99bb-8dd3f0db47bc}. |url: |action: |
+2023-08-11 13:30:54.3661|0|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {befd1401-1cab-4be0-99bb-8dd3f0db47bc} with expiration date 2023-09-10 02:06:08Z as default key. |url: |action: |
+2023-08-11 13:30:54.3661|0|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 |url: |action: |
+2023-08-11 13:30:54.3661|0|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI. |url: |action: |
+2023-08-11 13:30:54.3661|0|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 |url: |action: |
+2023-08-11 13:30:54.3773|0|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC. |url: |action: |
+2023-08-11 13:30:54.3773|0|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC. |url: |action: |
+2023-08-11 13:30:54.3773|0|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {befd1401-1cab-4be0-99bb-8dd3f0db47bc} as the default key. |url: |action: |
+2023-08-11 13:30:54.3773|0|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {befd1401-1cab-4be0-99bb-8dd3f0db47bc} was loaded during application startup. |url: |action: |
+2023-08-11 13:30:54.5370|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: A1B36F3074FFE353434C9B13AE59733DD9B8E436) |url: |action: |
+2023-08-11 13:30:54.5726|0|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly TUTOR.ERPS.Api |url: |action: |
+2023-08-11 13:30:54.5726|0|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh |url: |action: |
+2023-08-11 13:30:54.5726|0|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net |url: |action: |
+2023-08-11 13:30:54.5837|0|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started |url: |action: |
+2023-08-11 13:30:54.8624|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ5GH5JAIJ" accepted. |url: |action: |
+2023-08-11 13:30:54.8624|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ5GH5JAIJ" started. |url: |action: |
+2023-08-11 13:30:54.8624|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ5GH5JAIK" accepted. |url: |action: |
+2023-08-11 13:30:54.8624|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ5GH5JAIK" started. |url: |action: |
+2023-08-11 13:30:54.9000|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSQ5GH5JAIK" received FIN. |url: |action: |
+2023-08-11 13:30:54.9000|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSQ5GH5JAIJ" received FIN. |url: |action: |
+2023-08-11 13:30:54.9142|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)|url: |action: |
+2023-08-11 13:30:54.9142|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)|url: |action: |
+2023-08-11 13:30:54.9463|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ5GH5JAIJ" stopped. |url: |action: |
+2023-08-11 13:30:54.9463|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ5GH5JAIK" stopped. |url: |action: |
+2023-08-11 13:30:54.9555|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSQ5GH5JAIK" sending FIN because: "The Socket transport's send loop completed gracefully." |url: |action: |
+2023-08-11 13:30:54.9555|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSQ5GH5JAIJ" sending FIN because: "The Socket transport's send loop completed gracefully." |url: |action: |
+2023-08-11 13:30:55.2336|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ5GH5JAIL" accepted. |url: |action: |
+2023-08-11 13:30:55.2336|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ5GH5JAIL" started. |url: |action: |
+2023-08-11 13:30:55.2687|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMSQ5GH5JAIL established using the following protocol: Tls13 |url: |action: |
+2023-08-11 13:30:55.3891|0|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. |url: https://localhost/swagger/index.html|action: |
+2023-08-11 13:30:55.5842|0|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection. |url: https://localhost/swagger/index.html|action: |
+2023-08-11 13:30:55.9250|0|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection. |url: https://localhost/swagger/index.html|action: |
+2023-08-11 13:31:37.2315|0|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with no compiled views. |url: |action: |
+2023-08-11 13:31:37.2993|0|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider |url: |action: |
+2023-08-11 13:31:37.4463|0|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting |url: |action: |
+2023-08-11 13:31:37.4463|0|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\j3537\AppData\Local\ASP.NET\DataProtection-Keys\key-184f69a1-ee82-446d-a3df-16f76072f29e.xml'. |url: |action: |
+2023-08-11 13:31:37.4463|0|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\j3537\AppData\Local\ASP.NET\DataProtection-Keys\key-befd1401-1cab-4be0-99bb-8dd3f0db47bc.xml'. |url: |action: |
+2023-08-11 13:31:37.4583|0|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {184f69a1-ee82-446d-a3df-16f76072f29e}. |url: |action: |
+2023-08-11 13:31:37.4583|0|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {befd1401-1cab-4be0-99bb-8dd3f0db47bc}. |url: |action: |
+2023-08-11 13:31:37.4583|0|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {befd1401-1cab-4be0-99bb-8dd3f0db47bc} with expiration date 2023-09-10 02:06:08Z as default key. |url: |action: |
+2023-08-11 13:31:37.4715|0|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 |url: |action: |
+2023-08-11 13:31:37.4715|0|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI. |url: |action: |
+2023-08-11 13:31:37.4715|0|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 |url: |action: |
+2023-08-11 13:31:37.4715|0|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC. |url: |action: |
+2023-08-11 13:31:37.4715|0|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC. |url: |action: |
+2023-08-11 13:31:37.4715|0|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {befd1401-1cab-4be0-99bb-8dd3f0db47bc} as the default key. |url: |action: |
+2023-08-11 13:31:37.4715|0|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {befd1401-1cab-4be0-99bb-8dd3f0db47bc} was loaded during application startup. |url: |action: |
+2023-08-11 13:31:37.6705|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: A1B36F3074FFE353434C9B13AE59733DD9B8E436) |url: |action: |
+2023-08-11 13:31:37.7098|0|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly TUTOR.ERPS.Api |url: |action: |
+2023-08-11 13:31:37.7098|0|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh |url: |action: |
+2023-08-11 13:31:37.7098|0|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net |url: |action: |
+2023-08-11 13:31:37.7228|0|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started |url: |action: |
+2023-08-11 13:31:37.7740|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ5GTUQSSB" accepted. |url: |action: |
+2023-08-11 13:31:37.7740|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ5GTUQSSB" started. |url: |action: |
+2023-08-11 13:31:37.7956|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSQ5GTUQSSB" received FIN. |url: |action: |
+2023-08-11 13:31:37.8053|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)|url: |action: |
+2023-08-11 13:31:37.8378|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ5GTUQSSB" stopped. |url: |action: |
+2023-08-11 13:31:37.8478|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSQ5GTUQSSB" sending FIN because: "The Socket transport's send loop completed gracefully." |url: |action: |
+2023-08-11 13:31:38.1184|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ5GTUQSSC" accepted. |url: |action: |
+2023-08-11 13:31:38.1184|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ5GTUQSSC" started. |url: |action: |
+2023-08-11 13:31:38.1494|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMSQ5GTUQSSC established using the following protocol: Tls13 |url: |action: |
+2023-08-11 13:31:38.2588|0|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. |url: https://localhost/swagger/index.html|action: |
+2023-08-11 13:31:38.4655|0|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection. |url: https://localhost/swagger/index.html|action: |
+2023-08-11 13:31:38.6111|0|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection. |url: https://localhost/swagger/index.html|action: |
+2023-08-11 13:31:43.5376|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSQ5GTUQSSC" received FIN. |url: |action: |
+2023-08-11 13:31:43.5506|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMSQ5GTUQSSC" is closed. The last processed stream ID was 7. |url: |action: |
+2023-08-11 13:31:43.5506|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSQ5GTUQSSC" sending FIN because: "The client closed the connection." |url: |action: |
+2023-08-11 13:31:43.5681|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ5GTUQSSC" stopped. |url: |action: |
+2023-08-11 13:31:56.4150|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ5GTUQSSD" accepted. |url: |action: |
+2023-08-11 13:31:56.4150|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ5GTUQSSD" started. |url: |action: |
+2023-08-11 13:31:56.4260|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMSQ5GTUQSSD established using the following protocol: Tls13 |url: |action: |
+2023-08-11 13:31:56.4420|0|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter |url: https://localhost/member/student|action: |
+2023-08-11 13:31:56.4420|0|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter |url: https://localhost/member/student|action: |
+2023-08-11 13:31:56.4420|0|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /member/student does not match a supported file type |url: https://localhost/member/student|action: |
+2023-08-11 13:31:56.5185|0|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/member/student' |url: https://localhost/member/student|action: |
+2023-08-11 13:31:56.5185|0|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'TUTOR.ERPS.API.MemberController.GetMemberList (TUTOR.ERPS.Api)' with route pattern 'member/student' is valid for the request path '/member/student' |url: https://localhost/member/student|action: |
+2023-08-11 13:31:56.5185|0|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'TUTOR.ERPS.API.MemberController.GetMemberList (TUTOR.ERPS.Api)' |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:31:56.5976|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): TUTOR.ERPS.API.Infa.Attribute.ApTokenAuth |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:31:56.5976|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:31:56.5976|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:31:56.5976|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:31:56.5976|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter, Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:31:57.0665|0|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:31:58.3597|0|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 7.0.8 initialized 'TUTORERPSContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.8' with options: None |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:31:58.5102|0|DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<ApiTokenManage>()
+    .SingleOrDefault(x => x.ApiToken == __token_0)' |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:31:59.1340|0|DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<ApiTokenManage>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: ApiTokenManage.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: ApiTokenManage.ApiToken (string), 1], [Property: ApiTokenManage.Ip (string) MaxLength(50), 2], [Property: ApiTokenManage.TokenActive (int?), 3], [Property: ApiTokenManage.TokenEndTime (DateTime?), 4], [Property: ApiTokenManage.TokenStartTime (DateTime?), 5] }
+        SELECT TOP(2) a.Id, a.Api_Token, a.Ip, a.Token_Active, a.Token_EndTime, a.Token_StartTime
+        FROM ApiTokenManage AS a
+        WHERE a.Api_Token == @__token_0), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, ApiTokenManage>, 
+    TUTOR.Repository.EF.TUTORERPSContext, 
+    False, 
+    False, 
+    True
+)
+    .SingleOrDefault()' |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:31:59.2307|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:31:59.2360|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:31:59.3115|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (69ms). |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:31:59.3225|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (93ms). |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:31:59.3427|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (114ms). |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:31:59.3513|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:00.0997|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:00.1250|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:00.4159|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'TUTORERPSContext' started tracking 'ApiTokenManage' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:00.4816|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:00.5015|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'TUTOR.ERPS' on server 'erp.ahow.tw' is being disposed after spending 165ms reading results. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:00.5015|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:00.5267|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw' (18ms). |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:00.5267|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:00.5267|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:00.5267|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms). |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:00.5267|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:00.5350|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:00.5350|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:00.5805|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:00.5805|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'TUTOR.ERPS' on server 'erp.ahow.tw' is being disposed after spending 3ms reading results. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:00.5805|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:00.5805|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw' (0ms). |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:00.6531|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|'"TUTORERPSContext"' generated a temporary value for the property '"Id"."SystemErrorLog"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:00.7151|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'TUTORERPSContext' started tracking 'SystemErrorLog' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:00.7206|0|DEBUG|Microsoft.EntityFrameworkCore.Update|SaveChanges starting for 'TUTORERPSContext'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:00.7206|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges starting for 'TUTORERPSContext'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:00.7612|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges completed for 'TUTORERPSContext'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:00.8722|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:00.8722|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:00.8722|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:00.8722|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:00.8722|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (1ms). |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:00.8774|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p0='?' (Size = 50), @p1='?' (DbType = DateTime), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 50), @p8='?' (Size = 4000), @p9='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [SystemErrorLog] ([Api], [Entry_Date], [Entry_User], [Error_Level], [Ip], [Message], [Token], [Web_Method], [Web_Request], [Web_Response])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9); |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:00.9448|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The foreign key property 'SystemErrorLog.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:00.9700|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:00.9700|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'TUTOR.ERPS' on server 'erp.ahow.tw' is being disposed after spending 48ms reading results. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:00.9713|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:00.9713|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw' (0ms). |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:00.9995|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|An entity of type 'SystemErrorLog' tracked by 'TUTORERPSContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:01.0048|0|DEBUG|Microsoft.EntityFrameworkCore.Update|SaveChanges completed for 'TUTORERPSContext' with 1 entities written to the database. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:01.0048|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller TUTOR.ERPS.API.MemberController (TUTOR.ERPS.Api) |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:01.0048|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller TUTOR.ERPS.API.MemberController (TUTOR.ERPS.Api) |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:01.0393|0|DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<Member>()
+    .Where(x => x.BeDeleted == 0)' |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:01.0491|0|DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Member>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Member.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Member.Account (string) Required, 1], [Property: Member.BeDeleted (int) Required, 2], [Property: Member.CreateDate (DateTime?), 3], [Property: Member.Creator (string) MaxLength(50), 4], [Property: Member.Editor (string) MaxLength(50), 5], [Property: Member.Email (string) Required, 6], [Property: Member.EndDate (DateTime) Required, 7], [Property: Member.Name (string) MaxLength(10), 8], [Property: Member.Password (string) Required, 9], [Property: Member.StartDate (DateTime) Required, 10], [Property: Member.Status (int) Required, 11], [Property: Member.StudyLevel (int?), 12] }
+        SELECT m.Id, m.Account, m.BeDeleted, m.CreateDate, m.Creator, m.Editor, m.Email, m.EndDate, m.Name, m.Password, m.StartDate, m.Status, m.StudyLevel
+        FROM Member AS m
+        WHERE m.BeDeleted == 0), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Member>, 
+    TUTOR.Repository.EF.TUTORERPSContext, 
+    False, 
+    False, 
+    True
+)' |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:01.0798|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:01.0798|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:01.0798|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms). |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:01.0798|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:01.1012|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:01.1012|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [m].[Id], [m].[Account], [m].[BeDeleted], [m].[CreateDate], [m].[Creator], [m].[Editor], [m].[Email], [m].[EndDate], [m].[Name], [m].[Password], [m].[StartDate], [m].[Status], [m].[StudyLevel]
+FROM [Member] AS [m]
+WHERE [m].[BeDeleted] = 0 |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:01.2137|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'TUTORERPSContext' started tracking 'Member' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:01.2486|0|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'TUTORERPSContext' started tracking 'Member' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:01.2621|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:01.2621|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'TUTOR.ERPS' on server 'erp.ahow.tw' is being disposed after spending 74ms reading results. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:01.2745|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:01.2745|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw' (2ms). |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:01.3629|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:01.3629|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:01.3629|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:01.3629|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:01.3629|0|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:01.4245|0|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'TUTORERPSContext' disposed. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:01.4245|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'TUTOR.ERPS' on server 'erp.ahow.tw'. |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:01.4446|0|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database '' on server '' (4ms). |url: https://localhost/member/student|action: GetMemberList|
+2023-08-11 13:32:03.5583|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSQ5GTUQSSD" received FIN. |url: |action: |
+2023-08-11 13:32:03.5583|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMSQ5GTUQSSD" is closed. The last processed stream ID was 1. |url: |action: |
+2023-08-11 13:32:03.5666|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMSQ5GTUQSSD" sending FIN because: "The client closed the connection." |url: |action: |
+2023-08-11 13:32:03.5878|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMSQ5GTUQSSD" stopped. |url: |action: |

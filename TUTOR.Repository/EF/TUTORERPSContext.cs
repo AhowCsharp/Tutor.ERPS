@@ -21,12 +21,12 @@ namespace TUTOR.Repository.EF
         public virtual DbSet<AdminManage> AdminManage { get; set; }
         public virtual DbSet<AllowIpManage> AllowIpManage { get; set; }
         public virtual DbSet<ApiTokenManage> ApiTokenManage { get; set; }
-        public virtual DbSet<LogSystem> LogSystem { get; set; }
         public virtual DbSet<Member> Member { get; set; }
         public virtual DbSet<SentenceManage> SentenceManage { get; set; }
-        public virtual DbSet<SentenceTpye> SentenceTpye { get; set; }
+        public virtual DbSet<SentenceType> SentenceType { get; set; }
         public virtual DbSet<StudentAnswerLog> StudentAnswerLog { get; set; }
         public virtual DbSet<SystemErrorLog> SystemErrorLog { get; set; }
+        public virtual DbSet<WebToken> WebToken { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -67,31 +67,6 @@ namespace TUTOR.Repository.EF
                 entity.Property(e => e.TokenStartTime)
                     .HasColumnType("datetime")
                     .HasColumnName("Token_StartTime");
-            });
-
-            modelBuilder.Entity<LogSystem>(entity =>
-            {
-                entity.Property(e => e.Application)
-                    .IsRequired()
-                    .HasMaxLength(50);
-
-                entity.Property(e => e.Level)
-                    .IsRequired()
-                    .HasMaxLength(50);
-
-                entity.Property(e => e.Logged).HasColumnType("datetime");
-
-                entity.Property(e => e.Logger).HasMaxLength(250);
-
-                entity.Property(e => e.Message).IsRequired();
-
-                entity.Property(e => e.OfficialAccountId).HasComment("");
-
-                entity.Property(e => e.RemoteAddress).HasMaxLength(100);
-
-                entity.Property(e => e.ServerAddress).HasMaxLength(100);
-
-                entity.Property(e => e.UserName).HasMaxLength(250);
             });
 
             modelBuilder.Entity<Member>(entity =>
@@ -138,7 +113,7 @@ namespace TUTOR.Repository.EF
                 entity.Property(e => e.StudyLevel).HasColumnName("Study_Level");
             });
 
-            modelBuilder.Entity<SentenceTpye>(entity =>
+            modelBuilder.Entity<SentenceType>(entity =>
             {
                 entity.Property(e => e.StudyLevel).HasColumnName("Study_Level");
 
@@ -187,6 +162,23 @@ namespace TUTOR.Repository.EF
                 entity.Property(e => e.WebRequest).HasColumnName("Web_Request");
 
                 entity.Property(e => e.WebResponse).HasColumnName("Web_Response");
+            });
+
+            modelBuilder.Entity<WebToken>(entity =>
+            {
+                entity.Property(e => e.EndDate).HasColumnType("datetime");
+
+                entity.Property(e => e.EntryDate).HasColumnType("datetime");
+
+                entity.Property(e => e.EntryUser).HasMaxLength(50);
+
+                entity.Property(e => e.Ip).HasMaxLength(50);
+
+                entity.Property(e => e.ModifyDate).HasColumnType("datetime");
+
+                entity.Property(e => e.ModifyUser).HasMaxLength(50);
+
+                entity.Property(e => e.StartDate).HasColumnType("datetime");
             });
 
             OnModelCreatingPartial(modelBuilder);

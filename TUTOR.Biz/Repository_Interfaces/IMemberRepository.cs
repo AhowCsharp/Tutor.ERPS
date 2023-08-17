@@ -2,19 +2,15 @@
 using TUTOR.Biz.Domain.DTO;
 using TUTOR.Biz.Models.Requests;
 using TUTOR.Biz.Models;
+using TUTOR.Biz.Repository_Interfaces.Base;
+using X.PagedList;
 
 namespace TUTOR.Biz.Repository_Interfaces
 {
-    public interface IMemberRepository
+    public interface IMemberRepository : IRepository<MemberDTO, int>
     {
-        IEnumerable<MemberDTO>? GetList(int page);
+        Task<IEnumerable<MemberDTO>> GetMemberListAsync();
 
-        MemberDTO? Get(MemberRequest memberRequest);
-
-        Task<HttpStatusCode> EditOrCreate(MemberRequest memberRequest);
-
-        Task<HttpStatusCode> Delete(MemberRequest memberRequest);
-
-        Task<StatusResponse> InsertExcelDatas(IEnumerable<MemberDTO> memberDTOs);
+        Task<bool> AddStudentsFromExcel(IEnumerable<MemberDTO> memberDTOs);
     }
 }

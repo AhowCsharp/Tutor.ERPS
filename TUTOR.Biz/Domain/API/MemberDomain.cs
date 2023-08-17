@@ -10,89 +10,173 @@ using NPOI.SS.Formula.PTG;
 using System.Net;
 using TUTOR.Biz.Models.Responses.Member;
 using NPOI.SS.Formula.Functions;
+using TUTOR.Biz.Services;
+using TUTOR.Biz.SeedWork;
+using TUTOR.Biz.Models.Requests;
+using MathNet.Numerics.Distributions;
+using System.Data.Entity;
+using Org.BouncyCastle.Asn1.Ocsp;
+using AutoMapper;
 
 namespace TUTOR.Biz.Domain.API
 {
     public class MemberDomain : IMemberDomain
     {
-        private readonly IMemberRepository MemberRepo;
+        private readonly IMemberRepository _memberRepository;
 
-        private readonly IHttpContextAccessor httpContextAccessor;
+        private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public MemberDomain(IMemberRepository MemberRepo, IHttpContextAccessor httpContextAccessor)
+        private readonly IMapper _mapper;
+
+        private readonly UserService _userService;
+
+        public MemberDomain(IMemberRepository memberRepository, IHttpContextAccessor httpContextAccessor, UserService userService, IMapper mapper)
         {
-            this.MemberRepo = MemberRepo;
-            this.httpContextAccessor = httpContextAccessor;
+            _memberRepository = memberRepository;
+            _httpContextAccessor = httpContextAccessor;
+            _userService = userService;
+            _mapper = mapper;
         }
 
-        public async Task<StatusResponse> ImportFromExcel(IFormFile file)
+        public async Task<MemberResponse> GetMemberListAsync()
         {
+            var data = await _memberRepository.GetMemberListAsync();
+
+            return new MemberResponse(data);
+        }
+
+        public async Task<CommonResult> SaveStudentInfo(int studentId, MemberRequest request)
+        {
+            var result = new CommonResult();
+            var exist = await _memberRepository.GetAsync(studentId);
+            if (exist == null)
+            {
+                result.AddError(ResultError.ERR_STUDENT);
+            }
+
+            if (result.Errors.Any())
+            {
+                result.Result = false;
+
+                return result;
+            }
+
+            exist.Creator = request.Creator;
+            exist.Name = request.Name;
+            exist.StartDate = request.StartDate;
+            exist.EndDate = request.EndDate;
+            exist.BeDeleted = request.BeDeleted;
+            exist.Account = request.Account;
+            exist.Status = request.Status;
+            exist.Email = request.Email;
+            exist.Password = request.Password;
+            exist.Name = request.Name;
+            exist.StudyLevel = request.StudyLevel;
+            await _memberRepository.UpdateAsync(exist);
+
+            result.Result = true;
+
+            return result;
+        }
+
+        public async Task<CommonResult> AddStudentsFromExcel(Stream excelStream)
+        {
+            var result = new CommonResult();
             try
             {
-                var memberDTOs = new List<MemberDTO>();
+                var students = new List<MemberDTO>();
 
-                using (var stream = new MemoryStream())
+                // 使用 NPOI 讀取 Excel 文件
+                var workbook = new XSSFWorkbook(excelStream);
+                var sheet = workbook.GetSheetAt(0); // 取得第一個工作表
+
+                for (int row = 1; row <= sheet.LastRowNum; row++) // 從第二行開始讀取，假設第一行是標題
                 {
-                    await file.CopyToAsync(stream);
-                    stream.Position = 0; // reset the position to the beginning of the stream.
+                    var currentRow = sheet.GetRow(row);
+                    if (currentRow == null) continue;
 
-                    var workbook = new XSSFWorkbook(stream); // using NPOI.XSSF.UserModel;
-                    var sheet = workbook.GetSheetAt(0); // Assuming the data is in the first sheet
-
-                    for (int row = 1; row <= sheet.LastRowNum; row++) // Skip header row (row 0)
+                    var member = new MemberDTO
                     {
-                        var rowObject = sheet.GetRow(row);
-                        var dto = new MemberDTO
-                        {
-                            Name = rowObject.GetCell(0)?.ToString(),
-                            Account = rowObject.GetCell(1)?.ToString(),
-                            Password = rowObject.GetCell(2)?.ToString(),
-                            Email = rowObject.GetCell(3)?.ToString(),
-                            StudyLevel = int.TryParse(rowObject.GetCell(4)?.ToString(), out int studyLevel) ? studyLevel : 0,
-                            Status = int.TryParse(rowObject.GetCell(5)?.ToString(), out int status) ? status : 0,
-                            StartDate = DateTime.TryParse(rowObject.GetCell(6)?.ToString(), out DateTime startDate) ? startDate : DateTime.Now,
-                            EndDate = DateTime.TryParse(rowObject.GetCell(7)?.ToString(), out DateTime endDate) ? endDate : DateTime.Now,
-                            BeDeleted = int.TryParse(rowObject.GetCell(8)?.ToString(), out int beDeleted) ? beDeleted : 0,
-                            CreateDate = DateTime.Now
-                        };
-
-                        memberDTOs.Add(dto);
-                    }
+                        Account = currentRow.GetCell(0)?.ToString(),
+                        Email = currentRow.GetCell(1)?.ToString(),
+                        Password = currentRow.GetCell(2)?.ToString(),
+                        Status = int.Parse(currentRow.GetCell(3)?.ToString() ?? "0"),
+                        StudyLevel = int.TryParse(currentRow.GetCell(4)?.ToString(), out var studyLevel) ? studyLevel : (int?)null,
+                        BeDeleted = int.Parse(currentRow.GetCell(5)?.ToString() ?? "0"),
+                        Creator = currentRow.GetCell(6)?.ToString(),
+                        Editor = currentRow.GetCell(7)?.ToString(),
+                        Name = currentRow.GetCell(8)?.ToString(),
+                        Id = int.Parse(currentRow.GetCell(9)?.ToString() ?? "0"),
+                        StartDate = DateTime.TryParse(currentRow.GetCell(10)?.ToString(), out var startDate) ? startDate : (DateTime?)null,
+                        EndDate = DateTime.TryParse(currentRow.GetCell(11)?.ToString(), out var endDate) ? endDate : (DateTime?)null,
+                        CreateDate = DateTime.TryParse(currentRow.GetCell(12)?.ToString(), out var createDate) ? createDate : (DateTime?)null,
+                    };
+                    students.Add(member);
                 }
-                return await MemberRepo.InsertExcelDatas(memberDTOs);
+
+                await _memberRepository.AddStudentsFromExcel(students);
+                result.Result = true;
+                return result;
             }
             catch (Exception ex)
             {
-                // 在這裡記錄異常詳情
-                var errMsg = new List<string>();
-                errMsg.Add(ex.Message);
-                var res = new StatusResponse(errMsg, HttpStatusCode.BadRequest);
-                return res;
+                result.AddError(ex.Message);
+                result.Result = false;
+                return result;
             }
         }
 
-        public MemberResponse GetList(int page)
+        public async Task<CommonResult> AddStudentInfo(MemberRequest request)
         {
-            var dtos = MemberRepo.GetList(page);
-            if (dtos == null || !dtos.Any())
+            var result = new CommonResult();
+            try
             {
-                return new MemberResponse(null);
+                var memberDTO = new MemberDTO();
+                memberDTO.Creator = request.Creator;
+                memberDTO.Name = request.Name;
+                memberDTO.StartDate = request.StartDate;
+                memberDTO.EndDate = request.EndDate;
+                memberDTO.BeDeleted = request.BeDeleted;
+                memberDTO.Account = request.Account;
+                memberDTO.Status = request.Status;
+                memberDTO.Email = request.Email;
+                memberDTO.Password = request.Password;
+                memberDTO.Name = request.Name;
+                memberDTO.StudyLevel = request.StudyLevel;
+                await _memberRepository.InsertAsync(memberDTO);
+                result.Result = true;
+                return result;
             }
-            else
+            catch (Exception ex)
             {
-                var list = dtos.Select(x => new Member
-                {
-                    Account = x.Account,
-                    Email = x.Email,
-                    Status = x.Status,
-                    StudyLevel = x.StudyLevel,
-                    BeDeleted = x.BeDeleted,
-                    Name = x.Name,
-                    StartDate = x.StartDate,
-                    EndDate = x.EndDate
-                });
+                result.Result = false;
+                return result;
+            }
+        }
 
-                return new MemberResponse(list);
+        public async Task<CommonResult> DeleteStudentInfo(int studentId)
+        {
+            var result = new CommonResult();
+            try
+            {
+                var data = await _memberRepository.GetAsync(studentId);
+                if (data != null)
+                {
+                    data.BeDeleted = 1;
+                    await _memberRepository.UpdateAsync(data);
+                    result.Result = true;
+                    return result;
+                }
+                else
+                {
+                    result.Result = false;
+                    return result;
+                }
+            }
+            catch (Exception ex)
+            {
+                result.Result = false;
+                return result;
             }
         }
     }

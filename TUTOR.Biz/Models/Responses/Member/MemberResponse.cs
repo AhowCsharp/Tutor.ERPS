@@ -1,19 +1,16 @@
 ﻿using Swashbuckle.AspNetCore.Annotations;
+using TUTOR.Biz.Domain.DTO;
 
 namespace TUTOR.Biz.Models.Responses.Member
 {
     public class MemberResponse
     {
-        public MemberResponse(IEnumerable<Member> data)
+        public MemberResponse(IEnumerable<MemberDTO> list)
         {
-            Data = data;
+            List = list;
         }
 
-        /// <summary>
-        /// 學生資料
-        /// </summary>
-        [SwaggerSchema("學生資料")]
-        public IEnumerable<Member> Data { get; set; }
+        public IEnumerable<MemberDTO> List { get; set; }
     }
 
     public class Member

@@ -27,10 +27,6 @@
          "ObjectType": 0
       },
       {
-         "Name": "[dbo].[LogSystem]",
-         "ObjectType": 0
-      },
-      {
          "Name": "[dbo].[Member]",
          "ObjectType": 0
       },
@@ -39,7 +35,7 @@
          "ObjectType": 0
       },
       {
-         "Name": "[dbo].[SentenceTpye]",
+         "Name": "[dbo].[SentenceType]",
          "ObjectType": 0
       },
       {
@@ -48,6 +44,10 @@
       },
       {
          "Name": "[dbo].[SystemErrorLog]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[WebToken]",
          "ObjectType": 0
       }
    ],

@@ -1,0 +1,782 @@
+2023-08-16 12:13:25.0549|0|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\j3537\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. |url: |action: |
+2023-08-16 12:13:25.8196|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7061 |url: |action: |
+2023-08-16 12:13:25.8196|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5128 |url: |action: |
+2023-08-16 12:13:25.8374|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |
+2023-08-16 12:13:25.8374|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |
+2023-08-16 12:13:25.8449|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\GitLab\TUTOR.ERPS\TUTOR.ERPS\ |url: |action: |
+2023-08-16 12:13:26.5160|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/index.html - - |url: https://localhost/swagger/index.html|action: |
+2023-08-16 12:13:27.3945|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-08-16 12:13:27.3945|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_vs/browserLink - - |url: https://localhost/_vs/browserLink|action: |
+2023-08-16 12:13:27.4078|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 20.1557ms |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-08-16 12:13:27.4078|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/index.html - - - 200 - text/html;charset=utf-8 911.3113ms |url: https://localhost/swagger/index.html|action: |
+2023-08-16 12:13:27.5009|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 106.7573ms |url: https://localhost/_vs/browserLink|action: |
+2023-08-16 12:13:27.5702|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-08-16 12:13:28.0012|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 431.8424ms |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-08-16 12:15:47.0025|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/sentence/info - - |url: https://localhost/sentence/info|action: |
+2023-08-16 12:15:47.0949|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api)' |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 12:15:47.1559|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetSentenceManageList", controller = "SentenceManage"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSentenceManageList() on controller TUTOR.ERPS.API.SentenceManageController (TUTOR.ERPS.Api). |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 12:15:52.5230|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (280ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 12:15:52.8118|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (43ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 12:15:53.2093|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (42ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (DbType = DateTime), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 50), @p8='?' (Size = 4000), @p9='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [SystemErrorLog] ([Api], [Entry_Date], [Entry_User], [Error_Level], [Ip], [Message], [Token], [Web_Method], [Web_Request], [Web_Response])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9); |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 12:15:53.3013|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api) - Validation state: Valid |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 12:15:53.4732|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (87ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[Mp3_FileName], [s].[Mp3_FileUrl], [s].[Question_Answer], [s].[Question_Sentence], [s].[Question_Sentence_Chinese], [s].[Question_Type_Id], [s].[Study_Level]
+FROM [SentenceManage] AS [s]
+ORDER BY [s].[Question_Type_Id] |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 12:15:54.0669|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api) in 6912.3408ms |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 12:15:54.0826|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api)' |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 12:16:54.4862|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/index.html - - |url: https://localhost/swagger/index.html|action: |
+2023-08-16 12:16:54.5331|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/index.html - - - 200 - text/html;charset=utf-8 39.9684ms |url: https://localhost/swagger/index.html|action: |
+2023-08-16 12:16:54.5704|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-08-16 12:16:54.5791|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_vs/browserLink - - |url: https://localhost/_vs/browserLink|action: |
+2023-08-16 12:16:54.5791|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 7.4398ms |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-08-16 12:16:54.6418|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 71.2029ms |url: https://localhost/_vs/browserLink|action: |
+2023-08-16 12:16:54.6968|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-08-16 12:16:54.7104|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 16.2131ms |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-08-16 12:17:02.0417|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/sentence/info - - |url: https://localhost/sentence/info|action: |
+2023-08-16 12:17:02.0417|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api)' |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 12:17:02.0417|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetSentenceManageList", controller = "SentenceManage"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSentenceManageList() on controller TUTOR.ERPS.API.SentenceManageController (TUTOR.ERPS.Api). |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 12:17:02.1500|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (36ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 12:17:02.1932|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (36ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 12:17:02.2361|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (37ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (DbType = DateTime), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 50), @p8='?' (Size = 4000), @p9='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [SystemErrorLog] ([Api], [Entry_Date], [Entry_User], [Error_Level], [Ip], [Message], [Token], [Web_Method], [Web_Request], [Web_Response])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9); |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 12:17:02.2361|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api) - Validation state: Valid |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 12:17:08.4492|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (36ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[Mp3_FileName], [s].[Mp3_FileUrl], [s].[Question_Answer], [s].[Question_Sentence], [s].[Question_Sentence_Chinese], [s].[Question_Type_Id], [s].[Study_Level]
+FROM [SentenceManage] AS [s]
+ORDER BY [s].[Question_Type_Id] |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 12:17:16.5794|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api) in 14533.8339ms |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 12:17:16.5794|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api)' |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 12:17:23.5024|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/index.html - - |url: https://localhost/swagger/index.html|action: |
+2023-08-16 12:17:23.5638|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/index.html - - - 200 - text/html;charset=utf-8 61.1944ms |url: https://localhost/swagger/index.html|action: |
+2023-08-16 12:17:23.5638|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_vs/browserLink - - |url: https://localhost/_vs/browserLink|action: |
+2023-08-16 12:17:23.5638|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-08-16 12:17:23.5806|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 7.5279ms |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-08-16 12:17:23.6572|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 82.6086ms |url: https://localhost/_vs/browserLink|action: |
+2023-08-16 12:17:23.7474|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-08-16 12:17:23.7664|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 17.5120ms |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-08-16 12:17:27.4014|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/sentence/info - - |url: https://localhost/sentence/info|action: |
+2023-08-16 12:17:27.4014|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api)' |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 12:17:27.4014|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetSentenceManageList", controller = "SentenceManage"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSentenceManageList() on controller TUTOR.ERPS.API.SentenceManageController (TUTOR.ERPS.Api). |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 12:17:27.4701|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (35ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 12:17:27.5120|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (35ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 12:17:27.5540|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (36ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (DbType = DateTime), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 50), @p8='?' (Size = 4000), @p9='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [SystemErrorLog] ([Api], [Entry_Date], [Entry_User], [Error_Level], [Ip], [Message], [Token], [Web_Method], [Web_Request], [Web_Response])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9); |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 12:17:27.5540|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api) - Validation state: Valid |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 12:17:41.3124|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (36ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[Mp3_FileName], [s].[Mp3_FileUrl], [s].[Question_Answer], [s].[Question_Sentence], [s].[Question_Sentence_Chinese], [s].[Question_Type_Id], [s].[Study_Level]
+FROM [SentenceManage] AS [s]
+ORDER BY [s].[Question_Type_Id] |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 12:20:10.6745|0|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\j3537\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. |url: |action: |
+2023-08-16 12:20:10.9802|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7061 |url: |action: |
+2023-08-16 12:20:10.9802|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5128 |url: |action: |
+2023-08-16 12:20:10.9852|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |
+2023-08-16 12:20:10.9852|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |
+2023-08-16 12:20:10.9852|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\GitLab\TUTOR.ERPS\TUTOR.ERPS\ |url: |action: |
+2023-08-16 12:20:11.8116|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/index.html - - |url: https://localhost/swagger/index.html|action: |
+2023-08-16 12:20:12.2205|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-08-16 12:20:12.2205|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/index.html - - - 200 - text/html;charset=utf-8 420.6486ms |url: https://localhost/swagger/index.html|action: |
+2023-08-16 12:20:12.2368|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 15.2182ms |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-08-16 12:20:12.2541|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_vs/browserLink - - |url: https://localhost/_vs/browserLink|action: |
+2023-08-16 12:20:12.2983|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 56.7880ms |url: https://localhost/_vs/browserLink|action: |
+2023-08-16 12:20:12.4502|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-08-16 12:20:12.6274|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 178.0225ms |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-08-16 12:20:16.1280|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/sentence/info - - |url: https://localhost/sentence/info|action: |
+2023-08-16 12:20:16.2542|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api)' |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 12:20:16.3043|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetSentenceManageList", controller = "SentenceManage"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSentenceManageList() on controller TUTOR.ERPS.API.SentenceManageController (TUTOR.ERPS.Api). |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 12:20:20.7409|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (157ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 12:20:20.9803|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (39ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 12:20:21.3596|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (42ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (DbType = DateTime), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 50), @p8='?' (Size = 4000), @p9='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [SystemErrorLog] ([Api], [Entry_Date], [Entry_User], [Error_Level], [Ip], [Message], [Token], [Web_Method], [Web_Request], [Web_Response])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9); |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 12:20:21.4385|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api) - Validation state: Valid |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 12:20:28.9584|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (86ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[Mp3_FileName], [s].[Mp3_FileUrl], [s].[Question_Answer], [s].[Question_Sentence], [s].[Question_Sentence_Chinese], [s].[Question_Type_Id], [s].[Study_Level]
+FROM [SentenceManage] AS [s]
+ORDER BY [s].[Question_Type_Id] |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:00:12.0712|0|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\j3537\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. |url: |action: |
+2023-08-16 14:00:12.4775|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7061 |url: |action: |
+2023-08-16 14:00:12.4775|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5128 |url: |action: |
+2023-08-16 14:00:12.4891|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |
+2023-08-16 14:00:12.4891|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |
+2023-08-16 14:00:12.4891|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\GitLab\TUTOR.ERPS\TUTOR.ERPS\ |url: |action: |
+2023-08-16 14:00:13.0289|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/index.html - - |url: https://localhost/swagger/index.html|action: |
+2023-08-16 14:00:13.4890|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-08-16 14:00:13.5046|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 13.3330ms |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-08-16 14:00:13.5046|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/index.html - - - 200 - text/html;charset=utf-8 473.4491ms |url: https://localhost/swagger/index.html|action: |
+2023-08-16 14:00:13.5046|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_vs/browserLink - - |url: https://localhost/_vs/browserLink|action: |
+2023-08-16 14:00:13.5633|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 59.9614ms |url: https://localhost/_vs/browserLink|action: |
+2023-08-16 14:00:13.6277|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-08-16 14:00:13.8084|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 179.1464ms |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-08-16 14:00:18.5851|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/sentence/info - - |url: https://localhost/sentence/info|action: |
+2023-08-16 14:00:18.6889|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api)' |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:00:18.7445|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetSentenceManageList", controller = "SentenceManage"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSentenceManageList() on controller TUTOR.ERPS.API.SentenceManageController (TUTOR.ERPS.Api). |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:00:23.4321|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (196ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:00:23.7057|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (40ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:00:24.1027|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (42ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (DbType = DateTime), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 50), @p8='?' (Size = 4000), @p9='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [SystemErrorLog] ([Api], [Entry_Date], [Entry_User], [Error_Level], [Ip], [Message], [Token], [Web_Method], [Web_Request], [Web_Response])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9); |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:00:24.2046|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api) - Validation state: Valid |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:00:36.5451|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (90ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[Mp3_FileName], [s].[Mp3_FileUrl], [s].[Question_Answer], [s].[Question_Sentence], [s].[Question_Sentence_Chinese], [s].[Question_Type_Id], [s].[Study_Level]
+FROM [SentenceManage] AS [s]
+ORDER BY [s].[Question_Type_Id] |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:00:36.6843|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (36ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[Study_Level], [s].[Type]
+FROM [SentenceType] AS [s] |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:00:37.1288|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api) in 18385.1389ms |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:00:37.1430|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api)' |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:00:45.2635|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/index.html - - |url: https://localhost/swagger/index.html|action: |
+2023-08-16 14:00:45.2984|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/index.html - - - 200 - text/html;charset=utf-8 37.2975ms |url: https://localhost/swagger/index.html|action: |
+2023-08-16 14:00:45.3294|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-08-16 14:00:45.3294|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_vs/browserLink - - |url: https://localhost/_vs/browserLink|action: |
+2023-08-16 14:00:45.3294|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 4.2757ms |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-08-16 14:00:45.3913|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 66.8129ms |url: https://localhost/_vs/browserLink|action: |
+2023-08-16 14:00:45.4813|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-08-16 14:00:45.4944|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 15.0837ms |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-08-16 14:00:48.6655|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/sentence/info - - |url: https://localhost/sentence/info|action: |
+2023-08-16 14:00:48.6655|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api)' |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:00:48.6655|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetSentenceManageList", controller = "SentenceManage"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSentenceManageList() on controller TUTOR.ERPS.API.SentenceManageController (TUTOR.ERPS.Api). |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:00:48.7874|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (36ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:00:48.8293|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (37ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:00:48.8707|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (36ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (DbType = DateTime), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 50), @p8='?' (Size = 4000), @p9='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [SystemErrorLog] ([Api], [Entry_Date], [Entry_User], [Error_Level], [Ip], [Message], [Token], [Web_Method], [Web_Request], [Web_Response])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9); |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:00:48.8707|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api) - Validation state: Valid |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:00:51.4818|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (35ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[Mp3_FileName], [s].[Mp3_FileUrl], [s].[Question_Answer], [s].[Question_Sentence], [s].[Question_Sentence_Chinese], [s].[Question_Type_Id], [s].[Study_Level]
+FROM [SentenceManage] AS [s]
+ORDER BY [s].[Question_Type_Id] |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:00:51.5197|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (35ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[Study_Level], [s].[Type]
+FROM [SentenceType] AS [s] |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:01:05.4311|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api) in 16762.2637ms |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:01:05.4311|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api)' |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:08:49.4709|0|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\j3537\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. |url: |action: |
+2023-08-16 14:08:49.7991|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7061 |url: |action: |
+2023-08-16 14:08:49.7991|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5128 |url: |action: |
+2023-08-16 14:08:49.7991|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |
+2023-08-16 14:08:49.7991|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |
+2023-08-16 14:08:49.8155|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\GitLab\TUTOR.ERPS\TUTOR.ERPS\ |url: |action: |
+2023-08-16 14:08:50.6547|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/index.html - - |url: https://localhost/swagger/index.html|action: |
+2023-08-16 14:08:51.0794|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-08-16 14:08:51.0960|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 8.2602ms |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-08-16 14:08:51.0960|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_vs/browserLink - - |url: https://localhost/_vs/browserLink|action: |
+2023-08-16 14:08:51.0960|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/index.html - - - 200 - text/html;charset=utf-8 451.9297ms |url: https://localhost/swagger/index.html|action: |
+2023-08-16 14:08:51.1575|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 56.7148ms |url: https://localhost/_vs/browserLink|action: |
+2023-08-16 14:08:51.2668|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-08-16 14:08:51.4544|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 185.2786ms |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-08-16 14:09:43.2865|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/sentence/info - - |url: https://localhost/sentence/info|action: |
+2023-08-16 14:09:43.4109|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api)' |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:09:43.4651|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetSentenceManageList", controller = "SentenceManage"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSentenceManageList() on controller TUTOR.ERPS.API.SentenceManageController (TUTOR.ERPS.Api). |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:09:47.2418|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (176ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:09:47.5256|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (41ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:09:47.8933|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (40ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (DbType = DateTime), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 50), @p8='?' (Size = 4000), @p9='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [SystemErrorLog] ([Api], [Entry_Date], [Entry_User], [Error_Level], [Ip], [Message], [Token], [Web_Method], [Web_Request], [Web_Response])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9); |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:09:47.9917|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api) - Validation state: Valid |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:09:49.8474|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (90ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[Mp3_FileName], [s].[Mp3_FileUrl], [s].[Question_Answer], [s].[Question_Sentence], [s].[Question_Sentence_Chinese], [s].[Question_Type_Id], [s].[Study_Level]
+FROM [SentenceManage] AS [s]
+ORDER BY [s].[Question_Type_Id] |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:09:49.9758|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (36ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[Study_Level], [s].[Type]
+FROM [SentenceType] AS [s] |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:09:50.0036|0|INFO|TUTOR.ERPS.API.SentenceManageController|取得有效會員清單 |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:09:50.0166|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2014.8971ms. |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:09:50.0371|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'TUTOR.Biz.Models.Responses.SentenceManage.SentenceManageResponse'. |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:09:50.0720|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api) in 6597.9873ms |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:09:50.0720|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api)' |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:09:50.0996|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/sentence/info - - - 200 - application/json;+charset=utf-8 6812.3417ms |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:10:51.9412|0|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\j3537\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. |url: |action: |
+2023-08-16 14:10:52.2685|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7061 |url: |action: |
+2023-08-16 14:10:52.2685|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5128 |url: |action: |
+2023-08-16 14:10:52.2685|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |
+2023-08-16 14:10:52.2834|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |
+2023-08-16 14:10:52.2834|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\GitLab\TUTOR.ERPS\TUTOR.ERPS\ |url: |action: |
+2023-08-16 14:10:53.2032|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/index.html - - |url: https://localhost/swagger/index.html|action: |
+2023-08-16 14:10:53.5859|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/index.html - - - 200 - text/html;charset=utf-8 393.4527ms |url: https://localhost/swagger/index.html|action: |
+2023-08-16 14:10:53.6293|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-08-16 14:10:53.6293|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_vs/browserLink - - |url: https://localhost/_vs/browserLink|action: |
+2023-08-16 14:10:53.6672|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 41.2660ms |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-08-16 14:10:53.7289|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 98.9484ms |url: https://localhost/_vs/browserLink|action: |
+2023-08-16 14:10:53.7764|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-08-16 14:10:53.9319|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 156.8986ms |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-08-16 14:10:56.6374|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/sentence/info - - |url: https://localhost/sentence/info|action: |
+2023-08-16 14:10:56.6892|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api)' |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:10:56.7221|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetSentenceManageList", controller = "SentenceManage"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSentenceManageList() on controller TUTOR.ERPS.API.SentenceManageController (TUTOR.ERPS.Api). |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:11:00.2880|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (204ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:11:00.5764|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (39ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:11:01.0290|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (39ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (DbType = DateTime), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 50), @p8='?' (Size = 4000), @p9='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [SystemErrorLog] ([Api], [Entry_Date], [Entry_User], [Error_Level], [Ip], [Message], [Token], [Web_Method], [Web_Request], [Web_Response])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9); |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:11:01.1264|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api) - Validation state: Valid |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:11:02.8091|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (84ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[Mp3_FileName], [s].[Mp3_FileUrl], [s].[Question_Answer], [s].[Question_Sentence], [s].[Question_Sentence_Chinese], [s].[Question_Type_Id], [s].[Study_Level]
+FROM [SentenceManage] AS [s]
+ORDER BY [s].[Question_Type_Id] |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:11:02.9384|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (35ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[Study_Level], [s].[Type]
+FROM [SentenceType] AS [s] |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:11:02.9596|0|INFO|TUTOR.ERPS.API.SentenceManageController|取得有效會員清單 |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:11:02.9716|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1824.8896ms. |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:11:02.9903|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'TUTOR.Biz.Models.Responses.SentenceManage.SentenceManageResponse'. |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:11:03.0026|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api) in 6283.7554ms |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:11:03.0174|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api)' |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:11:03.0418|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/sentence/info - - - 200 - application/json;+charset=utf-8 6407.0810ms |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:15:37.8701|0|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\j3537\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. |url: |action: |
+2023-08-16 14:15:38.1888|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7061 |url: |action: |
+2023-08-16 14:15:38.1888|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5128 |url: |action: |
+2023-08-16 14:15:38.1888|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |
+2023-08-16 14:15:38.2049|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |
+2023-08-16 14:15:38.2049|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\GitLab\TUTOR.ERPS\TUTOR.ERPS\ |url: |action: |
+2023-08-16 14:15:39.0603|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/index.html - - |url: https://localhost/swagger/index.html|action: |
+2023-08-16 14:15:39.4568|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-08-16 14:15:39.4568|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_vs/browserLink - - |url: https://localhost/_vs/browserLink|action: |
+2023-08-16 14:15:39.4568|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 7.4840ms |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-08-16 14:15:39.4568|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/index.html - - - 200 - text/html;charset=utf-8 413.9358ms |url: https://localhost/swagger/index.html|action: |
+2023-08-16 14:15:39.5163|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 57.4704ms |url: https://localhost/_vs/browserLink|action: |
+2023-08-16 14:15:39.5794|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-08-16 14:15:39.7551|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 175.7607ms |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-08-16 14:16:11.6574|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/sentence/info - - |url: https://localhost/sentence/info|action: |
+2023-08-16 14:16:11.7665|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api)' |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:16:11.8169|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetSentenceManageList", controller = "SentenceManage"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSentenceManageList() on controller TUTOR.ERPS.API.SentenceManageController (TUTOR.ERPS.Api). |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:16:15.8945|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (178ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:16:16.1772|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (40ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:16:16.5313|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (40ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (DbType = DateTime), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 50), @p8='?' (Size = 4000), @p9='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [SystemErrorLog] ([Api], [Entry_Date], [Entry_User], [Error_Level], [Ip], [Message], [Token], [Web_Method], [Web_Request], [Web_Response])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9); |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:16:16.5949|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api) - Validation state: Valid |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:16:21.8242|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (84ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[Mp3_FileName], [s].[Mp3_FileUrl], [s].[Question_Answer], [s].[Question_Sentence], [s].[Question_Sentence_Chinese], [s].[Question_Type_Id], [s].[Study_Level]
+FROM [SentenceManage] AS [s]
+ORDER BY [s].[Question_Type_Id] |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:16:21.9530|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (37ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[Study_Level], [s].[Type]
+FROM [SentenceType] AS [s] |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:16:21.9790|0|INFO|TUTOR.ERPS.API.SentenceManageController|取得有效會員清單 |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:16:21.9926|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5380.1417ms. |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:16:22.0167|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'TUTOR.Biz.Models.Responses.SentenceManage.SentenceManageResponse'. |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:16:22.0328|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api) in 10218.8482ms |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:16:22.0328|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api)' |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:16:22.0731|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/sentence/info - - - 200 - application/json;+charset=utf-8 10408.2697ms |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:16:43.1734|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/sentence/type - - |url: https://localhost/sentence/type|action: |
+2023-08-16 14:16:43.1734|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'TUTOR.ERPS.API.SentenceManageController.GetSentenceTypeList (TUTOR.ERPS.Api)' |url: https://localhost/sentence/type|action: GetSentenceTypeList|
+2023-08-16 14:16:43.1935|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetSentenceTypeList", controller = "SentenceManage"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSentenceTypeList() on controller TUTOR.ERPS.API.SentenceManageController (TUTOR.ERPS.Api). |url: https://localhost/sentence/type|action: GetSentenceTypeList|
+2023-08-16 14:16:43.3131|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (35ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/sentence/type|action: GetSentenceTypeList|
+2023-08-16 14:16:43.3529|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (34ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/sentence/type|action: GetSentenceTypeList|
+2023-08-16 14:16:43.3933|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (36ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (DbType = DateTime), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 50), @p8='?' (Size = 4000), @p9='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [SystemErrorLog] ([Api], [Entry_Date], [Entry_User], [Error_Level], [Ip], [Message], [Token], [Web_Method], [Web_Request], [Web_Response])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9); |url: https://localhost/sentence/type|action: GetSentenceTypeList|
+2023-08-16 14:16:43.3933|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method TUTOR.ERPS.API.SentenceManageController.GetSentenceTypeList (TUTOR.ERPS.Api) - Validation state: Valid |url: https://localhost/sentence/type|action: GetSentenceTypeList|
+2023-08-16 14:16:43.4355|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (35ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[Study_Level], [s].[Type]
+FROM [SentenceType] AS [s] |url: https://localhost/sentence/type|action: GetSentenceTypeList|
+2023-08-16 14:16:43.4414|0|INFO|TUTOR.ERPS.API.SentenceManageController|取得句子類型清單 |url: https://localhost/sentence/type|action: GetSentenceTypeList|
+2023-08-16 14:16:43.4414|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method TUTOR.ERPS.API.SentenceManageController.GetSentenceTypeList (TUTOR.ERPS.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 46.898ms. |url: https://localhost/sentence/type|action: GetSentenceTypeList|
+2023-08-16 14:16:43.4414|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'TUTOR.Biz.Models.Responses.SentenceType.SentenceTypeResponse'. |url: https://localhost/sentence/type|action: GetSentenceTypeList|
+2023-08-16 14:16:43.4414|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action TUTOR.ERPS.API.SentenceManageController.GetSentenceTypeList (TUTOR.ERPS.Api) in 252.9125ms |url: https://localhost/sentence/type|action: GetSentenceTypeList|
+2023-08-16 14:16:43.4414|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'TUTOR.ERPS.API.SentenceManageController.GetSentenceTypeList (TUTOR.ERPS.Api)' |url: https://localhost/sentence/type|action: GetSentenceTypeList|
+2023-08-16 14:16:43.4414|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/sentence/type - - - 200 - application/json;+charset=utf-8 268.9724ms |url: https://localhost/sentence/type|action: GetSentenceTypeList|
+2023-08-16 14:18:29.2196|0|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\j3537\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. |url: |action: |
+2023-08-16 14:18:29.5332|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7061 |url: |action: |
+2023-08-16 14:18:29.5332|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5128 |url: |action: |
+2023-08-16 14:18:29.5332|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |
+2023-08-16 14:18:29.5478|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |
+2023-08-16 14:18:29.5478|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\GitLab\TUTOR.ERPS\TUTOR.ERPS\ |url: |action: |
+2023-08-16 14:18:30.0674|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/index.html - - |url: https://localhost/swagger/index.html|action: |
+2023-08-16 14:18:30.4720|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/index.html - - - 200 - text/html;charset=utf-8 414.2647ms |url: https://localhost/swagger/index.html|action: |
+2023-08-16 14:18:30.6026|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-08-16 14:18:30.6106|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_vs/browserLink - - |url: https://localhost/_vs/browserLink|action: |
+2023-08-16 14:18:30.6106|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 15.3652ms |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-08-16 14:18:30.6575|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 60.8110ms |url: https://localhost/_vs/browserLink|action: |
+2023-08-16 14:18:30.7335|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-08-16 14:18:30.8830|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 150.8094ms |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-08-16 14:19:04.3761|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/sentence/info - - |url: https://localhost/sentence/info|action: |
+2023-08-16 14:19:04.4583|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api)' |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:19:04.5152|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetSentenceManageList", controller = "SentenceManage"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSentenceManageList() on controller TUTOR.ERPS.API.SentenceManageController (TUTOR.ERPS.Api). |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:19:08.2181|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (178ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:19:08.5074|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (40ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:19:08.8580|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (40ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (DbType = DateTime), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 50), @p8='?' (Size = 4000), @p9='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [SystemErrorLog] ([Api], [Entry_Date], [Entry_User], [Error_Level], [Ip], [Message], [Token], [Web_Method], [Web_Request], [Web_Response])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9); |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:19:08.9388|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api) - Validation state: Valid |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:19:09.1167|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (82ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[Mp3_FileName], [s].[Mp3_FileUrl], [s].[Question_Answer], [s].[Question_Sentence], [s].[Question_Sentence_Chinese], [s].[Question_Type_Id], [s].[Study_Level]
+FROM [SentenceManage] AS [s]
+ORDER BY [s].[Question_Type_Id] |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:19:09.2493|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (37ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[Study_Level], [s].[Type]
+FROM [SentenceType] AS [s] |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:19:09.7051|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api) in 5178.1839ms |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:19:09.7051|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api)' |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:20:39.8704|0|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\j3537\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. |url: |action: |
+2023-08-16 14:20:40.2465|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7061 |url: |action: |
+2023-08-16 14:20:40.2506|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5128 |url: |action: |
+2023-08-16 14:20:40.2506|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |
+2023-08-16 14:20:40.2506|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |
+2023-08-16 14:20:40.2506|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\GitLab\TUTOR.ERPS\TUTOR.ERPS\ |url: |action: |
+2023-08-16 14:20:40.8886|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/index.html - - |url: https://localhost/swagger/index.html|action: |
+2023-08-16 14:20:41.2856|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-08-16 14:20:41.2856|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_vs/browserLink - - |url: https://localhost/_vs/browserLink|action: |
+2023-08-16 14:20:41.2856|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 8.3096ms |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-08-16 14:20:41.2856|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/index.html - - - 200 - text/html;charset=utf-8 411.3125ms |url: https://localhost/swagger/index.html|action: |
+2023-08-16 14:20:41.3452|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 59.1614ms |url: https://localhost/_vs/browserLink|action: |
+2023-08-16 14:20:41.4096|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-08-16 14:20:41.6103|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 198.3135ms |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-08-16 14:22:03.5170|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/sentence/info - - |url: https://localhost/sentence/info|action: |
+2023-08-16 14:22:03.6266|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api)' |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:22:03.6808|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetSentenceManageList", controller = "SentenceManage"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSentenceManageList() on controller TUTOR.ERPS.API.SentenceManageController (TUTOR.ERPS.Api). |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:22:07.6122|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (191ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:22:07.8810|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (41ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:22:08.2356|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (40ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (DbType = DateTime), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 50), @p8='?' (Size = 4000), @p9='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [SystemErrorLog] ([Api], [Entry_Date], [Entry_User], [Error_Level], [Ip], [Message], [Token], [Web_Method], [Web_Request], [Web_Response])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9); |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:22:08.3135|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api) - Validation state: Valid |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:22:08.4939|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (79ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[Mp3_FileName], [s].[Mp3_FileUrl], [s].[Question_Answer], [s].[Question_Sentence], [s].[Question_Sentence_Chinese], [s].[Question_Type_Id], [s].[Study_Level]
+FROM [SentenceManage] AS [s]
+ORDER BY [s].[Question_Type_Id] |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:22:08.6208|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (37ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[Study_Level], [s].[Type]
+FROM [SentenceType] AS [s] |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:22:08.6517|0|INFO|TUTOR.ERPS.API.SentenceManageController|取得有效會員清單 |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:22:08.6641|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 326.9725ms. |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:22:08.6731|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'TUTOR.Biz.Models.Responses.SentenceManage.SentenceManageResponse'. |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:22:08.7038|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api) in 5025.909ms |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:22:08.7038|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api)' |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:22:08.7529|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/sentence/info - - - 200 - application/json;+charset=utf-8 5227.7126ms |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:33:56.6669|0|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\j3537\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. |url: |action: |
+2023-08-16 14:33:57.2250|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7061 |url: |action: |
+2023-08-16 14:33:57.2250|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5128 |url: |action: |
+2023-08-16 14:33:57.2371|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |
+2023-08-16 14:33:57.2371|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |
+2023-08-16 14:33:57.2371|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\GitLab\TUTOR.ERPS\TUTOR.ERPS\ |url: |action: |
+2023-08-16 14:33:58.0483|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/index.html - - |url: https://localhost/swagger/index.html|action: |
+2023-08-16 14:33:58.4873|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/index.html - - - 200 - text/html;charset=utf-8 448.2729ms |url: https://localhost/swagger/index.html|action: |
+2023-08-16 14:33:58.5063|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-08-16 14:33:58.5063|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 6.5476ms |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-08-16 14:33:58.5174|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_vs/browserLink - - |url: https://localhost/_vs/browserLink|action: |
+2023-08-16 14:33:58.5474|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 41.7224ms |url: https://localhost/_vs/browserLink|action: |
+2023-08-16 14:33:58.7646|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-08-16 14:33:58.9482|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 184.5482ms |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-08-16 14:35:00.6138|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/sentence/info - - |url: https://localhost/sentence/info|action: |
+2023-08-16 14:35:00.7108|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api)' |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:35:00.7830|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetSentenceManageList", controller = "SentenceManage"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSentenceManageList() on controller TUTOR.ERPS.API.SentenceManageController (TUTOR.ERPS.Api). |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:35:04.6524|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (181ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:35:04.9115|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (40ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:35:05.3130|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (44ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (DbType = DateTime), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 50), @p8='?' (Size = 4000), @p9='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [SystemErrorLog] ([Api], [Entry_Date], [Entry_User], [Error_Level], [Ip], [Message], [Token], [Web_Method], [Web_Request], [Web_Response])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9); |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:35:05.4117|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api) - Validation state: Valid |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:35:05.5939|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (88ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[Mp3_FileName], [s].[Mp3_FileUrl], [s].[Question_Answer], [s].[Question_Sentence], [s].[Question_Sentence_Chinese], [s].[Question_Type_Id], [s].[Study_Level]
+FROM [SentenceManage] AS [s]
+ORDER BY [s].[Question_Type_Id] |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:35:05.7387|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (36ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[Study_Level], [s].[Type]
+FROM [SentenceType] AS [s] |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:35:05.7837|0|INFO|TUTOR.ERPS.API.SentenceManageController|取得有效會員清單 |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:35:05.7837|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 375.6128ms. |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:35:05.8145|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'TUTOR.Biz.Models.Responses.SentenceManage.SentenceManageResponse'. |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:35:05.8291|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api) in 5049.2978ms |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:35:05.8450|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api)' |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:35:05.8767|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/sentence/info - - - 200 - application/json;+charset=utf-8 5261.1467ms |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:35:18.0533|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/sentence/info - - |url: https://localhost/sentence/info|action: |
+2023-08-16 14:35:18.0533|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api)' |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:35:18.0533|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetSentenceManageList", controller = "SentenceManage"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSentenceManageList() on controller TUTOR.ERPS.API.SentenceManageController (TUTOR.ERPS.Api). |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:35:18.1631|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (35ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:35:18.2031|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (35ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:35:18.2444|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (36ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (DbType = DateTime), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 50), @p8='?' (Size = 4000), @p9='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [SystemErrorLog] ([Api], [Entry_Date], [Entry_User], [Error_Level], [Ip], [Message], [Token], [Web_Method], [Web_Request], [Web_Response])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9); |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:35:18.2444|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api) - Validation state: Valid |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:35:18.2891|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (36ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[Mp3_FileName], [s].[Mp3_FileUrl], [s].[Question_Answer], [s].[Question_Sentence], [s].[Question_Sentence_Chinese], [s].[Question_Type_Id], [s].[Study_Level]
+FROM [SentenceManage] AS [s]
+ORDER BY [s].[Question_Type_Id] |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:35:18.3314|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (35ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[Study_Level], [s].[Type]
+FROM [SentenceType] AS [s] |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:36:40.7232|0|INFO|TUTOR.ERPS.API.SentenceManageController|取得有效會員清單 |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:36:40.7232|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 82478.7526ms. |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:36:40.7349|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'TUTOR.Biz.Models.Responses.SentenceManage.SentenceManageResponse'. |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:36:40.7349|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api) in 82689.8395ms |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:36:40.7349|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api)' |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:36:40.7514|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/sentence/info - - - 200 - application/json;+charset=utf-8 82696.5753ms |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:37:33.6036|0|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\j3537\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. |url: |action: |
+2023-08-16 14:37:33.9551|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7061 |url: |action: |
+2023-08-16 14:37:33.9551|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5128 |url: |action: |
+2023-08-16 14:37:33.9700|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |
+2023-08-16 14:37:33.9700|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |
+2023-08-16 14:37:33.9700|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\GitLab\TUTOR.ERPS\TUTOR.ERPS\ |url: |action: |
+2023-08-16 14:37:34.3887|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/index.html - - |url: https://localhost/swagger/index.html|action: |
+2023-08-16 14:37:34.7405|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-08-16 14:37:34.7511|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_vs/browserLink - - |url: https://localhost/_vs/browserLink|action: |
+2023-08-16 14:37:34.7511|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/index.html - - - 200 - text/html;charset=utf-8 367.4461ms |url: https://localhost/swagger/index.html|action: |
+2023-08-16 14:37:34.7511|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 11.2303ms |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-08-16 14:37:34.7981|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 48.0376ms |url: https://localhost/_vs/browserLink|action: |
+2023-08-16 14:37:34.8641|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-08-16 14:37:35.0399|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 178.2509ms |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-08-16 14:37:54.8455|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/sentence/info - - |url: https://localhost/sentence/info|action: |
+2023-08-16 14:37:54.9402|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api)' |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:37:54.9914|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetSentenceManageList", controller = "SentenceManage"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSentenceManageList() on controller TUTOR.ERPS.API.SentenceManageController (TUTOR.ERPS.Api). |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:37:58.7696|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (177ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:37:59.0143|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (39ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:37:59.4159|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (39ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (DbType = DateTime), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 50), @p8='?' (Size = 4000), @p9='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [SystemErrorLog] ([Api], [Entry_Date], [Entry_User], [Error_Level], [Ip], [Message], [Token], [Web_Method], [Web_Request], [Web_Response])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9); |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:37:59.5014|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api) - Validation state: Valid |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:37:59.6880|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (86ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[Mp3_FileName], [s].[Mp3_FileUrl], [s].[Question_Answer], [s].[Question_Sentence], [s].[Question_Sentence_Chinese], [s].[Question_Type_Id], [s].[Study_Level]
+FROM [SentenceManage] AS [s]
+ORDER BY [s].[Question_Type_Id] |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:37:59.8117|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (35ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[Study_Level], [s].[Type]
+FROM [SentenceType] AS [s] |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:42:38.7837|0|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\j3537\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. |url: |action: |
+2023-08-16 14:42:39.1887|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7061 |url: |action: |
+2023-08-16 14:42:39.1904|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5128 |url: |action: |
+2023-08-16 14:42:39.1904|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |
+2023-08-16 14:42:39.2039|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |
+2023-08-16 14:42:39.2039|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\GitLab\TUTOR.ERPS\TUTOR.ERPS\ |url: |action: |
+2023-08-16 14:42:40.8104|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/index.html - - |url: https://localhost/swagger/index.html|action: |
+2023-08-16 14:42:41.2349|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-08-16 14:42:41.2520|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 6.7992ms |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-08-16 14:42:41.2520|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/index.html - - - 200 - text/html;charset=utf-8 449.5759ms |url: https://localhost/swagger/index.html|action: |
+2023-08-16 14:42:41.2520|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_vs/browserLink - - |url: https://localhost/_vs/browserLink|action: |
+2023-08-16 14:42:41.3601|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 117.1533ms |url: https://localhost/_vs/browserLink|action: |
+2023-08-16 14:42:41.4282|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-08-16 14:42:41.6009|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 172.6075ms |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-08-16 14:42:53.0022|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/sentence/info - - |url: https://localhost/sentence/info|action: |
+2023-08-16 14:42:53.0399|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api)' |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:42:53.0723|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetSentenceManageList", controller = "SentenceManage"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSentenceManageList() on controller TUTOR.ERPS.API.SentenceManageController (TUTOR.ERPS.Api). |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:42:55.1191|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (101ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:42:55.2740|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (38ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:42:55.4913|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (40ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (DbType = DateTime), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 50), @p8='?' (Size = 4000), @p9='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [SystemErrorLog] ([Api], [Entry_Date], [Entry_User], [Error_Level], [Ip], [Message], [Token], [Web_Method], [Web_Request], [Web_Response])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9); |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:42:55.5323|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api) - Validation state: Valid |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:42:55.6382|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (56ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[Mp3_FileName], [s].[Mp3_FileUrl], [s].[Question_Answer], [s].[Question_Sentence], [s].[Question_Sentence_Chinese], [s].[Question_Type_Id], [s].[Study_Level]
+FROM [SentenceManage] AS [s]
+ORDER BY [s].[Question_Type_Id] |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:42:55.7151|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (35ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[Study_Level], [s].[Type]
+FROM [SentenceType] AS [s] |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:44:51.6454|0|INFO|TUTOR.ERPS.API.SentenceManageController|取得有效會員清單 |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:44:51.6454|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 116112.9223ms. |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:44:51.6579|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'TUTOR.Biz.Models.Responses.SentenceManage.SentenceManageResponse'. |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:44:51.6761|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api) in 118606.3034ms |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:44:51.6761|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api)' |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:44:51.6905|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/sentence/info - - - 200 - application/json;+charset=utf-8 118697.5677ms |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:45:37.0009|0|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\j3537\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. |url: |action: |
+2023-08-16 14:45:37.3995|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7061 |url: |action: |
+2023-08-16 14:45:37.3995|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5128 |url: |action: |
+2023-08-16 14:45:37.4135|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |
+2023-08-16 14:45:37.4135|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |
+2023-08-16 14:45:37.4135|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\GitLab\TUTOR.ERPS\TUTOR.ERPS\ |url: |action: |
+2023-08-16 14:45:38.3974|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/index.html - - |url: https://localhost/swagger/index.html|action: |
+2023-08-16 14:45:38.8471|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/index.html - - - 200 - text/html;charset=utf-8 455.3425ms |url: https://localhost/swagger/index.html|action: |
+2023-08-16 14:45:38.8608|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-08-16 14:45:38.8608|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_vs/browserLink - - |url: https://localhost/_vs/browserLink|action: |
+2023-08-16 14:45:38.8763|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 11.5697ms |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-08-16 14:45:38.9077|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 47.9967ms |url: https://localhost/_vs/browserLink|action: |
+2023-08-16 14:45:39.0017|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-08-16 14:45:39.2251|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 226.3080ms |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-08-16 14:46:29.7055|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/sentence/info - - |url: https://localhost/sentence/info|action: |
+2023-08-16 14:46:29.7983|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api)' |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:46:29.8560|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetSentenceManageList", controller = "SentenceManage"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSentenceManageList() on controller TUTOR.ERPS.API.SentenceManageController (TUTOR.ERPS.Api). |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:46:33.6161|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (216ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:46:33.8879|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (40ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:46:34.2434|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (40ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (DbType = DateTime), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 50), @p8='?' (Size = 4000), @p9='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [SystemErrorLog] ([Api], [Entry_Date], [Entry_User], [Error_Level], [Ip], [Message], [Token], [Web_Method], [Web_Request], [Web_Response])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9); |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:46:34.3376|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api) - Validation state: Valid |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:46:34.5133|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (75ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[Mp3_FileName], [s].[Mp3_FileUrl], [s].[Question_Answer], [s].[Question_Sentence], [s].[Question_Sentence_Chinese], [s].[Question_Type_Id], [s].[Study_Level]
+FROM [SentenceManage] AS [s]
+ORDER BY [s].[Question_Type_Id] |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 14:46:34.6292|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (33ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[Study_Level], [s].[Type]
+FROM [SentenceType] AS [s] |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 15:13:39.9922|0|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\j3537\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. |url: |action: |
+2023-08-16 15:13:40.6041|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7061 |url: |action: |
+2023-08-16 15:13:40.6041|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5128 |url: |action: |
+2023-08-16 15:13:40.6155|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |
+2023-08-16 15:13:40.6155|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |
+2023-08-16 15:13:40.6155|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\GitLab\TUTOR.ERPS\TUTOR.ERPS\ |url: |action: |
+2023-08-16 15:13:41.2225|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/index.html - - |url: https://localhost/swagger/index.html|action: |
+2023-08-16 15:13:41.9126|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-08-16 15:13:41.9235|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_vs/browserLink - - |url: https://localhost/_vs/browserLink|action: |
+2023-08-16 15:13:41.9235|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 18.7862ms |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-08-16 15:13:41.9235|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/index.html - - - 200 - text/html;charset=utf-8 723.6145ms |url: https://localhost/swagger/index.html|action: |
+2023-08-16 15:13:42.0171|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 92.8088ms |url: https://localhost/_vs/browserLink|action: |
+2023-08-16 15:13:42.0648|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-08-16 15:13:42.3517|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 285.8573ms |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-08-16 15:13:47.9394|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/sentence/info - - |url: https://localhost/sentence/info|action: |
+2023-08-16 15:13:48.0394|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api)' |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 15:13:48.0984|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetSentenceManageList", controller = "SentenceManage"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSentenceManageList() on controller TUTOR.ERPS.API.SentenceManageController (TUTOR.ERPS.Api). |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 15:13:53.5060|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (233ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 15:13:53.7742|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (40ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 15:13:54.1255|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (42ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (DbType = DateTime), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 50), @p8='?' (Size = 4000), @p9='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [SystemErrorLog] ([Api], [Entry_Date], [Entry_User], [Error_Level], [Ip], [Message], [Token], [Web_Method], [Web_Request], [Web_Response])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9); |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 15:13:54.2107|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api) - Validation state: Valid |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 15:13:54.3935|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (91ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[Mp3_FileName], [s].[Mp3_FileUrl], [s].[Question_Answer], [s].[Question_Sentence], [s].[Question_Sentence_Chinese], [s].[Question_Type_Id], [s].[Study_Level]
+FROM [SentenceManage] AS [s]
+ORDER BY [s].[Question_Type_Id] |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 15:13:54.5352|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (36ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[Study_Level], [s].[Type]
+FROM [SentenceType] AS [s] |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 15:13:54.5899|0|INFO|TUTOR.ERPS.API.SentenceManageController|取得有效會員清單 |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 15:13:54.6013|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 382.9254ms. |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 15:13:54.6105|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'TUTOR.Biz.Models.Responses.SentenceManage.SentenceManageResponse'. |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 15:13:54.6413|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api) in 6545.1496ms |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 15:13:54.6413|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api)' |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 15:13:54.6881|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/sentence/info - - - 200 - application/json;+charset=utf-8 6753.3022ms |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 15:22:06.3831|0|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\j3537\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. |url: |action: |
+2023-08-16 15:22:06.7191|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7061 |url: |action: |
+2023-08-16 15:22:06.7208|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5128 |url: |action: |
+2023-08-16 15:22:06.7208|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |
+2023-08-16 15:22:06.7208|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |
+2023-08-16 15:22:06.7208|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\GitLab\TUTOR.ERPS\TUTOR.ERPS\ |url: |action: |
+2023-08-16 15:22:07.3849|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/index.html - - |url: https://localhost/swagger/index.html|action: |
+2023-08-16 15:22:07.7427|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-08-16 15:22:07.7510|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_vs/browserLink - - |url: https://localhost/_vs/browserLink|action: |
+2023-08-16 15:22:07.7510|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 8.4762ms |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-08-16 15:22:07.7510|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/index.html - - - 200 - text/html;charset=utf-8 373.6970ms |url: https://localhost/swagger/index.html|action: |
+2023-08-16 15:22:08.0328|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 288.6715ms |url: https://localhost/_vs/browserLink|action: |
+2023-08-16 15:22:08.0793|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-08-16 15:22:08.2237|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 143.6814ms |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-08-16 15:22:20.4431|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/sentence/info - - |url: https://localhost/sentence/info|action: |
+2023-08-16 15:22:20.5490|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api)' |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 15:22:20.5986|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetSentenceManageList", controller = "SentenceManage"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSentenceManageList() on controller TUTOR.ERPS.API.SentenceManageController (TUTOR.ERPS.Api). |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 15:22:24.2381|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (171ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 15:22:24.4905|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (39ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 15:22:24.8282|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (40ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (DbType = DateTime), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 50), @p8='?' (Size = 4000), @p9='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [SystemErrorLog] ([Api], [Entry_Date], [Entry_User], [Error_Level], [Ip], [Message], [Token], [Web_Method], [Web_Request], [Web_Response])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9); |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 15:22:24.9105|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api) - Validation state: Valid |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 15:22:25.0727|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (80ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[Mp3_FileName], [s].[Mp3_FileUrl], [s].[Question_Answer], [s].[Question_Sentence], [s].[Question_Sentence_Chinese], [s].[Question_Type_Id], [s].[Study_Level]
+FROM [SentenceManage] AS [s]
+ORDER BY [s].[Question_Type_Id] |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 15:22:25.1991|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (35ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[Study_Level], [s].[Type]
+FROM [SentenceType] AS [s] |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 15:31:37.3379|0|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\j3537\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. |url: |action: |
+2023-08-16 15:31:37.6549|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7061 |url: |action: |
+2023-08-16 15:31:37.6593|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5128 |url: |action: |
+2023-08-16 15:31:37.6593|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |
+2023-08-16 15:31:37.6593|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |
+2023-08-16 15:31:37.6593|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\GitLab\TUTOR.ERPS\TUTOR.ERPS\ |url: |action: |
+2023-08-16 15:31:38.1573|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/index.html - - |url: https://localhost/swagger/index.html|action: |
+2023-08-16 15:31:38.7999|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/index.html - - - 200 - text/html;charset=utf-8 647.3359ms |url: https://localhost/swagger/index.html|action: |
+2023-08-16 15:31:38.8134|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-08-16 15:31:38.8134|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 8.1969ms |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-08-16 15:31:38.8407|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_vs/browserLink - - |url: https://localhost/_vs/browserLink|action: |
+2023-08-16 15:31:38.8913|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 52.7075ms |url: https://localhost/_vs/browserLink|action: |
+2023-08-16 15:31:38.9516|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-08-16 15:31:39.1016|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 151.3697ms |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-08-16 15:31:42.8857|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/sentence/info - - |url: https://localhost/sentence/info|action: |
+2023-08-16 15:31:42.9726|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api)' |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 15:31:43.0159|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetSentenceManageList", controller = "SentenceManage"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSentenceManageList() on controller TUTOR.ERPS.API.SentenceManageController (TUTOR.ERPS.Api). |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 15:31:46.8486|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (186ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 15:31:47.1277|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (39ms) [Parameters=[@__token_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[Api_Token], [a].[Ip], [a].[Token_Active], [a].[Token_EndTime], [a].[Token_StartTime]
+FROM [ApiTokenManage] AS [a]
+WHERE [a].[Api_Token] = @__token_0 |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 15:31:47.5331|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (42ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (DbType = DateTime), @p2='?' (Size = 50), @p3='?' (Size = 50), @p4='?' (Size = 50), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 50), @p8='?' (Size = 4000), @p9='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [SystemErrorLog] ([Api], [Entry_Date], [Entry_User], [Error_Level], [Ip], [Message], [Token], [Web_Method], [Web_Request], [Web_Response])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9); |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 15:31:47.6162|0|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method TUTOR.ERPS.API.SentenceManageController.GetSentenceManageList (TUTOR.ERPS.Api) - Validation state: Valid |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 15:31:47.8022|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (96ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[Mp3_FileName], [s].[Mp3_FileUrl], [s].[Question_Answer], [s].[Question_Sentence], [s].[Question_Sentence_Chinese], [s].[Question_Type_Id], [s].[Study_Level]
+FROM [SentenceManage] AS [s]
+ORDER BY [s].[Question_Type_Id] |url: https://localhost/sentence/info|action: GetSentenceManageList|
+2023-08-16 15:31:47.9255|0|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (37ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[Study_Level], [s].[Type]
+FROM [SentenceType] AS [s] |url: https://localhost/sentence/info|action: GetSentenceManageList|

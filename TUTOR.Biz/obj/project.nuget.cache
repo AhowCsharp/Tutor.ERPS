@@ -1,16 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "YHbhLrhsinq9j9/O/lchjU84acNBLLqwNwKkGqnlgl2JNwBWMDpEK8CJsrot7BArxK0xVefN0fsAPePXtWfclQ==",
+  "dgSpecHash": "DU8QX7F263DMCUW4eefDZJjPmcGS9VtkO4QD8z1yuAHf1abGHDGqaDn7kAqwIQey6ZrYU0x7xInifdXt/ipmaQ==",
   "success": true,
   "projectFilePath": "D:\\GitLab\\TUTOR.ERPS\\TUTOR.Biz\\TUTOR.Biz.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\j3537\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\j3537\\.nuget\\packages\\automapper.extensions.expressionmapping\\6.0.4\\automapper.extensions.expressionmapping.6.0.4.nupkg.sha512",
     "C:\\Users\\j3537\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\j3537\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "C:\\Users\\j3537\\.nuget\\packages\\dapper\\2.0.143\\dapper.2.0.143.nupkg.sha512",
     "C:\\Users\\j3537\\.nuget\\packages\\entityframework\\6.3.0\\entityframework.6.3.0.nupkg.sha512",
     "C:\\Users\\j3537\\.nuget\\packages\\enums.net\\4.0.1\\enums.net.4.0.1.nupkg.sha512",
     "C:\\Users\\j3537\\.nuget\\packages\\flurl\\3.0.7\\flurl.3.0.7.nupkg.sha512",
+    "C:\\Users\\j3537\\.nuget\\packages\\jetbrains.annotations\\2022.3.1\\jetbrains.annotations.2022.3.1.nupkg.sha512",
     "C:\\Users\\j3537\\.nuget\\packages\\linqkit\\1.2.4\\linqkit.1.2.4.nupkg.sha512",
     "C:\\Users\\j3537\\.nuget\\packages\\linqkit.core\\1.2.4\\linqkit.core.1.2.4.nupkg.sha512",
     "C:\\Users\\j3537\\.nuget\\packages\\mathnet.numerics.signed\\4.15.0\\mathnet.numerics.signed.4.15.0.nupkg.sha512",
@@ -105,6 +107,7 @@
     "C:\\Users\\j3537\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Users\\j3537\\.nuget\\packages\\system.threading.tasks.parallel\\4.3.0\\system.threading.tasks.parallel.4.3.0.nupkg.sha512",
     "C:\\Users\\j3537\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
+    "C:\\Users\\j3537\\.nuget\\packages\\x.pagedlist\\8.4.7\\x.pagedlist.8.4.7.nupkg.sha512",
     "C:\\Users\\j3537\\.nuget\\packages\\zxing.net\\0.16.9\\zxing.net.0.16.9.nupkg.sha512"
   ],
   "logs": []

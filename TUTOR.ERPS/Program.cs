@@ -13,7 +13,10 @@ using System.Data.SqlClient;
 using TUTOR.Biz.Services;
 using Microsoft.AspNetCore.Hosting;
 using TUTOR.Repository.Mapper;
+using TUTOR.Repository.Repositories;
 using AutoMapper;
+using TUTOR.Biz.SeedWork;
+using TUTOR.Biz.Domain.API.Interface;
 
 var builder = WebApplication.CreateBuilder(args);
 var env = builder.Environment;
@@ -45,7 +48,7 @@ builder.Services.AddScoped<UserService>();
 
 builder.Services.AddScoped<ITokenRepository, TokenRepository>();
 builder.Services.AddScoped<IMemberRepository, MemberRepository>();
-builder.Services.AddScoped<ILogSystemRepository, LogSystemRepository>();
+builder.Services.AddScoped<ISentenceManageRepository, SentenceManageRepository>();
 
 #endregion Repository
 
@@ -53,6 +56,7 @@ builder.Services.AddScoped<ILogSystemRepository, LogSystemRepository>();
 
 builder.Services.AddScoped<AttributeDomain>();
 builder.Services.AddScoped<MemberDomain>();
+builder.Services.AddScoped<SentenceManageDomain>();
 
 #endregion Domain
 
@@ -60,6 +64,9 @@ builder.Services.AddScoped<MemberDomain>();
 builder.Services.AddMvc().AddJsonOptions(option => option.JsonSerializerOptions.PropertyNamingPolicy = null);
 // Swagger
 var environmentName = builder.Configuration.GetSection("TUTORConfig")["EnvironmentName"];
+// Swagger
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(swagger =>
 {
     swagger.SwaggerDoc("v1", new OpenApiInfo { Title = $"{environmentName} TUTOR API", Version = "v1" });
@@ -97,7 +104,7 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
-
+app.MapControllers();
 app.MapRazorPages();
 
 // 需要加上這段使用 swagger 時才不會404

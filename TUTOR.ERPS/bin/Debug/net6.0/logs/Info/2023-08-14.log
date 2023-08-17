@@ -1,0 +1,14 @@
+2023-08-14 19:01:55.6525|0|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\j3537\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. |url: |action: |
+2023-08-14 19:01:56.2668|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7061 |url: |action: |
+2023-08-14 19:01:56.2690|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5128 |url: |action: |
+2023-08-14 19:01:56.2690|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |
+2023-08-14 19:01:56.2837|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |
+2023-08-14 19:01:56.2837|0|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\GitLab\TUTOR.ERPS\TUTOR.ERPS\ |url: |action: |
+2023-08-14 19:01:56.9354|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/index.html - - |url: https://localhost/swagger/index.html|action: |
+2023-08-14 19:01:57.3768|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-08-14 19:01:57.3768|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/_vs/browserLink - - |url: https://localhost/_vs/browserLink|action: |
+2023-08-14 19:01:57.3768|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/index.html - - - 200 - text/html;charset=utf-8 457.5688ms |url: https://localhost/swagger/index.html|action: |
+2023-08-14 19:01:57.3934|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 13.7756ms |url: https://localhost/_framework/aspnetcore-browser-refresh.js|action: |
+2023-08-14 19:01:57.5015|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 119.1947ms |url: https://localhost/_vs/browserLink|action: |
+2023-08-14 19:01:57.5659|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - |url: https://localhost/swagger/v1/swagger.json|action: |
+2023-08-14 19:01:57.7121|0|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7061/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 147.5947ms |url: https://localhost/swagger/v1/swagger.json|action: |

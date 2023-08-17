@@ -1,6 +1,8 @@
-﻿namespace TUTOR.Biz.Domain.DTO
+﻿using TUTOR.Biz.SeedWork;
+
+namespace TUTOR.Biz.Domain.DTO
 {
-    public class MemberDTO
+    public class MemberDTO : IDTO
     {
         public string Account { get; set; }
 

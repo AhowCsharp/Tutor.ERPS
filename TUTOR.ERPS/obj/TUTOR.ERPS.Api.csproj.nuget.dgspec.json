@@ -44,6 +44,10 @@
               "target": "Package",
               "version": "[12.0.1, )"
             },
+            "AutoMapper.Extensions.ExpressionMapping": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[12.0.1, )"
@@ -83,6 +87,10 @@
             "System.Drawing.Common": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "X.PagedList": {
+              "target": "Package",
+              "version": "[8.4.7, )"
             },
             "ZXing.Net": {
               "target": "Package",
@@ -152,6 +160,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AutoMapper.Extensions.ExpressionMapping": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[12.0.1, )"
@@ -187,6 +199,10 @@
             "System.Drawing.Common": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "X.PagedList": {
+              "target": "Package",
+              "version": "[8.4.7, )"
             },
             "ZXing.Net": {
               "target": "Package",
@@ -260,6 +276,10 @@
               "target": "Package",
               "version": "[12.0.1, )"
             },
+            "AutoMapper.Extensions.ExpressionMapping": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[12.0.1, )"
@@ -279,6 +299,10 @@
             "System.Drawing.Common": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "X.PagedList": {
+              "target": "Package",
+              "version": "[8.4.7, )"
             },
             "ZXing.Net": {
               "target": "Package",
