@@ -7,18 +7,14 @@ using System.Threading.Tasks;
 
 namespace TUTOR.Biz.Models.Requests
 {
-    public class SentenceManageRequest
+    public class SentenceManageEditRequest
     {
-        public int Id { get; set; }
-        public int? QuestionTypeId { get; set; }
-        public string QuestionSentence { get; set; }
-        public string Mp3FileName { get; set; }
-        public string Mp3FileUrl { get; set; }
-        public string QuestionAnswer { get; set; }
-        public int? StudyLevel { get; set; }
-        public string QuestionSentenceChinese { get; set; }
+        public IFormFile? mp3File { get; set; }
+        public string questionSentence { get; set; }
+        public string questionSentenceChinese { get; set; }
+        public string typeName { get; set; }
+        public string questionAnswer { get; set; }
 
-        public IFormFile Mp3File { get; set; }
-        public string? TypeName { get; set; }
+        public int id { get; set; }
     }
 }

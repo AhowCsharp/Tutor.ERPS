@@ -36,6 +36,8 @@ namespace TUTOR.Repository.EF
 
                 entity.Property(e => e.CreateDate).HasColumnType("datetime");
 
+                entity.Property(e => e.Jwttoken).HasColumnName("JWTtoken");
+
                 entity.Property(e => e.Name)
                     .IsRequired()
                     .HasMaxLength(50);

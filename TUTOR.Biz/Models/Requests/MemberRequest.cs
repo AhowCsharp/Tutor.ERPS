@@ -8,34 +8,39 @@ namespace TUTOR.Biz.Models.Requests
 {
     public class MemberRequest
     {
-        public string Account { get; set; }
+        public string account { get; set; }
 
-        public string Email { get; set; }
+        public string email { get; set; }
 
-        public string Password { get; set; }
+        public string password { get; set; }
 
-        public int Status { get; set; }
+        public int status { get; set; }
 
-        public int? StudyLevel { get; set; }
+        public int studyLevel { get; set; }
 
-        public int BeDeleted { get; set; }
+        public int beDeleted { get; set; }
 
-        public string? Creator { get; set; }
+        public string creator { get; set; }
 
-        public string? Editor { get; set; }
-        public string? Name { get; set; }
-        public int? Id { get; set; }
+        public string editor { get; set; }
+        public string name { get; set; }
+        public int id { get; set; }
 
         /// <summary>
         /// 開始日期
         /// </summary>
-        public DateTime? StartDate { get; set; }
+        public DateTime startDate { get; set; }
 
         /// <summary>
         /// 結束日期
         /// </summary>
-        public DateTime? EndDate { get; set; }
+        public DateTime endDate { get; set; }
 
-        public DateTime? CreateDate { get; set; }
+        public DateTime createDate { get; set; }
+    }
+
+    public class MemberEditRequest
+    {
+        public List<MemberRequest> requests { get; set; }
     }
 }

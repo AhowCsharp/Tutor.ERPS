@@ -49,6 +49,8 @@ builder.Services.AddScoped<UserService>();
 builder.Services.AddScoped<ITokenRepository, TokenRepository>();
 builder.Services.AddScoped<IMemberRepository, MemberRepository>();
 builder.Services.AddScoped<ISentenceManageRepository, SentenceManageRepository>();
+builder.Services.AddScoped<IStudentAnswerLogRepository, StudentAnswerLogRepository>();
+builder.Services.AddScoped<IAdminManageRepository, AdminManageRepository>();
 
 #endregion Repository
 
@@ -57,6 +59,8 @@ builder.Services.AddScoped<ISentenceManageRepository, SentenceManageRepository>(
 builder.Services.AddScoped<AttributeDomain>();
 builder.Services.AddScoped<MemberDomain>();
 builder.Services.AddScoped<SentenceManageDomain>();
+builder.Services.AddScoped<AdminManageDomain>();
+builder.Services.AddScoped<StudentAnswerLogDomain>();
 
 #endregion Domain
 
@@ -80,7 +84,17 @@ builder.Services.AddAutoMapper(typeof(AutoMapperTool));
 builder.Services.AddScoped<IMapper, Mapper>();
 
 builder.Host.UseNLog();
-
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("CorsPolicy", builder =>
+    {
+        builder
+            .WithOrigins("http://localhost:3000")
+            .AllowAnyMethod()
+            .AllowAnyHeader()
+            .AllowCredentials();
+    });
+});
 var app = builder.Build();
 
 app.UseSwagger();
@@ -97,7 +111,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API v1"));
 }
-
+app.UseCors("CorsPolicy");
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
@@ -106,6 +120,7 @@ app.UseRouting();
 app.UseAuthorization();
 app.MapControllers();
 app.MapRazorPages();
+app.UseStaticFiles(); 
 
 // 需要加上這段使用 swagger 時才不會404
 app.MapControllers();

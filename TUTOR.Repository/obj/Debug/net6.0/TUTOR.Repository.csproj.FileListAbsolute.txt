@@ -13,3 +13,18 @@ D:\GitLab\TUTOR.ERPS\TUTOR.Repository\obj\Debug\net6.0\TUTOR.Repository.dll
 D:\GitLab\TUTOR.ERPS\TUTOR.Repository\obj\Debug\net6.0\refint\TUTOR.Repository.dll
 D:\GitLab\TUTOR.ERPS\TUTOR.Repository\obj\Debug\net6.0\TUTOR.Repository.pdb
 D:\GitLab\TUTOR.ERPS\TUTOR.Repository\obj\Debug\net6.0\ref\TUTOR.Repository.dll
+C:\Users\MSI MAG\Desktop\DoRay專案列表\Tutor.ERPS\TUTOR.Repository\bin\Debug\net6.0\TUTOR.Repository.deps.json
+C:\Users\MSI MAG\Desktop\DoRay專案列表\Tutor.ERPS\TUTOR.Repository\bin\Debug\net6.0\TUTOR.Repository.dll
+C:\Users\MSI MAG\Desktop\DoRay專案列表\Tutor.ERPS\TUTOR.Repository\bin\Debug\net6.0\TUTOR.Repository.pdb
+C:\Users\MSI MAG\Desktop\DoRay專案列表\Tutor.ERPS\TUTOR.Repository\bin\Debug\net6.0\TUTOR.Biz.dll
+C:\Users\MSI MAG\Desktop\DoRay專案列表\Tutor.ERPS\TUTOR.Repository\bin\Debug\net6.0\TUTOR.Biz.pdb
+C:\Users\MSI MAG\Desktop\DoRay專案列表\Tutor.ERPS\TUTOR.Repository\obj\Debug\net6.0\TUTOR.Repository.csproj.AssemblyReference.cache
+C:\Users\MSI MAG\Desktop\DoRay專案列表\Tutor.ERPS\TUTOR.Repository\obj\Debug\net6.0\TUTOR.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MSI MAG\Desktop\DoRay專案列表\Tutor.ERPS\TUTOR.Repository\obj\Debug\net6.0\TUTOR.Repository.AssemblyInfoInputs.cache
+C:\Users\MSI MAG\Desktop\DoRay專案列表\Tutor.ERPS\TUTOR.Repository\obj\Debug\net6.0\TUTOR.Repository.AssemblyInfo.cs
+C:\Users\MSI MAG\Desktop\DoRay專案列表\Tutor.ERPS\TUTOR.Repository\obj\Debug\net6.0\TUTOR.Repository.csproj.CoreCompileInputs.cache
+C:\Users\MSI MAG\Desktop\DoRay專案列表\Tutor.ERPS\TUTOR.Repository\obj\Debug\net6.0\TUTOR.Repository.csproj.CopyComplete
+C:\Users\MSI MAG\Desktop\DoRay專案列表\Tutor.ERPS\TUTOR.Repository\obj\Debug\net6.0\TUTOR.Repository.dll
+C:\Users\MSI MAG\Desktop\DoRay專案列表\Tutor.ERPS\TUTOR.Repository\obj\Debug\net6.0\refint\TUTOR.Repository.dll
+C:\Users\MSI MAG\Desktop\DoRay專案列表\Tutor.ERPS\TUTOR.Repository\obj\Debug\net6.0\TUTOR.Repository.pdb
+C:\Users\MSI MAG\Desktop\DoRay專案列表\Tutor.ERPS\TUTOR.Repository\obj\Debug\net6.0\ref\TUTOR.Repository.dll

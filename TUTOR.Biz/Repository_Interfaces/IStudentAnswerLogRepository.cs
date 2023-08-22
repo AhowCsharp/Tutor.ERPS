@@ -10,5 +10,11 @@ namespace TUTOR.Biz.Repository_Interfaces
     public interface IStudentAnswerLogRepository : IRepository<StudentAnswerLogDTO, int>
     {
         Task<IEnumerable<StudentAnswerLogDTO>> GetStudentAnswerLogsAsync(int studentId);
+
+        Task<bool> AddStudentAnswerLogAsync(StudentAnswerLogDTO answerLogDTO);
+
+        Task<StudentAnswerLogDTO> GetLastStudentAnswerLogAsync(int studentId, string type);
+
+        Task<StudentAnswerLogDTO> GetStudentAnswerLogAsync(int studentId, string type, string questionNum);
     }
 }

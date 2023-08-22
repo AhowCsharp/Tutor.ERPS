@@ -15,5 +15,6 @@ namespace TUTOR.Repository.EF
         public string QuestionAnswer { get; set; }
         public int? StudyLevel { get; set; }
         public string QuestionSentenceChinese { get; set; }
+        public int? QuestionNum { get; set; }
     }
 }

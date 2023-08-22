@@ -4,8 +4,8 @@ namespace TUTOR.Biz.Domain.DTO
 {
     public class SentenceTypeDTO : IDTO
     {
-        public int Id { get; set; }
-        public string Type { get; set; }
-        public int? StudyLevel { get; set; }
+        public int id { get; set; }
+        public string type { get; set; }
+        public int? studyLevel { get; set; }
     }
 }

@@ -12,5 +12,9 @@ namespace TUTOR.Biz.Repository_Interfaces
         Task<IEnumerable<MemberDTO>> GetMemberListAsync();
 
         Task<bool> AddStudentsFromExcel(IEnumerable<MemberDTO> memberDTOs);
+
+        Task<bool> EditMember(MemberDTO dto);
+
+        Task<MemberDTO> GetMemberAsync(string account, string name);
     }
 }

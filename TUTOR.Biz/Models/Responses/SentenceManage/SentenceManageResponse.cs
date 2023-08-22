@@ -11,5 +11,7 @@ namespace TUTOR.Biz.Models.Responses.SentenceManage
         }
 
         public IEnumerable<SentenceManageDTO> List { get; set; }
+
+
     }
 }

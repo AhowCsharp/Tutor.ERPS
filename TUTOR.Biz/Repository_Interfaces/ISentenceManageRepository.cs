@@ -11,8 +11,21 @@ namespace TUTOR.Biz.Repository_Interfaces
     {
         Task<IEnumerable<SentenceManageDTO>> GetSentenceManageListAsync();
 
+        Task<IEnumerable<SentenceDTO>> GetSentenceListAsync(int type, int? questionNum);
+
         Task<IEnumerable<SentenceTypeDTO>> GetSentenceTypeListAsync();
 
         Task<bool> CreateSentenceAsync(SentenceManageDTO sentenceManageDTO);
+
+        Task<SentenceManageDTO> GetSentenceManageAsync(int questionTypeId, int questionNum);
+
+        Task<bool> CreateTypeAsync(SentenceTypeDTO sentenceTypeDTO);
+
+        Task<bool> RemoveTypeAsync(int id);
+        Task<bool> RemoveSentenceAsync(int id);
+        Task<bool> UpdateSentenceAsync(SentenceManageDTO sentenceManageDTO);
+
+        Task<SentenceTypeDTO> GetSentenceTypeAsync(string type);
+
     }
 }

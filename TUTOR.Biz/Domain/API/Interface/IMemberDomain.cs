@@ -7,14 +7,14 @@ namespace TUTOR.Biz.Domain.API.Interface
 {
     public interface IMemberDomain
     {
-        Task<CommonResult> AddStudentsFromExcel(Stream excelStream);
+        Task<bool> AddStudentsFromExcel(Stream excelStream);
 
         Task<MemberResponse> GetMemberListAsync();
 
-        Task<CommonResult> SaveStudentInfo(int studentId, MemberRequest request);
+        Task<bool> SaveStudentInfo(List<MemberRequest> request);
 
-        Task<CommonResult> DeleteStudentInfo(int studentId);
+        Task<bool> DeleteStudentInfo(int studentId);
 
-        Task<CommonResult> AddStudentInfo(MemberRequest request);
+        Task<bool> AddStudentInfo(MemberRequest request);
     }
 }

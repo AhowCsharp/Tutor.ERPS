@@ -14,5 +14,6 @@ namespace TUTOR.Repository.EF
         public int AdminLevel { get; set; }
         public DateTime CreateDate { get; set; }
         public int Status { get; set; }
+        public string Jwttoken { get; set; }
     }
 }

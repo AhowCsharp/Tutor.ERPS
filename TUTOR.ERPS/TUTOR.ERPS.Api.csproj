@@ -17,6 +17,7 @@
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.5.0" />
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.5.0" />
     <PackageReference Include="System.Drawing.Common" Version="7.0.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.32.1" />
     <PackageReference Include="X.PagedList" Version="8.4.7" />
     <PackageReference Include="ZXing.Net" Version="0.16.9" />
   </ItemGroup>
@@ -24,4 +25,8 @@
 		<ProjectReference Include="..\TUTOR.Biz\TUTOR.Biz.csproj" />
 		<ProjectReference Include="..\TUTOR.Repository\TUTOR.Repository.csproj" />
 	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="wwwroot\uploads\" />
+	</ItemGroup>
+	<ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
 </Project>

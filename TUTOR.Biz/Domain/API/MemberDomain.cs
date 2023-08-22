@@ -6,17 +6,14 @@ using Microsoft.AspNetCore.Http;
 using TUTOR.Biz.Repository_Interfaces;
 using TUTOR.Biz.Models;
 using NPOI.XSSF.UserModel;
-using NPOI.SS.Formula.PTG;
-using System.Net;
 using TUTOR.Biz.Models.Responses.Member;
+using TUTOR.Biz.Models.Responses.StudentAnswerLog;
 using NPOI.SS.Formula.Functions;
 using TUTOR.Biz.Services;
 using TUTOR.Biz.SeedWork;
 using TUTOR.Biz.Models.Requests;
-using MathNet.Numerics.Distributions;
-using System.Data.Entity;
-using Org.BouncyCastle.Asn1.Ocsp;
 using AutoMapper;
+using System.Globalization;
 
 namespace TUTOR.Biz.Domain.API
 {
@@ -24,18 +21,23 @@ namespace TUTOR.Biz.Domain.API
     {
         private readonly IMemberRepository _memberRepository;
 
+        private readonly IStudentAnswerLogRepository _studentAnswerLogRepository;
+
+
         private readonly IHttpContextAccessor _httpContextAccessor;
 
         private readonly IMapper _mapper;
 
         private readonly UserService _userService;
 
-        public MemberDomain(IMemberRepository memberRepository, IHttpContextAccessor httpContextAccessor, UserService userService, IMapper mapper)
+        public MemberDomain(IMemberRepository memberRepository, IHttpContextAccessor httpContextAccessor,
+            UserService userService, IMapper mapper, IStudentAnswerLogRepository studentAnswerLogRepository)
         {
             _memberRepository = memberRepository;
             _httpContextAccessor = httpContextAccessor;
             _userService = userService;
             _mapper = mapper;
+            _studentAnswerLogRepository = studentAnswerLogRepository;
         }
 
         public async Task<MemberResponse> GetMemberListAsync()
@@ -45,41 +47,23 @@ namespace TUTOR.Biz.Domain.API
             return new MemberResponse(data);
         }
 
-        public async Task<CommonResult> SaveStudentInfo(int studentId, MemberRequest request)
+        public async Task<bool> SaveStudentInfo(List<MemberRequest> request)
         {
-            var result = new CommonResult();
-            var exist = await _memberRepository.GetAsync(studentId);
-            if (exist == null)
+            foreach(var item in request)
             {
-                result.AddError(ResultError.ERR_STUDENT);
+                var exist = await _memberRepository.GetAsync(item.id);
+                if (exist == null)
+                {
+                    return false;
+                }
+                var editItem = _mapper.Map<MemberDTO>(item);
+                await _memberRepository.EditMember(editItem);
             }
+            return true;
 
-            if (result.Errors.Any())
-            {
-                result.Result = false;
-
-                return result;
-            }
-
-            exist.Creator = request.Creator;
-            exist.Name = request.Name;
-            exist.StartDate = request.StartDate;
-            exist.EndDate = request.EndDate;
-            exist.BeDeleted = request.BeDeleted;
-            exist.Account = request.Account;
-            exist.Status = request.Status;
-            exist.Email = request.Email;
-            exist.Password = request.Password;
-            exist.Name = request.Name;
-            exist.StudyLevel = request.StudyLevel;
-            await _memberRepository.UpdateAsync(exist);
-
-            result.Result = true;
-
-            return result;
         }
 
-        public async Task<CommonResult> AddStudentsFromExcel(Stream excelStream)
+        public async Task<bool> AddStudentsFromExcel(Stream excelStream)
         {
             var result = new CommonResult();
             try
@@ -89,6 +73,8 @@ namespace TUTOR.Biz.Domain.API
                 // 使用 NPOI 讀取 Excel 文件
                 var workbook = new XSSFWorkbook(excelStream);
                 var sheet = workbook.GetSheetAt(0); // 取得第一個工作表
+                string[] formats = { "yyyy/M/d", "yyyy/M/dd", "yyyy/MM/dd", "yyyy/MM/d" };
+                DateTime parsedDate;
 
                 for (int row = 1; row <= sheet.LastRowNum; row++) // 從第二行開始讀取，假設第一行是標題
                 {
@@ -97,64 +83,110 @@ namespace TUTOR.Biz.Domain.API
 
                     var member = new MemberDTO
                     {
-                        Account = currentRow.GetCell(0)?.ToString(),
-                        Email = currentRow.GetCell(1)?.ToString(),
-                        Password = currentRow.GetCell(2)?.ToString(),
-                        Status = int.Parse(currentRow.GetCell(3)?.ToString() ?? "0"),
-                        StudyLevel = int.TryParse(currentRow.GetCell(4)?.ToString(), out var studyLevel) ? studyLevel : (int?)null,
-                        BeDeleted = int.Parse(currentRow.GetCell(5)?.ToString() ?? "0"),
-                        Creator = currentRow.GetCell(6)?.ToString(),
-                        Editor = currentRow.GetCell(7)?.ToString(),
-                        Name = currentRow.GetCell(8)?.ToString(),
-                        Id = int.Parse(currentRow.GetCell(9)?.ToString() ?? "0"),
-                        StartDate = DateTime.TryParse(currentRow.GetCell(10)?.ToString(), out var startDate) ? startDate : (DateTime?)null,
-                        EndDate = DateTime.TryParse(currentRow.GetCell(11)?.ToString(), out var endDate) ? endDate : (DateTime?)null,
-                        CreateDate = DateTime.TryParse(currentRow.GetCell(12)?.ToString(), out var createDate) ? createDate : (DateTime?)null,
+                        account = currentRow.GetCell(0)?.ToString(),
+                        email = currentRow.GetCell(1)?.ToString(),
+                        password = currentRow.GetCell(2)?.ToString(),
+                        status = int.TryParse(currentRow.GetCell(3)?.ToString(), out var parsedStatus) ? parsedStatus : 0,
+                        studyLevel = int.TryParse(currentRow.GetCell(4)?.ToString(), out var studyLevel) ? studyLevel : (int?)null,
+                        beDeleted = int.TryParse(currentRow.GetCell(5)?.ToString(), out var beDeleted) ? beDeleted : 0,
+                        creator = currentRow.GetCell(6)?.ToString(),
+                        editor = currentRow.GetCell(7)?.ToString(),
+                        name = currentRow.GetCell(8)?.ToString()
                     };
+                    var x = currentRow.GetCell(9)?.ToString();
+                    var y = currentRow.GetCell(10)?.ToString();
+                    var z = currentRow.GetCell(11)?.ToString();
+
+                    var start = currentRow.GetCell(9)?.ToString();
+                    var end = currentRow.GetCell(10)?.ToString();
+                    var create = currentRow.GetCell(11)?.ToString();
+                    member.startDate = ParseCustomDateFormat(start);
+                    member.endDate = ParseCustomDateFormat(end);
+                    member.createDate = ParseCustomDateFormat(create);
+
                     students.Add(member);
                 }
 
-                await _memberRepository.AddStudentsFromExcel(students);
-                result.Result = true;
-                return result;
+                return await _memberRepository.AddStudentsFromExcel(students);
             }
             catch (Exception ex)
             {
                 result.AddError(ex.Message);
-                result.Result = false;
-                return result;
+                return false;
             }
         }
 
-        public async Task<CommonResult> AddStudentInfo(MemberRequest request)
+        public static DateTime? ParseCustomDateFormat(string input)
         {
-            var result = new CommonResult();
             try
             {
-                var memberDTO = new MemberDTO();
-                memberDTO.Creator = request.Creator;
-                memberDTO.Name = request.Name;
-                memberDTO.StartDate = request.StartDate;
-                memberDTO.EndDate = request.EndDate;
-                memberDTO.BeDeleted = request.BeDeleted;
-                memberDTO.Account = request.Account;
-                memberDTO.Status = request.Status;
-                memberDTO.Email = request.Email;
-                memberDTO.Password = request.Password;
-                memberDTO.Name = request.Name;
-                memberDTO.StudyLevel = request.StudyLevel;
-                await _memberRepository.InsertAsync(memberDTO);
-                result.Result = true;
-                return result;
+                if (input == null)
+                { 
+                    return null;
+                }
+                var monthMappings = new Dictionary<string, int>
+                {
+                    {"1月", 1},
+                    {"2月", 2},
+                    {"3月", 3},
+                    {"4月", 4},
+                    {"5月", 5},
+                    {"6月", 6},
+                    {"7月", 7},
+                    {"8月", 8},
+                    {"9月", 9},
+                    {"10月", 10},
+                    {"11月", 11},
+                    {"12月", 12},
+                };
+
+                // Split by '-'
+                var parts = input.Split('-');
+
+                if (parts.Length != 3)
+                {
+                    return null; // Invalid format
+                }
+
+                int day = int.Parse(parts[0]);
+                int month;
+                if (!monthMappings.TryGetValue(parts[1], out month))
+                {
+                    return null; // Invalid month
+                }
+                int year = int.Parse(parts[2]);
+
+                return new DateTime(year, month, day);
+            }
+            catch
+            {
+                return null; // Failed to parse
+            }
+        }
+
+        public async Task<bool> AddStudentInfo(MemberRequest request)
+        {
+
+            try
+            {
+                var dto = _mapper.Map<MemberDTO>(request);
+                await _memberRepository.InsertAsync(dto);
+
+                return true;
             }
             catch (Exception ex)
             {
-                result.Result = false;
-                return result;
+                return false;
             }
         }
+        public async Task<StudentAnswerLogResponse> GetStudentAnswerLog(int id)
+        { 
+            var data = await _studentAnswerLogRepository.GetStudentAnswerLogsAsync(id);
+            return new StudentAnswerLogResponse(data);
+        }
 
-        public async Task<CommonResult> DeleteStudentInfo(int studentId)
+
+        public async Task<bool> DeleteStudentInfo(int studentId)
         {
             var result = new CommonResult();
             try
@@ -162,21 +194,18 @@ namespace TUTOR.Biz.Domain.API
                 var data = await _memberRepository.GetAsync(studentId);
                 if (data != null)
                 {
-                    data.BeDeleted = 1;
-                    await _memberRepository.UpdateAsync(data);
-                    result.Result = true;
-                    return result;
+                    data.beDeleted = 1;
+                    await _memberRepository.EditMember(data);
+                    return true;
                 }
                 else
                 {
-                    result.Result = false;
-                    return result;
+                    return false;
                 }
             }
             catch (Exception ex)
             {
-                result.Result = false;
-                return result;
+                return false; 
             }
         }
     }

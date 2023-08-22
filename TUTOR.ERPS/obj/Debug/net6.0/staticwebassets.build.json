@@ -1,11 +1,71 @@
 {
   "Version": 1,
-  "Hash": "DaespqNOV0YPe2eDRMridlKphE5A1gPUWj/HnnjgdbA=",
+  "Hash": "+ibZhnkclbdkcs3+3SE9AM+l5oLiYmRXe1i2MPoJRaY=",
   "Source": "TUTOR.ERPS.Api",
   "BasePath": "_content/TUTOR.ERPS.Api",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "TUTOR.ERPS.Api\\wwwroot",
+      "Source": "TUTOR.ERPS.Api",
+      "ContentRoot": "C:\\Users\\MSI MAG\\Desktop\\DoRay專案列表\\Tutor.ERPS\\TUTOR.ERPS\\wwwroot\\",
+      "BasePath": "_content/TUTOR.ERPS.Api",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\MSI MAG\\Desktop\\DoRay專案列表\\Tutor.ERPS\\TUTOR.ERPS\\wwwroot\\uploads\\people.mp3",
+      "SourceId": "TUTOR.ERPS.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\MSI MAG\\Desktop\\DoRay專案列表\\Tutor.ERPS\\TUTOR.ERPS\\wwwroot\\",
+      "BasePath": "_content/TUTOR.ERPS.Api",
+      "RelativePath": "uploads/people.mp3",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\people.mp3"
+    },
+    {
+      "Identity": "C:\\Users\\MSI MAG\\Desktop\\DoRay專案列表\\Tutor.ERPS\\TUTOR.ERPS\\wwwroot\\uploads\\test2 (1).mp3",
+      "SourceId": "TUTOR.ERPS.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\MSI MAG\\Desktop\\DoRay專案列表\\Tutor.ERPS\\TUTOR.ERPS\\wwwroot\\",
+      "BasePath": "_content/TUTOR.ERPS.Api",
+      "RelativePath": "uploads/test2 (1).mp3",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\test2 (1).mp3"
+    },
+    {
+      "Identity": "C:\\Users\\MSI MAG\\Desktop\\DoRay專案列表\\Tutor.ERPS\\TUTOR.ERPS\\wwwroot\\uploads\\test2 (3).mp3",
+      "SourceId": "TUTOR.ERPS.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\MSI MAG\\Desktop\\DoRay專案列表\\Tutor.ERPS\\TUTOR.ERPS\\wwwroot\\",
+      "BasePath": "_content/TUTOR.ERPS.Api",
+      "RelativePath": "uploads/test2 (3).mp3",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\test2 (3).mp3"
+    }
+  ]
 }

@@ -10,3 +10,15 @@ D:\GitLab\TUTOR.ERPS\TUTOR.Biz\obj\Debug\net6.0\TUTOR.Biz.dll
 D:\GitLab\TUTOR.ERPS\TUTOR.Biz\obj\Debug\net6.0\refint\TUTOR.Biz.dll
 D:\GitLab\TUTOR.ERPS\TUTOR.Biz\obj\Debug\net6.0\TUTOR.Biz.pdb
 D:\GitLab\TUTOR.ERPS\TUTOR.Biz\obj\Debug\net6.0\ref\TUTOR.Biz.dll
+C:\Users\MSI MAG\Desktop\DoRay專案列表\Tutor.ERPS\TUTOR.Biz\bin\Debug\net6.0\TUTOR.Biz.deps.json
+C:\Users\MSI MAG\Desktop\DoRay專案列表\Tutor.ERPS\TUTOR.Biz\bin\Debug\net6.0\TUTOR.Biz.dll
+C:\Users\MSI MAG\Desktop\DoRay專案列表\Tutor.ERPS\TUTOR.Biz\bin\Debug\net6.0\TUTOR.Biz.pdb
+C:\Users\MSI MAG\Desktop\DoRay專案列表\Tutor.ERPS\TUTOR.Biz\obj\Debug\net6.0\TUTOR.Biz.csproj.AssemblyReference.cache
+C:\Users\MSI MAG\Desktop\DoRay專案列表\Tutor.ERPS\TUTOR.Biz\obj\Debug\net6.0\TUTOR.Biz.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MSI MAG\Desktop\DoRay專案列表\Tutor.ERPS\TUTOR.Biz\obj\Debug\net6.0\TUTOR.Biz.AssemblyInfoInputs.cache
+C:\Users\MSI MAG\Desktop\DoRay專案列表\Tutor.ERPS\TUTOR.Biz\obj\Debug\net6.0\TUTOR.Biz.AssemblyInfo.cs
+C:\Users\MSI MAG\Desktop\DoRay專案列表\Tutor.ERPS\TUTOR.Biz\obj\Debug\net6.0\TUTOR.Biz.csproj.CoreCompileInputs.cache
+C:\Users\MSI MAG\Desktop\DoRay專案列表\Tutor.ERPS\TUTOR.Biz\obj\Debug\net6.0\TUTOR.Biz.dll
+C:\Users\MSI MAG\Desktop\DoRay專案列表\Tutor.ERPS\TUTOR.Biz\obj\Debug\net6.0\refint\TUTOR.Biz.dll
+C:\Users\MSI MAG\Desktop\DoRay專案列表\Tutor.ERPS\TUTOR.Biz\obj\Debug\net6.0\TUTOR.Biz.pdb
+C:\Users\MSI MAG\Desktop\DoRay專案列表\Tutor.ERPS\TUTOR.Biz\obj\Debug\net6.0\ref\TUTOR.Biz.dll

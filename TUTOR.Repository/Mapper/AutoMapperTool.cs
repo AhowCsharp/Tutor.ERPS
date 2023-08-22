@@ -11,9 +11,20 @@ namespace TUTOR.Repository.Mapper
         public AutoMapperTool()
         {
             CreateMap<SentenceManageDTO, SentenceManageRequest>().ReverseMap();
+            CreateMap<SentenceTypeDTO, SentenceTypeRequest>().ReverseMap();
             CreateMap<SentenceManageDTO, SentenceManage>().ReverseMap();
+            CreateMap<SentenceDTO, SentenceManage>().ReverseMap();
+
             CreateMap<SentenceTypeDTO, SentenceType>().ReverseMap();
+            CreateMap<TokenLogDTO, SystemErrorLog>().ReverseMap();
+            CreateMap<StudentAnswerLog, StudentAnswerLogDTO>().ReverseMap();
+            CreateMap<AdminManage, AdminManageDTO>().ReverseMap();
             CreateMap<MemberDTO, Member>().ReverseMap();
+            CreateMap<MemberRequest, MemberDTO>()
+            .ForMember(dest => dest.id, opt =>
+                opt.Condition(src => src.id != 0))  // 指定條件
+            .ReverseMap();
+
             //CreateMap<SentenceManageDTO, SentenceManageRequest>().ReverseMap();
             //CreateMap<AdminOAInviteToken, AdminOAInviteTokenDTO>().ReverseMap();
             //CreateMap<Application, ApplicationDTO>().ReverseMap();

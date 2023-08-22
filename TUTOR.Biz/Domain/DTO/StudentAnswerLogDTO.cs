@@ -4,13 +4,13 @@ namespace TUTOR.Biz.Domain.DTO
 {
     public class StudentAnswerLogDTO : IDTO
     {
-        public int Id { get; set; }
-        public int? StudentId { get; set; }
-        public string QuestionType { get; set; }
-        public string QuestionNumber { get; set; }
-        public string AnswerLog { get; set; }
-        public string CostTime { get; set; }
-        public int? Status { get; set; }
-        public DateTime? AnswerDate { get; set; }
+        public int id { get; set; }
+        public int? studentId { get; set; }
+        public string questionType { get; set; }
+        public string questionNumber { get; set; }
+        public string answerLog { get; set; }
+        public string costTime { get; set; }
+        public int? status { get; set; }
+        public DateTime? answerDate { get; set; }
     }
 }

@@ -52,23 +52,57 @@ namespace TUTOR.ERPS.API
         }
 
         /// <summary>
+        /// 取得學生LOG
+        /// </summary>
+        /// <response code="200">OK</response>
+        /// <response code="403">無此權限</response>
+        /// <response code="500">內部錯誤</response>
+        [HttpGet]
+        [Route("studentLog")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(BadRequestResponse), StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<IActionResult> GetStudentLogList(int id)
+        {
+            try
+            {
+                var response = await _domain.GetStudentAnswerLog(id); //GetMemberListAsync
+                _logger.LogInformation("取得會員LOG");
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, nameof(GetMemberList));
+                return ServerError500();
+            }
+        }
+
+        /// <summary>
         /// 儲存修改學生資訊
         /// </summary>
         /// <response code="200">OK</response>
         /// <response code="403">無此權限</response>
         /// <response code="500">內部錯誤</response>
         [HttpPatch]
-        [Route("{studentId}")]
+        [Route("updateinfo")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(BadRequestResponse), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> SaveStudentInfo(int studentId, MemberRequest request)
+        public async Task<IActionResult> SaveStudentInfo(List<MemberRequest> request)
         {
             try
             {
-                var response = await _domain.SaveStudentInfo(studentId, request);
-                _logger.LogInformation("儲存會員");
-                return Ok(response);
+                var response = await _domain.SaveStudentInfo(request);
+                if (response)
+                {
+                    _logger.LogInformation("修改會員");
+                    return Ok(response);
+                }
+                else
+                {
+                    return BadRequest("系統錯誤");
+                }
+
             }
             catch (Exception ex)
             {
@@ -85,7 +119,7 @@ namespace TUTOR.ERPS.API
         /// <response code="403">無此權限</response>
         /// <response code="500">內部錯誤</response>
         [HttpPost]
-        [Route("studentInfos")]
+        [Route("addInfos")]
         [Consumes("multipart/form-data")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(BadRequestResponse), StatusCodes.Status400BadRequest)]
@@ -107,8 +141,16 @@ namespace TUTOR.ERPS.API
 
                 // 轉換並新增學生資訊
                 var response = await _domain.AddStudentsFromExcel(stream);
-                _logger.LogInformation("批次新增學生資訊成功");
-                return Ok(response);
+                if (response)
+                {
+                    _logger.LogInformation("批次新增學生資訊成功");
+                    return Ok(response);
+                }
+                else
+                {
+                    return BadRequest("資料不正確");
+                }
+
             }
             catch (Exception ex)
             {
@@ -125,7 +167,7 @@ namespace TUTOR.ERPS.API
         /// <response code="403">無此權限</response>
         /// <response code="500">內部錯誤</response>
         [HttpPost]
-        [Route("studentInfo")]
+        [Route("addInfo")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(BadRequestResponse), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status403Forbidden)]
@@ -135,8 +177,16 @@ namespace TUTOR.ERPS.API
             try
             {
                 var response = await _domain.AddStudentInfo(request);
-                _logger.LogInformation("新增學生資訊成功");
-                return Ok(response);
+                if (response)
+                {
+                    _logger.LogInformation("新增學生資訊成功");
+                    return Ok(response);
+                }
+                else 
+                {
+                    return BadRequest("系統錯誤");
+                }
+
             }
             catch (Exception ex)
             {
@@ -152,7 +202,7 @@ namespace TUTOR.ERPS.API
         /// <response code="400">請求錯誤</response>
         /// <response code="403">無此權限</response>
         /// <response code="500">內部錯誤</response>
-        [HttpPost]
+        [HttpDelete]
         [Route("studentStatus")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(BadRequestResponse), StatusCodes.Status400BadRequest)]
@@ -163,8 +213,15 @@ namespace TUTOR.ERPS.API
             try
             {
                 var response = await _domain.DeleteStudentInfo(studentId);
-                _logger.LogInformation("刪除學生資訊成功");
-                return Ok(response);
+                if (response)
+                {
+                    _logger.LogInformation("刪除學生資訊成功");
+                    return Ok(response);
+                }
+                else
+                {
+                    return BadRequest("系統錯誤");
+                }
             }
             catch (Exception ex)
             {

@@ -27,6 +27,13 @@ namespace TUTOR.Repository.Repositories
             return _mapper.Map<IEnumerable<MemberDTO>>(data);
         }
 
+        public async Task<MemberDTO> GetMemberAsync(string account,string name)
+        {
+            var data = await _context.Member.FirstOrDefaultAsync(x => x.BeDeleted == 0 && x.Account == account && x.Name == name);
+
+            return _mapper.Map<MemberDTO>(data);
+        }
+
         public async Task<bool> AddStudentsFromExcel(IEnumerable<MemberDTO> memberDTOs)
         {
             try
@@ -39,6 +46,24 @@ namespace TUTOR.Repository.Repositories
             catch (Exception ex)
             {
                 return false;
+            }
+        }
+
+        public async Task<bool> EditMember(MemberDTO dto)
+        {
+            var exist = await _context.Member.FirstOrDefaultAsync(x => x.Id == dto.id);
+            if (exist == null)
+            {
+                return false;
+            }
+            else
+            {
+                _mapper.Map(dto, exist);  // 
+
+                await _context.SaveChangesAsync();
+
+                return true;
+
             }
         }
     }

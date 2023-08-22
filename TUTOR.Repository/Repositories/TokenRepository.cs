@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using TUTOR.Biz.Domain.DTO;
+using TUTOR.Biz.Models.Requests;
 using TUTOR.Biz.Repository_Interfaces;
 using TUTOR.Repository.EF;
 using TUTOR.Repository.Repositories;
@@ -35,18 +36,10 @@ namespace TUTOR.Repository
             }
         }
 
-        public void Log(TokenLogDTO dto)
+        public void Log(TokenLogDTO TokenLogDTO)
         {
-            var log = new SystemErrorLog
-            {
-                Token = dto.Token,
-                Ip = dto.IP,
-                Api = dto.RequestUrl,
-                WebRequest = dto.StartDate.HasValue ? dto.StartDate.Value.ToString("yyyy-MM-dd") : string.Empty,
-                WebResponse = dto.EndDate.HasValue ? dto.EndDate.Value.ToString("yyyy-MM-dd") : string.Empty,
-                EntryDate = dto.LogDate
-            };
-            _context.SystemErrorLog.Add(log);
+            var data = _mapper.Map<SystemErrorLog>(TokenLogDTO);
+            _context.SystemErrorLog.Add(data);
             _context.SaveChanges();
         }
     }
