@@ -21,7 +21,7 @@ namespace TUTOR.Repository.Repositories
         {
         }
 
-        public async Task<IEnumerable<ErrorWordLogDTO>> GetErrorWordLogsAsync(int level, string gamer)
+        public async Task<IEnumerable<ErrorWordLogDTO>> GetErrorWordLogsAsync(int? level, string gamer)
         {
             var today = DateTimeHelper.TaipeiNow;
             var twentyFourHoursAgo = today.AddHours(-24);

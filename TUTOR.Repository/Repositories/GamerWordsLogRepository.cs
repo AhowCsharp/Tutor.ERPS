@@ -35,7 +35,7 @@ namespace TUTOR.Repository.Repositories
             }
         }
 
-        public async Task<IEnumerable<GamerWordsLogDTO>> GetGamerWordsLogsAsync(int level, string gamer)
+        public async Task<IEnumerable<GamerWordsLogDTO>> GetGamerWordsLogsAsync(int? level, string gamer)
         {
             var today = DateTimeHelper.TaipeiNow;
             var twentyFourHoursAgo = today.AddHours(-24);

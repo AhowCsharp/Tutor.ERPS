@@ -9,7 +9,7 @@ namespace TUTOR.Biz.Repository_Interfaces
 {
     public interface IGameRepository : IRepository<GameWordsDTO, int>
     {
-        Task<IEnumerable<GameWordsDTO>> GetGameListAsync(int level, List<string> avoidWords, List<string> againWords);
+        Task<IEnumerable<GameWordsDTO>> GetGameListAsync(int? level, List<string> avoidWords, List<string> againWords);
 
         Task<IEnumerable<GameWordsDTO>> GetGameListAsync();
 

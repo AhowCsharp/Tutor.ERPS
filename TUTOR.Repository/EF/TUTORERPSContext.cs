@@ -87,6 +87,8 @@ namespace TUTOR.Repository.EF
             {
                 entity.Property(e => e.Word).HasMaxLength(50);
 
+                entity.Property(e => e.WordChinese).HasMaxLength(50);
+
                 entity.Property(e => e.WordKind).HasMaxLength(20);
             });
 

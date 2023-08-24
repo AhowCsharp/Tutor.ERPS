@@ -13,5 +13,6 @@ namespace TUTOR.Repository.EF
         public int? Status { get; set; }
         public string WordKind { get; set; }
         public string Mp3Url { get; set; }
+        public string WordChinese { get; set; }
     }
 }

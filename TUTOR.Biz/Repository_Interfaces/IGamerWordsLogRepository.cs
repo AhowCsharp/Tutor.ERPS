@@ -9,7 +9,7 @@ namespace TUTOR.Biz.Repository_Interfaces
 {
     public interface IGamerWordsLogRepository : IRepository<GamerWordsLogDTO, int>
     {
-        Task<IEnumerable<GamerWordsLogDTO>> GetGamerWordsLogsAsync(int level, string gamer);
+        Task<IEnumerable<GamerWordsLogDTO>> GetGamerWordsLogsAsync(int? level, string gamer);
 
         Task<bool> CreateWordsLogAsync(GamerWordsLogDTO gamerWordsLogDTO);
     }

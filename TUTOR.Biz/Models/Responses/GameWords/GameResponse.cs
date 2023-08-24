@@ -7,9 +7,9 @@ namespace TUTOR.Biz.Models.Responses.Game
     {
         public GameResponse(IEnumerable<GameWordsDTO> datasDto)
         {
-            words = datasDto;
+            Words = datasDto;
         }
 
-        public IEnumerable<GameWordsDTO> words { get; set; }
+        public IEnumerable<GameWordsDTO> Words { get; set; }
     }
 }

@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitLab\\TUTOR.ERPS\\TUTOR.Repository\\TUTOR.Repository.csproj": {}
+    "C:\\Users\\MSI MAG\\Desktop\\DoRay專案列表\\Tutor.ERPS\\TUTOR.Repository\\TUTOR.Repository.csproj": {}
   },
   "projects": {
-    "D:\\GitLab\\TUTOR.ERPS\\TUTOR.Biz\\TUTOR.Biz.csproj": {
+    "C:\\Users\\MSI MAG\\Desktop\\DoRay專案列表\\Tutor.ERPS\\TUTOR.Biz\\TUTOR.Biz.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitLab\\TUTOR.ERPS\\TUTOR.Biz\\TUTOR.Biz.csproj",
+        "projectUniqueName": "C:\\Users\\MSI MAG\\Desktop\\DoRay專案列表\\Tutor.ERPS\\TUTOR.Biz\\TUTOR.Biz.csproj",
         "projectName": "TUTOR.Biz",
-        "projectPath": "D:\\GitLab\\TUTOR.ERPS\\TUTOR.Biz\\TUTOR.Biz.csproj",
-        "packagesPath": "C:\\Users\\j3537\\.nuget\\packages\\",
-        "outputPath": "D:\\GitLab\\TUTOR.ERPS\\TUTOR.Biz\\obj\\",
+        "projectPath": "C:\\Users\\MSI MAG\\Desktop\\DoRay專案列表\\Tutor.ERPS\\TUTOR.Biz\\TUTOR.Biz.csproj",
+        "packagesPath": "C:\\Users\\MSI MAG\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MSI MAG\\Desktop\\DoRay專案列表\\Tutor.ERPS\\TUTOR.Biz\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\j3537\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MSI MAG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -117,21 +121,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\GitLab\\TUTOR.ERPS\\TUTOR.Repository\\TUTOR.Repository.csproj": {
+    "C:\\Users\\MSI MAG\\Desktop\\DoRay專案列表\\Tutor.ERPS\\TUTOR.Repository\\TUTOR.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitLab\\TUTOR.ERPS\\TUTOR.Repository\\TUTOR.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\MSI MAG\\Desktop\\DoRay專案列表\\Tutor.ERPS\\TUTOR.Repository\\TUTOR.Repository.csproj",
         "projectName": "TUTOR.Repository",
-        "projectPath": "D:\\GitLab\\TUTOR.ERPS\\TUTOR.Repository\\TUTOR.Repository.csproj",
-        "packagesPath": "C:\\Users\\j3537\\.nuget\\packages\\",
-        "outputPath": "D:\\GitLab\\TUTOR.ERPS\\TUTOR.Repository\\obj\\",
+        "projectPath": "C:\\Users\\MSI MAG\\Desktop\\DoRay專案列表\\Tutor.ERPS\\TUTOR.Repository\\TUTOR.Repository.csproj",
+        "packagesPath": "C:\\Users\\MSI MAG\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MSI MAG\\Desktop\\DoRay專案列表\\Tutor.ERPS\\TUTOR.Repository\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\j3537\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MSI MAG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -145,8 +153,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\GitLab\\TUTOR.ERPS\\TUTOR.Biz\\TUTOR.Biz.csproj": {
-                "projectPath": "D:\\GitLab\\TUTOR.ERPS\\TUTOR.Biz\\TUTOR.Biz.csproj"
+              "C:\\Users\\MSI MAG\\Desktop\\DoRay專案列表\\Tutor.ERPS\\TUTOR.Biz\\TUTOR.Biz.csproj": {
+                "projectPath": "C:\\Users\\MSI MAG\\Desktop\\DoRay專案列表\\Tutor.ERPS\\TUTOR.Biz\\TUTOR.Biz.csproj"
               }
             }
           }
@@ -218,7 +226,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

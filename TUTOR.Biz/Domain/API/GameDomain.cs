@@ -20,6 +20,7 @@ using TUTOR.Biz.Models.Responses.SentenceType;
 using AutoMapper;
 using TUTOR.Biz.Models.Responses.SentenceManage;
 using NPOI.SS.UserModel;
+using NPOI.HSSF.Record;
 
 namespace TUTOR.Biz.Domain.API
 {
@@ -47,8 +48,13 @@ namespace TUTOR.Biz.Domain.API
             _errorWordLogRepository = errorWordLogRepository;
         }
 
-        public async Task<GameResponse> GetGameWordsListAsync(string gamer, int level)
+        public async Task<GameResponse> GetGameWordsListAsync(string gamer, int? level)
         {
+            if (string.IsNullOrEmpty(gamer) && !level.HasValue)
+            { 
+                var fullData = await _gameRepository.GetGameListAsync();
+                return new GameResponse(fullData);
+            }
             var wordsLog = await _gamerWordsLogRepository.GetGamerWordsLogsAsync(level, gamer);
             var errWordsLog = await _errorWordLogRepository.GetErrorWordLogsAsync(level, gamer);
 
@@ -91,10 +97,10 @@ namespace TUTOR.Biz.Domain.API
                 {
                     var filePath = Path.Combine(uploadsDirectory, mp3.FileName);
 
-                    var wordInfo = wordInfos.FirstOrDefault(w => w.Word == mp3.FileName);
+                    var wordInfo = wordInfos.FirstOrDefault(w => w.word == mp3.FileName.Replace(".mp3",""));
                     if (wordInfo != null)
                     {
-                        wordInfo.Mp3Url = $"/gameUploads/{mp3.FileName}";
+                        wordInfo.mp3Url = $"/gameUploads/{mp3.FileName}";
 
                         // 更新資料庫
                         var isUpdate = await _gameRepository.UpdateGameMp3UrlAsync(wordInfo);
@@ -115,6 +121,50 @@ namespace TUTOR.Biz.Domain.API
             }
         }
 
+        public async Task<bool> EditGameWordsAsync(List<GameWordRequest> gameWordRequests)
+        {
+            try
+            {
+                foreach (var req in gameWordRequests)
+                {
+                    var exist = await _gameRepository.GetAsync(req.id);
+                    if (exist != null)
+                    {
+                        exist.hardLevel = req.hardLevel;
+                        exist.word = req.word;
+                        exist.wordChinese = req.wordChinese;
+                        return await _gameRepository.UpdateGameMp3UrlAsync(exist);
+                    }
+                }
+                return true;
+            }
+            catch (Exception e)
+            { 
+                return false;
+            }
+        }
+        public async Task<bool> CreateErrword(string errword,int level,string name)
+        {
+            var errDTO = new ErrorWordLogDTO();
+            errDTO.ErrorWord = errword;
+            errDTO.CreateDate = DateTimeHelper.TaipeiNow;
+            errDTO.HardLevel = level;
+            errDTO.Gamer = name;
+            return await _errorWordLogRepository.CreateWordsLogAsync(errDTO);
+        }
+
+        public async Task<bool> DeleteGameWords(int id)
+        {
+            try
+            {
+                await _gameRepository.DeleteAsync(id);
+                return true;
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
+        }
         public async Task<bool> ImportGameWordsAsync(IFormFile excelFile)
         {
             try
@@ -134,6 +184,8 @@ namespace TUTOR.Biz.Domain.API
 
                     string wordCell = dataRow.GetCell(0)?.ToString();
                     ICell hardLevelCell = dataRow.GetCell(1);
+                    string wordChineseCell = dataRow.GetCell(2)?.ToString();
+
 
                     // 如果 wordCell 為 null 或 hardLevelCell 無法轉換為整數，則跳過這一行
                     if (string.IsNullOrEmpty(wordCell) ||
@@ -149,8 +201,9 @@ namespace TUTOR.Biz.Domain.API
                     }
                     GameWordsDTO gameWord = new GameWordsDTO
                     {
-                        Word = wordCell,
-                        HardLevel = hardLevel
+                        word = wordCell,
+                        hardLevel = hardLevel,
+                        wordChinese = wordChineseCell
                     };
 
                     gameWords.Add(gameWord);

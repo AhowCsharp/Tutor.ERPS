@@ -26,7 +26,7 @@ namespace TUTOR.ERPS.API
         }
 
         /// <summary>
-        /// 取得句子清單
+        /// 取得單字清單
         /// </summary>
         /// <response code="200">OK</response>
         /// <response code="403">無此權限</response>
@@ -36,12 +36,12 @@ namespace TUTOR.ERPS.API
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(BadRequestResponse), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> GetGameWordsList(string gamer, int level)
+        public async Task<IActionResult> GetGameWordsList(string? gamer, int? level)
         {
             try
             {
                 var response = await _domain.GetGameWordsListAsync(gamer, level);
-                _logger.LogInformation("取得句子清單");
+                _logger.LogInformation("取得單字清單");
                 return Ok(response);
             }
             catch (Exception ex)
@@ -74,7 +74,7 @@ namespace TUTOR.ERPS.API
                 var response = await _domain.CreateGameWordsMp3Aync(mp3Files);
                 if (response)
                 {
-                    _logger.LogInformation("檔案名稱找不到對應單字");
+                    _logger.LogInformation("檔案上傳成功");
                     return Ok(response);
                 }
                 else
@@ -122,41 +122,96 @@ namespace TUTOR.ERPS.API
             }
         }
 
-        ///// <summary>
-        ///// 取得句子清單
-        ///// </summary>
-        ///// <response code="200">OK</response>
-        ///// <response code="403">無此權限</response>
-        ///// <response code="500">內部錯誤</response>
-        //[HttpPost]
-        //[Route("upload")]
-        //[ProducesResponseType(StatusCodes.Status200OK)]
-        //[ProducesResponseType(typeof(BadRequestResponse), StatusCodes.Status400BadRequest)]
-        //[ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        //public async Task<IActionResult> CreateGame([FromForm] GameRequest request)
-        //{
-        //    try
-        //    {
-        //        if (request.Mp3File == null || request.Mp3File.Length == 0)
-        //        {
-        //            return BadRequest("No file provided.");
-        //        }
-        //        var response = await _domain.CreateGameAsync(request); //GetGameListAsync
-        //        if (response)
-        //        {
-        //            _logger.LogInformation("新增句子");
-        //            return Ok(response);
-        //        }
-        //        else
-        //        {
-        //            return BadRequest("fileName error");
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        _logger.LogError(ex, nameof(GetGameList));
-        //        return ServerError500();
-        //    }
-        //}
+        [HttpPatch]
+        [Route("editword")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(BadRequestResponse), StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<IActionResult> EditGameWords(List<GameWordRequest> gameWordRequests)
+        {
+            try
+            {
+
+
+                var response = await _domain.EditGameWordsAsync(gameWordRequests);
+
+                if (response)
+                {
+                    _logger.LogInformation("Successfully edited game words.");
+                    return Ok(response);
+                }
+                else
+                {
+                    return BadRequest("An error occurred while processing the edited.");
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, nameof(EditGameWords));
+                return StatusCode(StatusCodes.Status500InternalServerError, "An internal error occurred.");
+            }
+        }
+
+        [HttpDelete]
+        [Route("deleteword")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(BadRequestResponse), StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<IActionResult> DeleteGameWords(int id)
+        {
+            try
+            {
+                var response = await _domain.DeleteGameWords(id);
+
+                if (response)
+                {
+                    _logger.LogInformation("Successfully deleted game words.");
+                    return Ok(response);
+                }
+                else
+                {
+                    return BadRequest("An error occurred while processing the edited.");
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, nameof(EditGameWords));
+                return StatusCode(StatusCodes.Status500InternalServerError, "An internal error occurred.");
+            }
+        }
+
+        /// <summary>
+        /// 記錄錯誤單字
+        /// </summary>
+        /// <response code="200">OK</response>
+        /// <response code="403">無此權限</response>
+        /// <response code="500">內部錯誤</response>
+        [HttpPost]
+        [Route("errorlog")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(BadRequestResponse), StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<IActionResult> CreateErrWord(string errWord,int level,string name)
+        {
+            try
+            {
+
+                var response = await _domain.CreateErrword(errWord,level,name); //GetGameListAsync
+                if (response)
+                {
+                    _logger.LogInformation("記錄錯誤");
+                    return Ok(response);
+                }
+                else
+                {
+                    return BadRequest("fileName error");
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, nameof(CreateErrWord));
+                return ServerError500();
+            }
+        }
     }
 }

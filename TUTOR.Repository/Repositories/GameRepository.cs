@@ -21,7 +21,7 @@ namespace TUTOR.Repository.Repositories
         {
         }
 
-        public async Task<IEnumerable<GameWordsDTO>> GetGameListAsync(int level, List<string> avoidWords, List<string> againWords)
+        public async Task<IEnumerable<GameWordsDTO>> GetGameListAsync(int? level, List<string> avoidWords, List<string> againWords)
         {
             var data = await _context.GameWords
             .Where(x => x.HardLevel == level && !avoidWords.Contains(x.Word) && againWords.Contains(x.Word))
@@ -32,7 +32,7 @@ namespace TUTOR.Repository.Repositories
 
         public async Task<IEnumerable<GameWordsDTO>> GetGameListAsync()
         {
-            var data = await _context.GameWords
+            var data = await _context.GameWords.OrderByDescending(x => x.HardLevel)
             .ToListAsync();
 
             return data.Select(_mapper.Map<GameWordsDTO>);
@@ -47,7 +47,7 @@ namespace TUTOR.Repository.Repositories
 
         public async Task<bool> UpdateGameMp3UrlAsync(GameWordsDTO gameWordsDTO)
         {
-            var exist = _context.GameWords.SingleOrDefault(x => x.Id == gameWordsDTO.Id);
+            var exist = _context.GameWords.SingleOrDefault(x => x.Id == gameWordsDTO.id);
             if (exist != null)
             {
                 _mapper.Map(gameWordsDTO, exist);
