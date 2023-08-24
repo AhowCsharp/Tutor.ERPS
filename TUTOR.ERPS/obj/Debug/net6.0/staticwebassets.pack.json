@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\GitLab\\TUTOR.ERPS\\TUTOR.ERPS\\wwwroot\\uploads\\people.mp3",
+      "PackagePath": "staticwebassets\\uploads\\people.mp3"
+    },
+    {
+      "Id": "D:\\GitLab\\TUTOR.ERPS\\TUTOR.ERPS\\wwwroot\\uploads\\test2 (1).mp3",
+      "PackagePath": "staticwebassets\\uploads\\test2 (1).mp3"
+    },
+    {
+      "Id": "D:\\GitLab\\TUTOR.ERPS\\TUTOR.ERPS\\wwwroot\\uploads\\test2 (3).mp3",
+      "PackagePath": "staticwebassets\\uploads\\test2 (3).mp3"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.TUTOR.ERPS.Api.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.TUTOR.ERPS.Api.props",
+      "PackagePath": "build\\TUTOR.ERPS.Api.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.TUTOR.ERPS.Api.props",
+      "PackagePath": "buildMultiTargeting\\TUTOR.ERPS.Api.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.TUTOR.ERPS.Api.props",
+      "PackagePath": "buildTransitive\\TUTOR.ERPS.Api.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -33,7 +33,7 @@ namespace TUTOR.Biz.Domain.API
 
         private readonly UserService _userService;
 
-        public SentenceManageDomain(ISentenceManageRepository sentenceManageRepository, IMemberRepository memberRepository, IHttpContextAccessor httpContextAccessor, UserService userService, 
+        public SentenceManageDomain(ISentenceManageRepository sentenceManageRepository, IMemberRepository memberRepository, IHttpContextAccessor httpContextAccessor, UserService userService,
             IMapper mapper, IStudentAnswerLogRepository studentAnswerLogRepository)
         {
             _sentenceManageRepository = sentenceManageRepository;
@@ -60,12 +60,11 @@ namespace TUTOR.Biz.Domain.API
             return new SentenceManageResponse(data);
         }
 
-        public async Task<SentenceResponse> GetSentenceListAsync(string typeName,string account,string name)
+        public async Task<SentenceResponse> GetSentenceListAsync(string typeName, string account, string name)
         {
             var student = await _memberRepository.GetMemberAsync(account, name);
             var types = await _sentenceManageRepository.GetSentenceTypeListAsync();
             var type = types.FirstOrDefault(t => t.type == typeName);
-            //var subjects = new List<Subject>();
             if (type != null)
             {
                 var lastTime = await _studentAnswerLogRepository.GetLastStudentAnswerLogAsync(student.id, type.type);
@@ -83,23 +82,22 @@ namespace TUTOR.Biz.Domain.API
                     subject.mp3FileUrl = item.mp3FileUrl;
                     subject.questionNum = item.questionNum;
                     subject.typeName = type.type;
-                    subject.preAnswer = log != null? log.answerLog : null;
+                    subject.preAnswer = log != null ? log.answerLog : null;
                     item.subject = subject;
-                    if(log != null)
+                    if (log != null)
                     {
-                        item.isPassing = log.status == 1 ? true : false; 
+                        item.isPassing = log.status == 1 ? true : false;
                     }
                     //subjects.Add(subject);
                 }
 
                 return new SentenceResponse(data);
             }
-            else 
+            else
             {
                 return new SentenceResponse(null);
             }
         }
-
 
         public async Task<bool> CreateSentenceTypeAsync(SentenceTypeRequest sentenceTypeRequest)
         {
@@ -125,12 +123,12 @@ namespace TUTOR.Biz.Domain.API
                 var existingEntity = await _sentenceManageRepository.GetAsync(id);
 
                 if (existingEntity == null)
-                {                
+                {
                     return false;
                 }
-                else 
+                else
                 {
-                    isPass =await _sentenceManageRepository.RemoveSentenceAsync(id);
+                    isPass = await _sentenceManageRepository.RemoveSentenceAsync(id);
                     var fileName = existingEntity.mp3FileName;
 
                     // 获取文件存储目录
@@ -146,7 +144,7 @@ namespace TUTOR.Biz.Domain.API
                         System.IO.File.Delete(filePath);
                     }
                 }
-                
+
                 return isPass;
             }
             catch (Exception ex)
@@ -247,11 +245,8 @@ namespace TUTOR.Biz.Domain.API
             exsit.studyLevel = type != null ? type.studyLevel : 0;
             isPass = await _sentenceManageRepository.UpdateSentenceAsync(exsit);
 
-
             return isPass;
         }
-
-
 
         public async Task<SentenceTypeResponse> GetSentenceTypeListAsync()
         {

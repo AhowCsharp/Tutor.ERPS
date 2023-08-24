@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+ibZhnkclbdkcs3+3SE9AM+l5oLiYmRXe1i2MPoJRaY=",
+  "Hash": "2S6UVWpopHvRJarUofOnE9v2pXXgoaa8GIr1EtAGnqM=",
   "Source": "TUTOR.ERPS.Api",
   "BasePath": "_content/TUTOR.ERPS.Api",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "TUTOR.ERPS.Api\\wwwroot",
       "Source": "TUTOR.ERPS.Api",
-      "ContentRoot": "C:\\Users\\MSI MAG\\Desktop\\DoRay專案列表\\Tutor.ERPS\\TUTOR.ERPS\\wwwroot\\",
+      "ContentRoot": "D:\\GitLab\\TUTOR.ERPS\\TUTOR.ERPS\\wwwroot\\",
       "BasePath": "_content/TUTOR.ERPS.Api",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\MSI MAG\\Desktop\\DoRay專案列表\\Tutor.ERPS\\TUTOR.ERPS\\wwwroot\\uploads\\people.mp3",
+      "Identity": "D:\\GitLab\\TUTOR.ERPS\\TUTOR.ERPS\\wwwroot\\uploads\\people.mp3",
       "SourceId": "TUTOR.ERPS.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\MSI MAG\\Desktop\\DoRay專案列表\\Tutor.ERPS\\TUTOR.ERPS\\wwwroot\\",
+      "ContentRoot": "D:\\GitLab\\TUTOR.ERPS\\TUTOR.ERPS\\wwwroot\\",
       "BasePath": "_content/TUTOR.ERPS.Api",
       "RelativePath": "uploads/people.mp3",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\people.mp3"
     },
     {
-      "Identity": "C:\\Users\\MSI MAG\\Desktop\\DoRay專案列表\\Tutor.ERPS\\TUTOR.ERPS\\wwwroot\\uploads\\test2 (1).mp3",
+      "Identity": "D:\\GitLab\\TUTOR.ERPS\\TUTOR.ERPS\\wwwroot\\uploads\\test2 (1).mp3",
       "SourceId": "TUTOR.ERPS.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\MSI MAG\\Desktop\\DoRay專案列表\\Tutor.ERPS\\TUTOR.ERPS\\wwwroot\\",
+      "ContentRoot": "D:\\GitLab\\TUTOR.ERPS\\TUTOR.ERPS\\wwwroot\\",
       "BasePath": "_content/TUTOR.ERPS.Api",
       "RelativePath": "uploads/test2 (1).mp3",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\test2 (1).mp3"
     },
     {
-      "Identity": "C:\\Users\\MSI MAG\\Desktop\\DoRay專案列表\\Tutor.ERPS\\TUTOR.ERPS\\wwwroot\\uploads\\test2 (3).mp3",
+      "Identity": "D:\\GitLab\\TUTOR.ERPS\\TUTOR.ERPS\\wwwroot\\uploads\\test2 (3).mp3",
       "SourceId": "TUTOR.ERPS.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\MSI MAG\\Desktop\\DoRay專案列表\\Tutor.ERPS\\TUTOR.ERPS\\wwwroot\\",
+      "ContentRoot": "D:\\GitLab\\TUTOR.ERPS\\TUTOR.ERPS\\wwwroot\\",
       "BasePath": "_content/TUTOR.ERPS.Api",
       "RelativePath": "uploads/test2 (3).mp3",
       "AssetKind": "All",

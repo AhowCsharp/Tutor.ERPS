@@ -21,6 +21,9 @@ namespace TUTOR.Repository.EF
         public virtual DbSet<AdminManage> AdminManage { get; set; }
         public virtual DbSet<AllowIpManage> AllowIpManage { get; set; }
         public virtual DbSet<ApiTokenManage> ApiTokenManage { get; set; }
+        public virtual DbSet<ErrorWordLog> ErrorWordLog { get; set; }
+        public virtual DbSet<GameWords> GameWords { get; set; }
+        public virtual DbSet<GamerWordsLog> GamerWordsLog { get; set; }
         public virtual DbSet<Member> Member { get; set; }
         public virtual DbSet<SentenceManage> SentenceManage { get; set; }
         public virtual DbSet<SentenceType> SentenceType { get; set; }
@@ -69,6 +72,34 @@ namespace TUTOR.Repository.EF
                 entity.Property(e => e.TokenStartTime)
                     .HasColumnType("datetime")
                     .HasColumnName("Token_StartTime");
+            });
+
+            modelBuilder.Entity<ErrorWordLog>(entity =>
+            {
+                entity.Property(e => e.CreateDate).HasColumnType("datetime");
+
+                entity.Property(e => e.ErrorWord).HasMaxLength(50);
+
+                entity.Property(e => e.Gamer).HasMaxLength(20);
+            });
+
+            modelBuilder.Entity<GameWords>(entity =>
+            {
+                entity.Property(e => e.Word).HasMaxLength(50);
+
+                entity.Property(e => e.WordKind).HasMaxLength(20);
+            });
+
+            modelBuilder.Entity<GamerWordsLog>(entity =>
+            {
+                entity.Property(e => e.CreateDate).HasColumnType("datetime");
+
+                entity.Property(e => e.Gamer)
+                    .IsRequired()
+                    .HasMaxLength(20)
+                    .IsFixedLength();
+
+                entity.Property(e => e.Words).IsRequired();
             });
 
             modelBuilder.Entity<Member>(entity =>

@@ -14,7 +14,9 @@ namespace TUTOR.Repository.Mapper
             CreateMap<SentenceTypeDTO, SentenceTypeRequest>().ReverseMap();
             CreateMap<SentenceManageDTO, SentenceManage>().ReverseMap();
             CreateMap<SentenceDTO, SentenceManage>().ReverseMap();
-
+            CreateMap<GameWordsDTO, GameWords>().ReverseMap();
+            CreateMap<GamerWordsLogDTO, GamerWordsLog>().ReverseMap();
+            CreateMap<ErrorWordLogDTO, ErrorWordLog>().ReverseMap();
             CreateMap<SentenceTypeDTO, SentenceType>().ReverseMap();
             CreateMap<TokenLogDTO, SystemErrorLog>().ReverseMap();
             CreateMap<StudentAnswerLog, StudentAnswerLogDTO>().ReverseMap();

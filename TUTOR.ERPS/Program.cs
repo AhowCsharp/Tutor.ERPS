@@ -50,6 +50,9 @@ builder.Services.AddScoped<ITokenRepository, TokenRepository>();
 builder.Services.AddScoped<IMemberRepository, MemberRepository>();
 builder.Services.AddScoped<ISentenceManageRepository, SentenceManageRepository>();
 builder.Services.AddScoped<IStudentAnswerLogRepository, StudentAnswerLogRepository>();
+builder.Services.AddScoped<IGameRepository, GameRepository>();
+builder.Services.AddScoped<IGamerWordsLogRepository, GamerWordsLogRepository>();
+builder.Services.AddScoped<IErrorWordLogRepository, ErrorWordLogRepository>();
 builder.Services.AddScoped<IAdminManageRepository, AdminManageRepository>();
 
 #endregion Repository
@@ -61,6 +64,7 @@ builder.Services.AddScoped<MemberDomain>();
 builder.Services.AddScoped<SentenceManageDomain>();
 builder.Services.AddScoped<AdminManageDomain>();
 builder.Services.AddScoped<StudentAnswerLogDomain>();
+builder.Services.AddScoped<GameDomain>();
 
 #endregion Domain
 
@@ -120,7 +124,7 @@ app.UseRouting();
 app.UseAuthorization();
 app.MapControllers();
 app.MapRazorPages();
-app.UseStaticFiles(); 
+app.UseStaticFiles();
 
 // 需要加上這段使用 swagger 時才不會404
 app.MapControllers();

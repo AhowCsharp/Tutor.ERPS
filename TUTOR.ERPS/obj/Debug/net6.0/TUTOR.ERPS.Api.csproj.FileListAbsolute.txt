@@ -246,3 +246,4 @@ C:\Users\MSI MAG\Desktop\DoRay專案列表\Tutor.ERPS\TUTOR.ERPS\obj\Debug\net6.
 C:\Users\MSI MAG\Desktop\DoRay專案列表\Tutor.ERPS\TUTOR.ERPS\obj\Debug\net6.0\TUTOR.ERPS.Api.genruntimeconfig.cache
 C:\Users\MSI MAG\Desktop\DoRay專案列表\Tutor.ERPS\TUTOR.ERPS\obj\Debug\net6.0\ref\TUTOR.ERPS.Api.dll
 C:\Users\MSI MAG\Desktop\DoRay專案列表\Tutor.ERPS\TUTOR.ERPS\bin\Debug\net6.0\TUTOR.ERPS.Api.staticwebassets.runtime.json
+D:\GitLab\TUTOR.ERPS\TUTOR.ERPS\bin\Debug\net6.0\TUTOR.ERPS.Api.staticwebassets.runtime.json
